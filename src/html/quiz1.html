@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../style.css" />
     <title>Site Parcousup</title>
 </head>
 <body>
+   <div id="question_div">
     <div id="question" class="texte_question">Emplacement question</div>
     <div id="Reponses">
       <button id="reponse1" class="texte_reponse" onClick="clickReponse(1);">
@@ -22,6 +23,7 @@
         Emplacement réponse 4
       </button>
     </div>
+  </div>
     <div id="resultat" class="texte_resultat">Zone résultat</div>
     <button id="nextQuestion" class="bouton_next" onClick="presenterQuestion()">
       Question suivante
@@ -123,7 +125,7 @@
 
     function presenterQuestion() {
         if (questionsCorrectes==3) {
-            window.location.href = "page2.html";    
+            window.location.href = "présentation3.html";    
         } else {
             var idQuestion = Math.floor(Math.random() * tabQuestions1.length);
 
@@ -175,10 +177,6 @@
       } else {
         zoneResultat.innerHTML = "Votre reponse est fausse";
       }
-    }
-
-    function redirectToNewPage() {
-        window.location.href = "présentation3.html";    
     }
     
     presenterQuestion();

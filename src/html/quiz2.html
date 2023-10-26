@@ -10,6 +10,7 @@
 
 <body>
   <div class="question_div">
+
     <div id="question" class="texte_question">Emplacement question</div>
     <div id="Reponses">
       <button id="reponse1" class="texte_reponse" onClick="clickReponse(1);">
@@ -29,53 +30,70 @@
     <button id="nextQuestion" class="bouton_next" onClick="presenterQuestion()">
       Question suivante
     </button>
+    
   </div>
 </body>
 
 <script type="text/javascript">
   var questionsCorrectes = 0;
   var tabQuestions1 = [
-    [
-      "Quelle est la durée d'un BUT ?",
-      "1 an",
-      "2 ans",
-      "3 ans",
-      "4 ans",
-      3
-    ],
-    [
-      "Quest-ce qu'un IUT ?",
-      "Une université classique",
-      "Un institut universitaire de technologie ",
-      "Une école d'ingénieurs",
-      "Une école de commerce",
-      2
-    ],
-    [
-      "Comment les formations à l'IUT se comparent-elles à celles de l'université ? ",
-      "Plus longues",
-      "Plus théoriques",
-      "Plus pratiques",
-      "Moins professionnalisante",
-      3
-    ],
-    [
-      "Que pouvez-vous faire après avoir suivi un cursus à l'IUT ? ",
-      "Entrer dans une entreprise uniquement",
-      "Continuer ses études uniquement",
-      "L’un ou l’autre",
-      "Rien du tout",
-      3
-    ],
-    [
-      "Que veut dire MMI ?",
-      "Métiers du Multimédia et de l’Internet",
-      "Mouvement Médiatique et Informatif",
-      "Mécanique des Médias et de l’Informatique",
-      "Multimédia et Métiers de l’Internet",
-      1
-    ]
-  ];
+      [
+        "Quel est le métier qui n’est pas un débouché de MMI ?",
+        "Chirurgien",
+        "Réalisateur",
+        "Game Designer",
+        "Développeur Web",
+        1
+      ],
+      [
+        "Quels sont les métiers potentiels pour les amoureux des graphismes et de l'audiovisuel issus du BUT MMI ?",
+        "Agence publicitaire ou de communication",
+        "Développement web",
+        "Programmation d'applications",
+        "Sécurité informatique",
+        1
+      ],
+      [
+        "Quels débouchés sont mentionnés pour les passionnés du développement informatique ?",
+        "Marketing et stratégie de communication",
+        "Programmation d'applications",
+        "Gestion des médias sociaux",
+        "Sécurité informatique",
+        2
+      ],
+      [
+        "Où peut travailler un webmestre en fonction de ses centres d'intérêt ?",
+        "Journalisme",
+        "Bâtiment et travaux publics (BTP)",
+        "Édition, librairie, bibliothèque",
+        "Énergie",
+        1
+      ],
+      [
+        "Quel professionnel améliore l'expérience des utilisateurs en simplifiant la navigation en ligne ?",
+        "Développeur informatique",
+        "Animateur 2D",
+        "Concepteur multimédia",
+        "UX designer",
+        4
+      ],
+      [
+        "Quels domaines professionnels sont associés au métier d'UX designer?",
+        "WebDesigner",
+        "Réalisateur",
+        "Agriculture",
+        "Journalisme",
+        1
+      ],
+      [
+        "Quel métier consiste à donner vie à des images dessinées sur papier ou tablette?",
+        "Développeur informatique",
+        "Animateur 2D",
+        "Concepteur multimédia",
+        "Webmaster",
+        2
+      ]
+    ];
 
   var question_courante;
   var reponse1_courante;
@@ -95,7 +113,7 @@
 
   function presenterQuestion() {
     if (questionsCorrectes == 3) {
-      window.location.href = "page2.html";
+      window.location.href = "présentation4.html";
     } else {
       var idQuestion = Math.floor(Math.random() * tabQuestions1.length);
 
@@ -148,10 +166,6 @@
     } else {
       zoneResultat.innerHTML = "Votre reponse est fausse";
     }
-  }
-
-  function redirectToNewPage() {
-    window.location.href = "présentation4.html";
   }
 
   presenterQuestion();
