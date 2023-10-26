@@ -125,7 +125,7 @@
 
     function presenterQuestion() {
         if (questionsCorrectes==3) {
-            window.location.href = "page2.html";    
+            window.location.href = "présentation3.html";    
         } else {
             var idQuestion = Math.floor(Math.random() * tabQuestions1.length);
 
@@ -177,10 +177,6 @@
       } else {
         zoneResultat.innerHTML = "Votre reponse est fausse";
       }
-    }
-
-    function redirectToNewPage() {
-        window.location.href = "présentation3.html";    
     }
     
     presenterQuestion();
