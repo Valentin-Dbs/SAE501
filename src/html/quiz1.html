@@ -7,6 +7,7 @@
     <title>Site Parcousup</title>
 </head>
 <body>
+   <div id="question_div">
     <div id="question" class="texte_question">Emplacement question</div>
     <div id="Reponses">
       <button id="reponse1" class="texte_reponse" onClick="clickReponse(1);">
@@ -22,6 +23,7 @@
         Emplacement réponse 4
       </button>
     </div>
+  </div>
     <div id="resultat" class="texte_resultat">Zone résultat</div>
     <button id="nextQuestion" class="bouton_next" onClick="presenterQuestion()">
       Question suivante
@@ -178,7 +180,7 @@
     }
 
     function redirectToNewPage() {
-        window.location.href = "page2.html";    
+        window.location.href = "présentation3.html";    
     }
     
     presenterQuestion();

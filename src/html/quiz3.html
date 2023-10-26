@@ -7,6 +7,7 @@
     <title>Site Parcousup</title>
 </head>
 <body>
+  <div id="question_div">
     <div id="question" class="texte_question">Emplacement question</div>
     <div id="Reponses">
       <button id="reponse1" class="texte_reponse" onClick="clickReponse(1);">
@@ -22,6 +23,7 @@
         Emplacement réponse 4
       </button>
     </div>
+  </div>
     <div id="resultat" class="texte_resultat">Zone résultat</div>
     <button id="nextQuestion" class="bouton_next" onClick="presenterQuestion()">
       Question suivante
@@ -32,76 +34,69 @@
     var questionsCorrectes = 0;
     var tabQuestions1 = [
       [
-        "Quelle est la durée d'un BUT ?",
-        "1 an",
-        "2 ans",
-        "3 ans",
-        "4 ans",
-        3
-      ],
-      [
-        "Quest-ce qu'un IUT ?",
-        "Une université classique",
-        "Un institut universitaire de technologie ",
-        "Une école d'ingénieurs",
-        "Une école de commerce",
-        2
-      ],
-      [
-        "Comment les formations à l'IUT se comparent-elles à celles de l'université ?",
-        "Plus longues",
-        "Plus théoriques",
-        "Plus pratiques" ,
-        "Moins professionnalisante",
-        3
-      ],
-      [
-        "Pourquoi les formations à l'IUT sont-elles sélectives ?",
-        "Parce qu'elles sont plus courtes",
-        "Parce qu'elles sont moins chères",
-        "Parce qu'elles ont un nombre limité de places disponibles",
-        "Parce qu'elles sont ouvertes à tout le monde",
-        3
-      ],
-      [
-        "Que pouvez-vous faire après avoir suivi un cursus à l'IUT ?",
-        "Entrer dans une entreprise uniquement",
-        "Continuer ses études uniquement" ,
-        "L’un ou l’autre",
-        "Rien du tout",
-        3
-      ],
-      [
-        "Que veut dire MMI ?",
-        "Métiers du Multimédia et de l’Internet",
-        "Mouvement Médiatique et Informatif",
-        "Mécanique des Médias et de l’Informatique",
-        "Multimédia et Métiers de l’Internet",
+        "Dans quel domaine peut-on apprendre à se servir d’un appareil photo ou d’une caméra?",
+        "Audiovisuel",
+        "Animation",
+        "Suite Adobe",
+        "Développement de jeux vidéo",
         1
       ],
       [
-        "Quelles compétences peut-on acquérir en suivant le BUT MMI ?",
-        "Création de sites internet, développement d’application et jeux vidéo uniquement",
-        "Création numérique, création de publicités, et communication uniquement",
-        "Gestion de projets uniquement",
-        "Un peu de tout ça : MMI est un vrai couteau suisse",
+        "Quels types de projets peuvent être fait en Audiovisuel ?",
+        "Montage photo",
+        "Court-métrages",
+        "Construction de sites web",
+        "Jeux vidéo",
+        2
+      ],
+      [
+        "Dans quel domaine apprend-on à utiliser une tablette et des logiciels de dessin ?",
+        "Audiovisuel",
+        "Animation et Dessin numérique",
+        "Développement de jeux vidéo",
+        "Développement Back",
+        2
+      ],
+      [
+        "Qu’est-ce que la suite Adobe? ",
+        "Un ensemble de logiciel dédié à la création",
+        "Un logiciel de montage photo et vidéo",
+        "Un ensemble de langages de programmation pour développer des jeux vidéo",
+        "Un logiciel qui permet le développement de sites web",
+        1
+      ],
+      [
+        "Quel domaine implique l'apprentissage de langages, logiciels et techniques pour les jeux vidéo ?",
+        "Audiovisuel",
+        "Animation",
+        "Suite Adobe",
+        "Développement de jeux vidéo",
+
         4
       ],
       [
-        "Combien de parcours de spécialisation sont disponibles en MMI ?",
-        "1",
-        "2",
-        "3",
-        "4",
+        "Où peut-on apprendre à utiliser des logiciels de construction de site tels que WordPress ?",
+        "Développement de jeux vidéo",
+        "Développement de site web",
+        "Développement Back",
+        "E-boutique",
+        2
+      ],
+      [
+        "Dans quel domaine apprend-on à construire et coder une base de données ?",
+        "Audiovisuel",
+        "Animation",
+        "Suite Adobe",
+        "Développement Back",
+        4
+      ],
+      [
+        "Quel outil est mentionné comme un logiciel pour créer des boutiques en ligne ?",
+        "Adobe",
+        "WordPress",
+        "Prestashop",
+        "Suite Microsoft",
         3
-      ],
-      [
-        "Quels sont les parcours de spécialisation disponibles dans la formation MMI ?",
-        "Création numérique et développement web",
-        "Développement web et stratégie de communication",
-        "Création numérique et stratégie de communication",
-        "Création numérique, développement web et Stratégie de communication",
-        4
       ]
     ];
 
@@ -178,7 +173,7 @@
     }
 
     function redirectToNewPage() {
-        window.location.href = "page2.html";    
+        window.location.href = "présentation6.html";    
     }
     
     presenterQuestion();
