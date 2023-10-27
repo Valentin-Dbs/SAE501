@@ -1,29 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="../../style.css">
 
     <title>Site Parcousup</title>
 </head>
-    <body>
-        <div class="textInfo">
-            C’est quoi un IUT ?
-            <br><br>
-            L’ IUT est un institut universitaire de technologie qui propose des formations sélectives. Les formations y sont aussi plus axées sur les travaux pratiques et plus professionnalisantes. On apprend tout en créant, c’est ce qui rend l’IUT  super intéressant. On peut tout à fait, après un cursus à l’IUT, entrer dans une entreprise ou bien continuer ses études selon ce que l’on veut faire.
-            <br><br>
-            Le BUT est une formation qui se fait à l’IUT en 3 ans, il signifie bachelor universitaire de technologie. 
-            <br><br>
-            Il existe plusieurs BUT mais celui qui nous intéresse ici c’est le BUT MMI !
-            Le BUT MMI (Métiers du multimédia et de l’Informatique) est un couteau suisse qui permet d’obtenir des compétences dans le domaine de la Création Numérique, la Communication, le Développement Web et l’Audiovisuel. 
-            <br><br>
-            Nous, nous sommes le BUT MMI de Béziers, c’est ici !
+
+<body>
+    <div class="textInfo">
+        <h1>Et le BUT MMI ?</h1>
+        <p>Lors de la deuxième année, il te sera demandé de choisir un parcours de spécialisation. Les trois parcours de
+            spécialisation possibles en MMI sont :
+        <ul>
+            <li>Création numérique</li>
+            <li>Développement web et dispositifs interactifs</li>
+            <li>Stratégie de communication numérique et design d’expérience</li>
+        </ul>
+        </p>
+        <p>
+            Cependant à l’IUT de Béziers seulement 2 parcours sont proposés :
+        <ul>
+            <li> Création numérique</li>
+            <li>Développement web et dispositifs interactifs</li>
+
+        </ul>
+        </p>
+        <p>
+
+            Mais il existe 30 IUT qui proposent MMI parmis les 108 IUT de France alors si le parcours stratégie de
+            communication numérique et design d’expérience t’intéresse alors n’hésite pas à regarder les autres IUT.
+
+            Cliquez sur les dossiers pour en apprendre davantage sur les parcours ;)
+        </p>
+
+        <div class="parcours">
+            <button>Création numérique</button>
+            <div class="texteCache" id="crea"> Si tu choisis cette voie, tu te plongeras dans le monde de la conception
+                numérique. Cela
+                signifie que tu apprendras à créer des éléments visuels numériques comme des illustrations, des
+                infographies,
+                des animations, des design de jeux vidéo, des créations audiovisuelles et d'autres contenus créatifs.
+                C'est un
+                excellent choix si tu as un œil artistique et que tu veux donner vie à des idées numériques.
+            </div>
 
         </div>
+
+
+
+    </div>
     <br>
     <a href="quiz1.html"><button id="goTo1" class="bouton_next">
-        Faire le quiz 1
-    </button></a>
-    </body>
+            Faire le quiz 1
+        </button></a>
+
+        
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleButton = document.getElementById("toggleButton");
+            const textContainer = document.getElementById("textContainer");
+
+            toggleButton.addEventListener("click", function () {
+                if (textContainer.style.display === "none") {
+                    textContainer.style.display = "block";
+                    toggleButton.textContent = "Masquer le texte";
+                } else {
+                    textContainer.style.display = "none";
+                    toggleButton.textContent = "Dérouler le texte";
+                }
+            });
+        });
+    </script>
+</body>
+
 </html>

@@ -16,6 +16,12 @@ body {
   text-align: center;
 }
 
+.textCache {
+  display: none;
+}
+
+
+
 .question_div {
   background-color: white;
   height: 80vh;

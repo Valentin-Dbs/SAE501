@@ -36,7 +36,7 @@
 
 <script type="text/javascript">
   var questionsCorrectes = 0;
-  var tabQuestions1 = [
+  var tabQuestions2 = [
     [
       "Quel est le métier qui n’est pas un débouché de MMI ?",
       "Chirurgien",
@@ -115,7 +115,7 @@
     if (questionsCorrectes == 3) {
       window.location.href = "présentation4.html";
     } else {
-      var idQuestion = Math.floor(Math.random() * tabQuestions1.length);
+      var idQuestion = Math.floor(Math.random() * tabQuestions2.length);
 
       zoneResultat.style.visibility = "hidden";
       zoneBoutonNext.style.visibility = "hidden";
@@ -129,7 +129,7 @@
       zoneReponse3.style.opacity = 1;
       zoneReponse4.style.opacity = 1;
 
-      var grpQuestionReponses = tabQuestions1[idQuestion];
+      var grpQuestionReponses = tabQuestions2[idQuestion];
       question_courante = grpQuestionReponses[0];
       reponse1_courante = grpQuestionReponses[1];
       reponse2_courante = grpQuestionReponses[2];
