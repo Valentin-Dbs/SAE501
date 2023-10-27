@@ -38,7 +38,7 @@
         </p>
 
         <div class="parcours">
-            <button>Création numérique</button>
+            <button id="btnCrea">Création numérique</button>
             <div class="texteCache" id="crea"> Si tu choisis cette voie, tu te plongeras dans le monde de la conception
                 numérique. Cela
                 signifie que tu apprendras à créer des éléments visuels numériques comme des illustrations, des
@@ -58,19 +58,19 @@
             Faire le quiz 1
         </button></a>
 
-        
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const toggleButton = document.getElementById("toggleButton");
-            const textContainer = document.getElementById("textContainer");
+            const btnCrea = document.getElementById("btnCrea");
+            const crea = document.getElementById("crea");
 
-            toggleButton.addEventListener("click", function () {
-                if (textContainer.style.display === "none") {
-                    textContainer.style.display = "block";
-                    toggleButton.textContent = "Masquer le texte";
+            btnCrea.addEventListener("click", function () {
+                if (crea.style.display != "none") {
+                    crea.style.display = "block";
+                    btnCrea.textContent = "Masquer le texte";
                 } else {
-                    textContainer.style.display = "none";
-                    toggleButton.textContent = "Dérouler le texte";
+                    crea.style.display = "none";
+                    btnCrea.textContent = "Dérouler le texte";
                 }
             });
         });
