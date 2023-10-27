@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 body {
   /* Police */
+  font-family: 'Josefin Sans', sans-serif;
   /* Background */
   background-image: url('src/img/background.png');
   background-size: cover;
@@ -11,6 +14,7 @@ body {
   align-items: center;
   height: 100vh;
   width: 100%;
+  color: #4B9CD4;
 
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
