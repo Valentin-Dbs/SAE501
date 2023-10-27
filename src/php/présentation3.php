@@ -31,7 +31,7 @@
 
         </div>
         <br>
-        <a href="quiz2.html"><button id="goTo1" class="bouton_next">
+        <a href="quiz2.php"><button id="goTo1" class="bouton_next">
                 Faire le quiz 1
             </button></a>
     </div>

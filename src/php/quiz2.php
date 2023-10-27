@@ -113,7 +113,7 @@
 
   function presenterQuestion() {
     if (questionsCorrectes == 3) {
-      window.location.href = "présentation4.html";
+      window.location.href = "présentation4.php";
     } else {
       var idQuestion = Math.floor(Math.random() * tabQuestions2.length);
 
