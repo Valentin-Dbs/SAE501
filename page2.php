@@ -18,5 +18,6 @@ if (!isset($_SESSION['nom']) || !isset($_SESSION['prenom'])) {
 <body>
     <h1>Welcome to the new page, <?php echo $_SESSION['prenom']; ?>!</h1>
     <a href="deconnexion.php">Déconnexion</a>
+    <a href="essaiequiz.php"><button id="goTo1" class="bouton_next">
 </body>
 </html>
