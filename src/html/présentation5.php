@@ -29,6 +29,8 @@
             <br><br>
             Nous, nous sommes le BUT MMI de Béziers, c’est ici !
 
+            youpi
+
         </div>
         <br>
         <a href="quiz3.php"><button id="goTo1" class="bouton_next">
