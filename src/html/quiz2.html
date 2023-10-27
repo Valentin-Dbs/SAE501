@@ -30,70 +30,70 @@
     <button id="nextQuestion" class="bouton_next" onClick="presenterQuestion()">
       Question suivante
     </button>
-    
+
   </div>
 </body>
 
 <script type="text/javascript">
   var questionsCorrectes = 0;
-  var tabQuestions1 = [
-      [
-        "Quel est le métier qui n’est pas un débouché de MMI ?",
-        "Chirurgien",
-        "Réalisateur",
-        "Game Designer",
-        "Développeur Web",
-        1
-      ],
-      [
-        "Quels sont les métiers potentiels pour les amoureux des graphismes et de l'audiovisuel issus du BUT MMI ?",
-        "Agence publicitaire ou de communication",
-        "Développement web",
-        "Programmation d'applications",
-        "Sécurité informatique",
-        1
-      ],
-      [
-        "Quels débouchés sont mentionnés pour les passionnés du développement informatique ?",
-        "Marketing et stratégie de communication",
-        "Programmation d'applications",
-        "Gestion des médias sociaux",
-        "Sécurité informatique",
-        2
-      ],
-      [
-        "Où peut travailler un webmestre en fonction de ses centres d'intérêt ?",
-        "Journalisme",
-        "Bâtiment et travaux publics (BTP)",
-        "Édition, librairie, bibliothèque",
-        "Énergie",
-        1
-      ],
-      [
-        "Quel professionnel améliore l'expérience des utilisateurs en simplifiant la navigation en ligne ?",
-        "Développeur informatique",
-        "Animateur 2D",
-        "Concepteur multimédia",
-        "UX designer",
-        4
-      ],
-      [
-        "Quels domaines professionnels sont associés au métier d'UX designer?",
-        "WebDesigner",
-        "Réalisateur",
-        "Agriculture",
-        "Journalisme",
-        1
-      ],
-      [
-        "Quel métier consiste à donner vie à des images dessinées sur papier ou tablette?",
-        "Développeur informatique",
-        "Animateur 2D",
-        "Concepteur multimédia",
-        "Webmaster",
-        2
-      ]
-    ];
+  var tabQuestions2 = [
+    [
+      "Quel est le métier qui n’est pas un débouché de MMI ?",
+      "Chirurgien",
+      "Réalisateur",
+      "Game Designer",
+      "Développeur Web",
+      1
+    ],
+    [
+      "Quels sont les métiers potentiels pour les amoureux des graphismes et de l'audiovisuel issus du BUT MMI ?",
+      "Agence publicitaire ou de communication",
+      "Développement web",
+      "Programmation d'applications",
+      "Sécurité informatique",
+      1
+    ],
+    [
+      "Quels débouchés sont mentionnés pour les passionnés du développement informatique ?",
+      "Marketing et stratégie de communication",
+      "Programmation d'applications",
+      "Gestion des médias sociaux",
+      "Sécurité informatique",
+      2
+    ],
+    [
+      "Où peut travailler un webmestre en fonction de ses centres d'intérêt ?",
+      "Journalisme",
+      "Bâtiment et travaux publics (BTP)",
+      "Édition, librairie, bibliothèque",
+      "Énergie",
+      1
+    ],
+    [
+      "Quel professionnel améliore l'expérience des utilisateurs en simplifiant la navigation en ligne ?",
+      "Développeur informatique",
+      "Animateur 2D",
+      "Concepteur multimédia",
+      "UX designer",
+      4
+    ],
+    [
+      "Quels domaines professionnels sont associés au métier d'UX designer?",
+      "WebDesigner",
+      "Réalisateur",
+      "Agriculture",
+      "Journalisme",
+      1
+    ],
+    [
+      "Quel métier consiste à donner vie à des images dessinées sur papier ou tablette?",
+      "Développeur informatique",
+      "Animateur 2D",
+      "Concepteur multimédia",
+      "Webmaster",
+      2
+    ]
+  ];
 
   var question_courante;
   var reponse1_courante;
@@ -115,7 +115,7 @@
     if (questionsCorrectes == 3) {
       window.location.href = "présentation4.html";
     } else {
-      var idQuestion = Math.floor(Math.random() * tabQuestions1.length);
+      var idQuestion = Math.floor(Math.random() * tabQuestions2.length);
 
       zoneResultat.style.visibility = "hidden";
       zoneBoutonNext.style.visibility = "hidden";
@@ -129,7 +129,7 @@
       zoneReponse3.style.opacity = 1;
       zoneReponse4.style.opacity = 1;
 
-      var grpQuestionReponses = tabQuestions1[idQuestion];
+      var grpQuestionReponses = tabQuestions2[idQuestion];
       question_courante = grpQuestionReponses[0];
       reponse1_courante = grpQuestionReponses[1];
       reponse2_courante = grpQuestionReponses[2];

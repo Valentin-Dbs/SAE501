@@ -6,6 +6,7 @@ body {
   background-repeat: no-repeat;
   /* display pour centrer la page */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -14,6 +15,12 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
 }
+
+.textCache {
+  display: none;
+}
+
+
 
 .question_div {
   background-color: white;
