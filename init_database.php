@@ -31,7 +31,7 @@ $sql = "CREATE TABLE IF NOT EXISTS users (
     prenom VARCHAR(50) NOT NULL,
     numero_etudiant VARCHAR(10) NOT NULL,
     inscription_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-)";
+)ENGINE=InnoDB";
 
 if ($conn->query($sql) === TRUE) {
     echo "Table 'users' créée avec succès !";
