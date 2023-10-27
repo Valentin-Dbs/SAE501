@@ -59,22 +59,23 @@
         </button></a>
 
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const btnCrea = document.getElementById("btnCrea");
-            const crea = document.getElementById("crea");
-
-            btnCrea.addEventListener("click", function () {
-                if (crea.style.display != "none") {
-                    crea.style.display = "block";
-                    btnCrea.textContent = "Masquer le texte";
-                } else {
-                    crea.style.display = "none";
-                    btnCrea.textContent = "Dérouler le texte";
-                }
-            });
-        });
-    </script>
+    
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const btnCrea = document.getElementById("btnCrea");
+        const crea = document.getElementById("crea");
+
+        btnCrea.addEventListener("click", function () {
+            if (crea.style.display != "none") {
+                crea.style.display = "block";
+                btnCrea.textContent = "Masquer le texte";
+            } else {
+                crea.style.display = "none";
+                btnCrea.textContent = "Dérouler le texte";
+            }
+        });
+    });
+</script>
 
 </html>
