@@ -37,7 +37,7 @@
         <p>Nous, nous sommes le BUT MMI de Béziers, c’est ici !</p>
     </div>
     <br />
-    <a href="présentation2.html"><button id="goTo1" class="bouton_next">Suite</button></a>
+    <a href="présentation2.php"><button id="goTo1" class="bouton_next">Suite</button></a>
 </div>
 </body>
 

@@ -10,6 +10,7 @@
 
 <body>
   <div class="div-centre">
+
     <div id="question" class="texte_question">Emplacement question</div>
     <div id="Reponses">
       <button id="reponse1" class="texte_reponse" onClick="clickReponse(1);">
@@ -29,77 +30,68 @@
     <button id="nextQuestion" class="bouton_next" onClick="presenterQuestion()">
       Question suivante
     </button>
-  </div>
 
+  </div>
 </body>
 
 <script type="text/javascript">
   var questionsCorrectes = 0;
-  var tabQuestions3 = [
+  var tabQuestions2 = [
     [
-      "Dans quel domaine peut-on apprendre à se servir d’un appareil photo ou d’une caméra?",
-      "Audiovisuel",
-      "Animation",
-      "Suite Adobe",
-      "Développement de jeux vidéo",
+      "Quel est le métier qui n’est pas un débouché de MMI ?",
+      "Chirurgien",
+      "Réalisateur",
+      "Game Designer",
+      "Développeur Web",
       1
     ],
     [
-      "Quels types de projets peuvent être fait en Audiovisuel ?",
-      "Montage photo",
-      "Court-métrages",
-      "Construction de sites web",
-      "Jeux vidéo",
-      2
-    ],
-    [
-      "Dans quel domaine apprend-on à utiliser une tablette et des logiciels de dessin ?",
-      "Audiovisuel",
-      "Animation et Dessin numérique",
-      "Développement de jeux vidéo",
-      "Développement Back",
-      2
-    ],
-    [
-      "Qu’est-ce que la suite Adobe? ",
-      "Un ensemble de logiciel dédié à la création",
-      "Un logiciel de montage photo et vidéo",
-      "Un ensemble de langages de programmation pour développer des jeux vidéo",
-      "Un logiciel qui permet le développement de sites web",
+      "Quels sont les métiers potentiels pour les amoureux des graphismes et de l'audiovisuel issus du BUT MMI ?",
+      "Agence publicitaire ou de communication",
+      "Développement web",
+      "Programmation d'applications",
+      "Sécurité informatique",
       1
     ],
     [
-      "Quel domaine implique l'apprentissage de langages, logiciels et techniques pour les jeux vidéo ?",
-      "Audiovisuel",
-      "Animation",
-      "Suite Adobe",
-      "Développement de jeux vidéo",
-
-      4
-    ],
-    [
-      "Où peut-on apprendre à utiliser des logiciels de construction de site tels que WordPress ?",
-      "Développement de jeux vidéo",
-      "Développement de site web",
-      "Développement Back",
-      "E-boutique",
+      "Quels débouchés sont mentionnés pour les passionnés du développement informatique ?",
+      "Marketing et stratégie de communication",
+      "Programmation d'applications",
+      "Gestion des médias sociaux",
+      "Sécurité informatique",
       2
     ],
     [
-      "Dans quel domaine apprend-on à construire et coder une base de données ?",
-      "Audiovisuel",
-      "Animation",
-      "Suite Adobe",
-      "Développement Back",
+      "Où peut travailler un webmestre en fonction de ses centres d'intérêt ?",
+      "Journalisme",
+      "Bâtiment et travaux publics (BTP)",
+      "Édition, librairie, bibliothèque",
+      "Énergie",
+      1
+    ],
+    [
+      "Quel professionnel améliore l'expérience des utilisateurs en simplifiant la navigation en ligne ?",
+      "Développeur informatique",
+      "Animateur 2D",
+      "Concepteur multimédia",
+      "UX designer",
       4
     ],
     [
-      "Quel outil est mentionné comme un logiciel pour créer des boutiques en ligne ?",
-      "Adobe",
-      "WordPress",
-      "Prestashop",
-      "Suite Microsoft",
-      3
+      "Quels domaines professionnels sont associés au métier d'UX designer?",
+      "WebDesigner",
+      "Réalisateur",
+      "Agriculture",
+      "Journalisme",
+      1
+    ],
+    [
+      "Quel métier consiste à donner vie à des images dessinées sur papier ou tablette?",
+      "Développeur informatique",
+      "Animateur 2D",
+      "Concepteur multimédia",
+      "Webmaster",
+      2
     ]
   ];
 
@@ -121,9 +113,9 @@
 
   function presenterQuestion() {
     if (questionsCorrectes == 3) {
-      window.location.href = "présentation6.html";
+      window.location.href = "présentation4.php";
     } else {
-      var idQuestion = Math.floor(Math.random() * tabQuestions3.length);
+      var idQuestion = Math.floor(Math.random() * tabQuestions2.length);
 
       zoneResultat.style.visibility = "hidden";
       zoneBoutonNext.style.visibility = "hidden";
@@ -137,7 +129,7 @@
       zoneReponse3.style.opacity = 1;
       zoneReponse4.style.opacity = 1;
 
-      var grpQuestionReponses = tabQuestions3[idQuestion];
+      var grpQuestionReponses = tabQuestions2[idQuestion];
       question_courante = grpQuestionReponses[0];
       reponse1_courante = grpQuestionReponses[1];
       reponse2_courante = grpQuestionReponses[2];
@@ -170,6 +162,7 @@
     if (idReponse == idReponseCorrecte) {
       zoneResultat.innerHTML = "Votre reponse est juste";
       questionsCorrectes++;
+      console.log(questionsCorrectes);
     } else {
       zoneResultat.innerHTML = "Votre reponse est fausse";
     }

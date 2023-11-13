@@ -29,9 +29,11 @@
             <br><br>
             Nous, nous sommes le BUT MMI de Béziers, c’est ici !
 
+            youpi
+
         </div>
         <br>
-        <a href="présentation5.html"><button id="goTo1" class="bouton_next">
+        <a href="quiz3.php"><button id="goTo1" class="bouton_next">
                 Faire le quiz 1
             </button></a>
     </div>

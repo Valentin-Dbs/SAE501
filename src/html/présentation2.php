@@ -8,6 +8,12 @@
     <link rel="stylesheet" type="text/css" href="../../style.css">
 
     <title>Site Parcousup</title>
+
+    <style>
+        .texteCache {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -40,7 +46,7 @@
             </p>
 
             <div class="parcours">
-                <button id="btnCrea">Création numérique</button>
+                <button onclick="toggleText('crea')">Création numérique</button>
                 <div class="texteCache" id="crea"> Si tu choisis cette voie, tu te plongeras dans le monde de la
                     conception
                     numérique. Cela
@@ -51,6 +57,27 @@
                     C'est un
                     excellent choix si tu as un œil artistique et que tu veux donner vie à des idées numériques.
                 </div>
+            </div>
+
+            <div class="parcours">
+                <button onclick="toggleText('dev')">Développement web et dispositifs interactifs </button>
+                <div class="texteCache" id="dev">
+                    Avec ce parcours, tu te lanceras dans le domaine du développement web. Tu apprendras à créer des
+                    sites web interactifs, des applications web et mobiles, des jeux vidéo, ainsi que d'autres solutions
+                    interactives telles que de la réalité virtuelle et de la conception 3D . Si tu es intéressé par la
+                    programmation et que tu veux travailler sur des projets interactifs, c'est le parcours qu'il te
+                    faut.
+                </div>
+            </div>
+
+            <div class="parcours">
+                <button onclick="toggleText('com')">Stratégie de communication numérique et design d'expérience</button>
+                <div class="texteCache" id="com">
+                    Si tu choisis cette spécialisation, tu te plongeras dans le monde de la communication numérique. Tu
+                    apprendras à concevoir des stratégies de communication en ligne, à gérer des médias sociaux, et à
+                    créer des expériences utilisateur exceptionnelles. Si tu es passionné par la communication et que tu
+                    veux jouer un rôle clé dans la création d'expériences numériques, c'est le parcours qui te convient.
+                </div>
 
             </div>
 
@@ -58,7 +85,7 @@
 
         </div>
         <br>
-        <a href="quiz1.html"><button id="goTo1" class="bouton_next">
+        <a href="quiz1.php"><button id="goTo1" class="bouton_next">
                 Faire le quiz 1
             </button></a>
     </div>
@@ -67,20 +94,19 @@
 
 </body>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const btnCrea = document.getElementById("btnCrea");
-        const crea = document.getElementById("crea");
+    function toggleText(text) {
+        var texteElement = document.getElementById(text);
+        var textesCaches = document.getElementsByClassName("texteCache");
 
-        btnCrea.addEventListener("click", function () {
-            if (crea.style.display != "none") {
-                crea.style.display = "block";
-                btnCrea.textContent = "Masquer le texte";
-            } else {
-                crea.style.display = "none";
-                btnCrea.textContent = "Dérouler le texte";
+        if (texteElement.style.display === "none") {
+            for (let i = 0; i < textesCaches.length; i++) {
+                textesCaches[i].style.display = "none";
             }
-        });
-    });
+            texteElement.style.display = "block";
+        } else {
+            texteElement.style.display = "none";
+        }
+    }
 </script>
 
 </html>

@@ -10,7 +10,6 @@
 
 <body>
   <div class="div-centre">
-
     <div id="question" class="texte_question">Emplacement question</div>
     <div id="Reponses">
       <button id="reponse1" class="texte_reponse" onClick="clickReponse(1);">
@@ -30,68 +29,84 @@
     <button id="nextQuestion" class="bouton_next" onClick="presenterQuestion()">
       Question suivante
     </button>
-
   </div>
+
 </body>
 
 <script type="text/javascript">
   var questionsCorrectes = 0;
-  var tabQuestions2 = [
+  var tabQuestions1 = [
     [
-      "Quel est le métier qui n’est pas un débouché de MMI ?",
-      "Chirurgien",
-      "Réalisateur",
-      "Game Designer",
-      "Développeur Web",
-      1
+      "Quelle est la durée d'un BUT ?",
+      "1 an",
+      "2 ans",
+      "3 ans",
+      "4 ans",
+      3
     ],
     [
-      "Quels sont les métiers potentiels pour les amoureux des graphismes et de l'audiovisuel issus du BUT MMI ?",
-      "Agence publicitaire ou de communication",
-      "Développement web",
-      "Programmation d'applications",
-      "Sécurité informatique",
-      1
-    ],
-    [
-      "Quels débouchés sont mentionnés pour les passionnés du développement informatique ?",
-      "Marketing et stratégie de communication",
-      "Programmation d'applications",
-      "Gestion des médias sociaux",
-      "Sécurité informatique",
+      "Quest-ce qu'un IUT ?",
+      "Une université classique",
+      "Un institut universitaire de technologie ",
+      "Une école d'ingénieurs",
+      "Une école de commerce",
       2
     ],
     [
-      "Où peut travailler un webmestre en fonction de ses centres d'intérêt ?",
-      "Journalisme",
-      "Bâtiment et travaux publics (BTP)",
-      "Édition, librairie, bibliothèque",
-      "Énergie",
+      "Comment les formations à l'IUT se comparent-elles à celles de l'université ?",
+      "Plus longues",
+      "Plus théoriques",
+      "Plus pratiques",
+      "Moins professionnalisante",
+      3
+    ],
+    [
+      "Pourquoi les formations à l'IUT sont-elles sélectives ?",
+      "Parce qu'elles sont plus courtes",
+      "Parce qu'elles sont moins chères",
+      "Parce qu'elles ont un nombre limité de places disponibles",
+      "Parce qu'elles sont ouvertes à tout le monde",
+      3
+    ],
+    [
+      "Que pouvez-vous faire après avoir suivi un cursus à l'IUT ?",
+      "Entrer dans une entreprise uniquement",
+      "Continuer ses études uniquement",
+      "L’un ou l’autre",
+      "Rien du tout",
+      3
+    ],
+    [
+      "Que veut dire MMI ?",
+      "Métiers du Multimédia et de l’Internet",
+      "Mouvement Médiatique et Informatif",
+      "Mécanique des Médias et de l’Informatique",
+      "Multimédia et Métiers de l’Internet",
       1
     ],
     [
-      "Quel professionnel améliore l'expérience des utilisateurs en simplifiant la navigation en ligne ?",
-      "Développeur informatique",
-      "Animateur 2D",
-      "Concepteur multimédia",
-      "UX designer",
+      "Quelles compétences peut-on acquérir en suivant le BUT MMI ?",
+      "Création de sites internet, développement d’application et jeux vidéo uniquement",
+      "Création numérique, création de publicités, et communication uniquement",
+      "Gestion de projets uniquement",
+      "Un peu de tout ça : MMI est un vrai couteau suisse",
       4
     ],
     [
-      "Quels domaines professionnels sont associés au métier d'UX designer?",
-      "WebDesigner",
-      "Réalisateur",
-      "Agriculture",
-      "Journalisme",
-      1
+      "Combien de parcours de spécialisation sont disponibles en MMI ?",
+      "1",
+      "2",
+      "3",
+      "4",
+      3
     ],
     [
-      "Quel métier consiste à donner vie à des images dessinées sur papier ou tablette?",
-      "Développeur informatique",
-      "Animateur 2D",
-      "Concepteur multimédia",
-      "Webmaster",
-      2
+      "Quels sont les parcours de spécialisation disponibles dans la formation MMI ?",
+      "Création numérique et développement web",
+      "Développement web et stratégie de communication",
+      "Création numérique et stratégie de communication",
+      "Création numérique, développement web et Stratégie de communication",
+      4
     ]
   ];
 
@@ -113,9 +128,9 @@
 
   function presenterQuestion() {
     if (questionsCorrectes == 3) {
-      window.location.href = "présentation4.html";
+      window.location.href = "présentation3.php";
     } else {
-      var idQuestion = Math.floor(Math.random() * tabQuestions2.length);
+      var idQuestion = Math.floor(Math.random() * tabQuestions1.length);
 
       zoneResultat.style.visibility = "hidden";
       zoneBoutonNext.style.visibility = "hidden";
@@ -129,7 +144,7 @@
       zoneReponse3.style.opacity = 1;
       zoneReponse4.style.opacity = 1;
 
-      var grpQuestionReponses = tabQuestions2[idQuestion];
+      var grpQuestionReponses = tabQuestions1[idQuestion];
       question_courante = grpQuestionReponses[0];
       reponse1_courante = grpQuestionReponses[1];
       reponse2_courante = grpQuestionReponses[2];
@@ -162,7 +177,6 @@
     if (idReponse == idReponseCorrecte) {
       zoneResultat.innerHTML = "Votre reponse est juste";
       questionsCorrectes++;
-      console.log(questionsCorrectes);
     } else {
       zoneResultat.innerHTML = "Votre reponse est fausse";
     }

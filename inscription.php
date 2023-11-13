@@ -30,11 +30,16 @@ $database = "quiz_app";     // Nom de la base de données que vous avez créée
 
     // Exécutez la requête
     if ($stmt->execute()) {
+        // Créez une variable de session pour l'authentification
+        session_start();
+        $_SESSION['nom'] = $nom;
+        $_SESSION['prenom'] = $prenom;
         echo "Inscription réussie !";
     } else {
         echo "Erreur : " . $conn->error;
     }
-
+    header('Location: page2.php');
+    exit;    
     // Fermez la connexion
     $conn->close();
 
