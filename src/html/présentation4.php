@@ -12,28 +12,35 @@
 
 <body>
     <div class="div-centre">
-        <div class="textInfo">
-            C’est quoi un IUT ?
-            <br><br>
-            L’ IUT est un institut universitaire de technologie qui propose des formations sélectives. Les formations y
-            sont aussi plus axées sur les travaux pratiques et plus professionnalisantes. On apprend tout en créant,
-            c’est ce qui rend l’IUT super intéressant. On peut tout à fait, après un cursus à l’IUT, entrer dans une
-            entreprise ou bien continuer ses études selon ce que l’on veut faire.
-            <br><br>
-            Le BUT est une formation qui se fait à l’IUT en 3 ans, il signifie bachelor universitaire de technologie.
-            <br><br>
-            Il existe plusieurs BUT mais celui qui nous intéresse ici c’est le BUT MMI !
-            Le BUT MMI (Métiers du multimédia et de l’Informatique) est un couteau suisse qui permet d’obtenir des
-            compétences dans le domaine de la Création Numérique, la Communication, le Développement Web et
-            l’Audiovisuel.
-            <br><br>
-            Nous, nous sommes le BUT MMI de Béziers, c’est ici !
+        <div>
+            <div class="textInfo">
+                C’est quoi un IUT ?
+                <br><br>
+                L’ IUT est un institut universitaire de technologie qui propose des formations sélectives. Les
+                formations y
+                sont aussi plus axées sur les travaux pratiques et plus professionnalisantes. On apprend tout en créant,
+                c’est ce qui rend l’IUT super intéressant. On peut tout à fait, après un cursus à l’IUT, entrer dans une
+                entreprise ou bien continuer ses études selon ce que l’on veut faire.
+                <br><br>
+                Le BUT est une formation qui se fait à l’IUT en 3 ans, il signifie bachelor universitaire de
+                technologie.
+                <br><br>
+                Il existe plusieurs BUT mais celui qui nous intéresse ici c’est le BUT MMI !
+                Le BUT MMI (Métiers du multimédia et de l’Informatique) est un couteau suisse qui permet d’obtenir des
+                compétences dans le domaine de la Création Numérique, la Communication, le Développement Web et
+                l’Audiovisuel.
+                <br><br>
+                Nous, nous sommes le BUT MMI de Béziers, c’est ici !
 
+            </div>
+            <br>
+            <a href="présentation5.php">
+                <button id="goTo1" class="bouton_next">
+                    Faire le quiz 1
+                </button>
+            </a>
         </div>
-        <br>
-        <a href="présentation5.php"><button id="goTo1" class="bouton_next">
-                Faire le quiz 1
-            </button></a>
+
     </div>
 </body>
 
