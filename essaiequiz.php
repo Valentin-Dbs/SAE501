@@ -2,9 +2,9 @@
 session_start();
 
 if (!isset($_SESSION['nom']) || !isset($_SESSION['prenom'])) {
-    // Redirigez l'utilisateur vers la page de connexion si les informations d'authentification ne sont pas présentes
-    header('Location: connexion.html');
-    exit;
+  // Redirigez l'utilisateur vers la page de connexion si les informations d'authentification ne sont pas présentes
+  header('Location: connexion.html');
+  exit;
 }
 ?>
 
@@ -21,25 +21,27 @@ if (!isset($_SESSION['nom']) || !isset($_SESSION['prenom'])) {
 
 <body>
   <div class="div-centre">
-    <div id="question" class="texte_question">Emplacement question</div>
-    <div id="Reponses">
-      <button id="reponse1" class="texte_reponse" onClick="clickReponse(1);">
-        Emplacement réponse 1
-      </button>
-      <button id="reponse2" class="texte_reponse" onClick="clickReponse(2);">
-        Emplacement réponse 2
-      </button>
-      <button id="reponse3" class="texte_reponse" onClick="clickReponse(3)">
-        Emplacement réponse 3
-      </button>
-      <button id="reponse4" class="texte_reponse" onClick="clickReponse(4)">
-        Emplacement réponse 4
+    <div>
+      <div id="question" class="texte_question">Emplacement question</div>
+      <div id="Reponses">
+        <button id="reponse1" class="texte_reponse" onClick="clickReponse(1);">
+          Emplacement réponse 1
+        </button>
+        <button id="reponse2" class="texte_reponse" onClick="clickReponse(2);">
+          Emplacement réponse 2
+        </button>
+        <button id="reponse3" class="texte_reponse" onClick="clickReponse(3)">
+          Emplacement réponse 3
+        </button>
+        <button id="reponse4" class="texte_reponse" onClick="clickReponse(4)">
+          Emplacement réponse 4
+        </button>
+      </div>
+      <div id="resultat" class="texte_resultat">Zone résultat</div>
+      <button id="nextQuestion" class="bouton_next" onClick="presenterQuestion()">
+        Question suivante
       </button>
     </div>
-    <div id="resultat" class="texte_resultat">Zone résultat</div>
-    <button id="nextQuestion" class="bouton_next" onClick="presenterQuestion()">
-      Question suivante
-    </button>
   </div>
 
 </body>
@@ -171,97 +173,97 @@ if (!isset($_SESSION['nom']) || !isset($_SESSION['prenom'])) {
     }
   }
 
-//   function clickReponse(idReponse) {
-//     zoneReponse1.disabled = true;
-//     zoneReponse2.disabled = true;
-//     zoneReponse3.disabled = true;
-//     zoneReponse4.disabled = true;
-//     if (idReponse != 1) zoneReponse1.style.opacity = 0.5;
-//     if (idReponse != 2) zoneReponse2.style.opacity = 0.5;
-//     if (idReponse != 3) zoneReponse3.style.opacity = 0.5;
-//     if (idReponse != 4) zoneReponse4.style.opacity = 0.5;
+  //   function clickReponse(idReponse) {
+  //     zoneReponse1.disabled = true;
+  //     zoneReponse2.disabled = true;
+  //     zoneReponse3.disabled = true;
+  //     zoneReponse4.disabled = true;
+  //     if (idReponse != 1) zoneReponse1.style.opacity = 0.5;
+  //     if (idReponse != 2) zoneReponse2.style.opacity = 0.5;
+  //     if (idReponse != 3) zoneReponse3.style.opacity = 0.5;
+  //     if (idReponse != 4) zoneReponse4.style.opacity = 0.5;
 
-//     zoneResultat.style.visibility = "visible";
-//     zoneBoutonNext.style.visibility = "visible";
+  //     zoneResultat.style.visibility = "visible";
+  //     zoneBoutonNext.style.visibility = "visible";
 
-//     //  zoneReponse1.innerHTML = reponse1_courante;
-//     if (idReponse == idReponseCorrecte) {
-//       zoneResultat.innerHTML = "Votre reponse est juste";
-//       questionsCorrectes++;
-//     } else {
-//       zoneResultat.innerHTML = "Votre reponse est fausse";
-//     }
-//   }
+  //     //  zoneReponse1.innerHTML = reponse1_courante;
+  //     if (idReponse == idReponseCorrecte) {
+  //       zoneResultat.innerHTML = "Votre reponse est juste";
+  //       questionsCorrectes++;
+  //     } else {
+  //       zoneResultat.innerHTML = "Votre reponse est fausse";
+  //     }
+  //   }
 
-function clickReponse(idReponse) {
-      zoneReponse1.disabled = true;
-      zoneReponse2.disabled = true;
-      zoneReponse3.disabled = true;
-      zoneReponse4.disabled = true;
-      if (idReponse != 1) zoneReponse1.style.opacity = 0.5;
-      if (idReponse != 2) zoneReponse2.style.opacity = 0.5;
-      if (idReponse != 3) zoneReponse3.style.opacity = 0.5;
-      if (idReponse != 4) zoneReponse4.style.opacity = 0.5;
+  function clickReponse(idReponse) {
+    zoneReponse1.disabled = true;
+    zoneReponse2.disabled = true;
+    zoneReponse3.disabled = true;
+    zoneReponse4.disabled = true;
+    if (idReponse != 1) zoneReponse1.style.opacity = 0.5;
+    if (idReponse != 2) zoneReponse2.style.opacity = 0.5;
+    if (idReponse != 3) zoneReponse3.style.opacity = 0.5;
+    if (idReponse != 4) zoneReponse4.style.opacity = 0.5;
 
-      zoneResultat.style.visibility = "visible";
-      zoneBoutonNext.style.visibility = "visible";
+    zoneResultat.style.visibility = "visible";
+    zoneBoutonNext.style.visibility = "visible";
 
-      var reponseChoisie; // variable pour stocker la réponse choisie
+    var reponseChoisie; // variable pour stocker la réponse choisie
 
-      switch (idReponse) {
-        case 1:
-          reponseChoisie = reponse1_courante;
-          break;
-        case 2:
-          reponseChoisie = reponse2_courante;
-          break;
-        case 3:
-          reponseChoisie = reponse3_courante;
-          break;
-        case 4:
-          reponseChoisie = reponse4_courante;
-          break;
-      }
-
-      // Préparez les données à envoyer
-      var postData = {
-            quiz_id : 1,
-            question: question_courante,
-            reponse_choisie: reponseChoisie, // Utilisez la variable reponseChoisie définie précédemment
-            est_correcte: (idReponse === idReponseCorrecte) ? 1 : 0, // 1 si la réponse est correcte, 0 sinon
-            temps_reponse: 33// Remplacez par le temps passé sur la question
-        };
-
-        console.log(postData);
-
-
-
-          // Utilisez AJAX pour envoyer les données au fichier PHP
-  $.ajax({
-    type: "POST",
-    url: "insert_quiz_response.php",
-    data: postData,
-    success: function (response_choisie) {
-      // Gérez la réponse du serveur ici (par exemple, affichez un message de confirmation)
-      console.log(response_choisie);
-    },
-    error: function (xhr, status, error) {
-      // Gérez les erreurs ici
-      console.error(error);
+    switch (idReponse) {
+      case 1:
+        reponseChoisie = reponse1_courante;
+        break;
+      case 2:
+        reponseChoisie = reponse2_courante;
+        break;
+      case 3:
+        reponseChoisie = reponse3_courante;
+        break;
+      case 4:
+        reponseChoisie = reponse4_courante;
+        break;
     }
-  });
-  
-      // Affichez le résultat
-      if (idReponse == idReponseCorrecte) {
-        zoneResultat.innerHTML = "Votre réponse est juste";
-        questionsCorrectes++;
-      } else {
-        zoneResultat.innerHTML = "Votre réponse est fausse";
+
+    // Préparez les données à envoyer
+    var postData = {
+      quiz_id: 1,
+      question: question_courante,
+      reponse_choisie: reponseChoisie, // Utilisez la variable reponseChoisie définie précédemment
+      est_correcte: (idReponse === idReponseCorrecte) ? 1 : 0, // 1 si la réponse est correcte, 0 sinon
+      temps_reponse: 33// Remplacez par le temps passé sur la question
+    };
+
+    console.log(postData);
+
+
+
+    // Utilisez AJAX pour envoyer les données au fichier PHP
+    $.ajax({
+      type: "POST",
+      url: "insert_quiz_response.php",
+      data: postData,
+      success: function (response_choisie) {
+        // Gérez la réponse du serveur ici (par exemple, affichez un message de confirmation)
+        console.log(response_choisie);
+      },
+      error: function (xhr, status, error) {
+        // Gérez les erreurs ici
+        console.error(error);
       }
-}
+    });
+
+    // Affichez le résultat
+    if (idReponse == idReponseCorrecte) {
+      zoneResultat.innerHTML = "Votre réponse est juste";
+      questionsCorrectes++;
+    } else {
+      zoneResultat.innerHTML = "Votre réponse est fausse";
+    }
+  }
 
 
-presenterQuestion();
+  presenterQuestion();
 </script>
 
 </html>

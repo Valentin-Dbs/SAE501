@@ -91,3 +91,10 @@ button:hover{
   cursor: pointer;
   background-color: var(--darker-light-color-main);
 }
+#underlineButton{
+  background: none;
+  color: var(--color-main);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0;
+}
