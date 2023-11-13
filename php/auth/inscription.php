@@ -38,7 +38,7 @@ $database = "quiz_app";     // Nom de la base de données que vous avez créée
     } else {
         echo "Erreur : " . $conn->error;
     }
-    header('Location: page2.php');
+    header('Location: ../../src/html/présentation1.php');
     exit;    
     // Fermez la connexion
     $conn->close();

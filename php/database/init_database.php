@@ -13,7 +13,7 @@ if ($conn->connect_error) {
     die("Échec de la connexion : " . $conn->connect_error);
 }
 
-// Création de la base de données s'elle n'existe pas déjà
+// Création de la base de données si elle n'existe pas déjà
 $sql = "CREATE DATABASE IF NOT EXISTS $database";
 if ($conn->query($sql) === TRUE) {
     echo "Base de données créée avec succès ! ";

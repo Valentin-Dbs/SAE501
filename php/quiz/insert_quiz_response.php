@@ -19,20 +19,21 @@ session_start();
 
 
 
-// Traitez les données reçues de "essaiequiz.php"
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Assurez-vous que l'utilisateur est connecté et que la variable de session user_id est définie
 // Assurez-vous que l'utilisateur est connecté et que la variable de session user_id est définie
 if (isset($_SESSION['nom']) || isset($_SESSION['prenom'])) {
     $user_nom = $_SESSION['nom'];
+    $quiz_id = mysqli_real_escape_string($conn, $_POST['quiz_id']);
     $question = mysqli_real_escape_string($conn, $_POST['question']); // Échapper la question
     $reponse_choisie = mysqli_real_escape_string($conn, $_POST['reponse_choisie']); // Échapper la réponse choisie
     $est_correcte = $_POST['est_correcte'];
     $temps_reponse = $_POST['temps_reponse'];
 
     // Insérez les données dans la table quiz_responses
-    $sql = "INSERT INTO quiz_responses (user_nom, question, reponse_choisie, est_correcte, temps_reponse) 
-            VALUES ('$user_nom', '$question', '$reponse_choisie', '$est_correcte', '$temps_reponse')";
+    $sql = "INSERT INTO quiz_responses (user_nom, quiz_id, question, reponse_choisie, est_correcte, temps_reponse) 
+            VALUES ('$user_nom', '$quiz_id', '$question', '$reponse_choisie', '$est_correcte', '$temps_reponse')";
     if ($conn->query($sql) === TRUE) {
         echo "Les données ont été insérées avec succès dans la table quiz_responses.";
     } else {
