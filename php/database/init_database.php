@@ -30,6 +30,7 @@ $sql = "CREATE TABLE IF NOT EXISTS users (
     nom VARCHAR(50) NOT NULL,
     prenom VARCHAR(50) NOT NULL,
     numero_etudiant VARCHAR(10) NOT NULL,
+    role VARCHAR(10) NOT NULL DEFAULT 'user',
     inscription_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     INDEX (nom)
 ) ENGINE=InnoDB";
@@ -38,6 +39,21 @@ if ($conn->query($sql) === TRUE) {
     echo "Table 'users' créée avec succès !";
 } else {
     echo "Erreur lors de la création de la table 'users' : " . $conn->error;
+}
+
+// Ajouter un administrateur
+$adminNom = "admin";
+$adminPrenom = "admin";
+$adminNumeroEtudiant = "admin123";
+$adminRole = "admin"; // Utilisez le rôle "admin" pour les administrateurs
+
+$sql = "INSERT INTO users (nom, prenom, numero_etudiant, role) 
+        VALUES ('$adminNom', '$adminPrenom', '$adminNumeroEtudiant', '$adminRole')";
+
+if ($conn->query($sql) === TRUE) {
+    echo " Utilisateur administrateur ajouté avec succès.";
+} else {
+    echo " Erreur lors de l'ajout de l'utilisateur administrateur : " . $conn->error;
 }
 
 // Création de la table "quiz_responses"
