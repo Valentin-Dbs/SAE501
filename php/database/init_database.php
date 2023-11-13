@@ -78,6 +78,27 @@ if ($conn->query($sql) === TRUE) {
     } else {
         echo "Erreur lors de l'ajout de la clé étrangère : " . $conn->error;
     }
+
+    // Création de la vue
+    $sqlVue = "CREATE VIEW vue_quiz_responses AS
+        SELECT
+            u.nom AS Nom,
+            u.prenom AS Prenom,
+            qr.question AS Question,
+            qr.reponse_choisie AS ReponseChoisie,
+            qr.est_correcte AS EstCorrecte,
+            qr.temps_reponse AS TempsReponse
+        FROM
+            users u
+        JOIN
+            quiz_responses qr ON u.nom = qr.user_nom";
+
+    if ($conn->query($sqlVue) === TRUE) {
+        echo "Vue 'vue_quiz_responses' créée avec succès !";
+    } else {
+        echo "Erreur lors de la création de la vue 'vue_quiz_responses' : " . $conn->error;
+    }
+    
 } else {
     echo "Erreur lors de la création de la table 'quiz_responses' : " . $conn->error;
 }
