@@ -8,29 +8,84 @@
     <link rel="stylesheet" type="text/css" href="../../style.css">
 
     <title>Site Parcousup</title>
+
+    <style>
+        .ressourcesSae {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .element {
+            width: 30%;
+            position: relative;
+        }
+
+        .img {
+            width: 50%;
+            border-radius: 100%;
+        }
+
+        .texteCache {
+            height: 100%;
+            display: none;
+            align-items: center;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background-color: rgb(255, 255, 255, 0.5);
+        }
+    </style>
 </head>
 
 <body>
     <div class="div-centre">
         <div>
             <div class="textInfo">
-                C’est quoi un IUT ?
-                <br><br>
-                L’ IUT est un institut universitaire de technologie qui propose des formations sélectives. Les
-                formations y
-                sont aussi plus axées sur les travaux pratiques et plus professionnalisantes. On apprend tout en créant,
-                c’est ce qui rend l’IUT super intéressant. On peut tout à fait, après un cursus à l’IUT, entrer dans une
-                entreprise ou bien continuer ses études selon ce que l’on veut faire.
-                <br><br>
-                Le BUT est une formation qui se fait à l’IUT en 3 ans, il signifie bachelor universitaire de
-                technologie.
-                <br><br>
-                Il existe plusieurs BUT mais celui qui nous intéresse ici c’est le BUT MMI !
-                Le BUT MMI (Métiers du multimédia et de l’Informatique) est un couteau suisse qui permet d’obtenir des
-                compétences dans le domaine de la Création Numérique, la Communication, le Développement Web et
-                l’Audiovisuel.
-                <br><br>
-                Nous, nous sommes le BUT MMI de Béziers, c’est ici !
+                <h1>Le fonctionnement de la formation</h1>
+                <p>La formation est séparé en deux types de cours, qui s'alternent une semaine sur l'autre.</p>
+                <div class="ressourcesSae">
+                    <div class="element" id="ressources">
+                        <img class="img" src="..\img\ressources.jpeg" alt="Etudiant lisant ses leçons">
+                        <div class="texteCache" id="textRessources">
+                            D'abord, il y a les semaines ressources où on a des cours magistraux, des travaux dirigés et
+                            des travaux pratiques qui nous donnent des connaissances théoriques et pratiques.
+                        </div>
+                    </div>
+                    <div class="element" id="sae">
+                        <img class="img" src="..\img\sae.jpeg" alt="Groupe travaillant sur un projet">
+                        <div class="texteCache" id="textSae">
+                            Ensuite, place aux SAE, ces gros projets encadrés qui peuvent être très fun à réaliser.
+                            Comme réaliser un court-métrage, créer un jeu vidéo ou même une application de réalité
+                            virtuelle !
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <p>
+                    Pendant la première année et demie, tout le monde suit les mêmes cours :
+                <ul>
+                    <li>audiovisuel</li>
+                    <li>communication</li>
+                    <li>infographie</li>
+                    <li>développement web</li>
+                    <li>gestion de projet</li>
+                    <li>droit</li>
+                    <li>anglais</li>
+                    <li>référencement</li>
+                    <li>animation</li>
+                </ul>
+                </p>
+                <p>
+                    C'est au semestre 4 (au milieu de la deuxième année) qu'on choisit notre spécialisation : Création
+                    numérique, Développement web ou Stratégie de communication.
+                </p>
+                <p>
+                    Enfin en 2e et 3e année, on a un grand choix à faire : Stage ou alternance ?
+                </p>
 
             </div>
             <br>
@@ -42,6 +97,50 @@
         </div>
 
     </div>
+
+    <script>
+
+        document.getElementById('ressources').addEventListener('mouseover', function () {
+            document.getElementById('textRessources').style.display = 'flex';
+        });
+
+        document.getElementById('ressources').addEventListener('mouseout', function () {
+            document.getElementById('textRessources').style.display = 'none';
+        });
+
+        document.getElementById('sae').addEventListener('mouseover', function () {
+            document.getElementById('textSae').style.display = 'flex';
+        });
+
+        document.getElementById('sae').addEventListener('mouseout', function () {
+            document.getElementById('textSae').style.display = 'none';
+        });
+
+
+
+
+        // var images = document.getElementsByClassName("element");
+        // var t = ['textRessources', 'textSae']
+
+        // console.log(images)
+
+        // for (let i = 0; i < images.length; i++) {
+        //     images[i].addEventListener('mouseover', showText(t[i]));
+        //     images[i].addEventListener('mouseout', hideText(t[i]));
+        // }
+
+
+
+        // function showText(id) {
+        //     document.getElementById(id).style.display = 'block';
+        //     console.log("hello")
+        // }
+
+        // function hideText(id) {
+        //     document.getElementById(id).style.display = 'none';
+        //     console.log("bye")
+        // }
+    </script>
 </body>
 
 </html>
