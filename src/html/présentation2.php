@@ -95,7 +95,7 @@
 
             </div>
             <br>
-            <a href="quiz1.php"><button id="goTo1" class="bouton_next">
+            <a href="quiz1.php"><button id="goTo1" class="bouton_next" style="padding: 10px 100px 10px 100px">
                     Faire le quiz 1
                 </button></a>
         </div>

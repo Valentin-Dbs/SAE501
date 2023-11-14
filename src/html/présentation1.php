@@ -11,7 +11,7 @@
 
 <body>
     <div class="div-centre">
-        <div>
+        <div class="div-centre-contenu">
             <h1>Présentation du BUT</h1>
             <div class="textInfo">
                 <h3>C’est quoi un IUT ?</h3>
@@ -38,7 +38,7 @@
                 <p>Nous, nous sommes le BUT MMI de Béziers, c’est ici !</p>
             </div>
             <br />
-            <a href="présentation2.php"><button id="goTo1" class="bouton_next">Suite</button></a>
+            <a href="présentation2.php"><button id="goTo1" class="bouton_next" style="padding: 10px 100px 10px 100px">Suite</button></a>
         </div>
 
     </div>
