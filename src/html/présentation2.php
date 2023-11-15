@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap">
     <link rel="stylesheet" type="text/css" href="../../style.css">
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <title>Site Parcousup</title>
 
     <style>
@@ -17,6 +17,13 @@
 </head>
 
 <body>
+
+<!-- session -->
+
+<?php include('../../php/auth/check_session.php'); ?>
+
+<!-- session -->
+
     <div class="div-centre">
         <div>
             <div class="textInfo">
@@ -95,14 +102,15 @@
 
             </div>
             <br>
+            <a href="présentation1.php"><button id="goTo1" class="bouton_next">
+                    Présentation précédente
+                </button></a>
             <a href="quiz1.php"><button id="goTo1" class="bouton_next">
                     Faire le quiz 1
                 </button></a>
         </div>
 
     </div>
-
-
 
 </body>
 <script>
@@ -120,5 +128,11 @@
         }
     }
 </script>
+
+<!-- js -->
+
+<script src="../js/navigation.js"></script>
+
+<!-- js -->
 
 </html>

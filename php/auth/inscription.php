@@ -49,6 +49,7 @@ if ($stmt->execute()) {
     session_start();
     $_SESSION['nom'] = $nom;
     $_SESSION['prenom'] = $prenom;
+    $_SESSION['progression'] = 1; // 1 correspond à la première page (présentation1.php)
 
     // Redirigez en fonction du rôle
 
