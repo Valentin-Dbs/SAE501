@@ -9,11 +9,6 @@
 
     <title>Site Parcousup</title>
 
-    <style>
-        .texteCache {
-            display: none;
-        }
-    </style>
 </head>
 
 <body>
@@ -50,7 +45,7 @@
 
                 <div class="parcours">
                     <button onclick="toggleText('crea')" id="underlineButton">Création numérique</button>
-                    <div class="texteCache" id="crea"> Si tu choisis cette voie, tu te plongeras dans le monde de la
+                    <div class="texteCache" id="crea" style="display: none;"> Si tu choisis cette voie, tu te plongeras dans le monde de la
                         conception
                         numérique. Cela
                         signifie que tu apprendras à créer des éléments visuels numériques comme des illustrations, des
@@ -64,7 +59,7 @@
 
                 <div class="parcours">
                     <button onclick="toggleText('dev')" id ="underlineButton">Développement web et dispositifs interactifs </button>
-                    <div class="texteCache" id="dev">
+                    <div class="texteCache" id="dev" style="display: none;">
                         Avec ce parcours, tu te lanceras dans le domaine du développement web. Tu apprendras à créer des
                         sites web interactifs, des applications web et mobiles, des jeux vidéo, ainsi que d'autres
                         solutions
@@ -78,7 +73,7 @@
                 <div class="parcours">
                     <button onclick="toggleText('com')" id="underlineButton">Stratégie de communication numérique et design
                         d'expérience</button>
-                    <div class="texteCache" id="com">
+                    <div class="texteCache" id="com" style="display: none;">
                         Si tu choisis cette spécialisation, tu te plongeras dans le monde de la communication numérique.
                         Tu
                         apprendras à concevoir des stratégies de communication en ligne, à gérer des médias sociaux, et
