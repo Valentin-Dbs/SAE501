@@ -19,7 +19,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   color: var(--color-main);
   text-align: center;
@@ -39,8 +39,10 @@ li {
 
 
 .div-centre {
+  padding: 20px 0 20px 0;
+  margin: 10px 0 20px 0;
   background-color: white;
-  height: 80vh;
+  min-height: 80%;
   width: 80%;
   box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.5);
   border-radius: 10px;
