@@ -130,31 +130,6 @@
         document.getElementById('sae').addEventListener('mouseout', function () {
             document.getElementById('textSae').style.display = 'none';
         });
-
-
-
-
-        // var images = document.getElementsByClassName("element");
-        // var t = ['textRessources', 'textSae']
-
-        // console.log(images)
-
-        // for (let i = 0; i < images.length; i++) {
-        //     images[i].addEventListener('mouseover', showText(t[i]));
-        //     images[i].addEventListener('mouseout', hideText(t[i]));
-        // }
-
-
-
-        // function showText(id) {
-        //     document.getElementById(id).style.display = 'block';
-        //     console.log("hello")
-        // }
-
-        // function hideText(id) {
-        //     document.getElementById(id).style.display = 'none';
-        //     console.log("bye")
-        // }
     </script>
 
 </body>
