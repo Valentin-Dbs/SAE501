@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea8333ea-792f-4388-955b-0cacf44e2737" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/animateur-2d-3d.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/concepteur-multimedia.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/developpeur-informatique.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/mmi-logo-couleur_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ressources.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/sae.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ux-designer.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/webmaster.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/présentation1.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/présentation1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/présentation2.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/présentation2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/présentation3.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/présentation3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/présentation4.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/présentation4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/quiz1.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/quiz1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/quiz2.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/quiz2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/quiz3.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/quiz3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="ea8333ea-792f-4388-955b-0cacf44e2737" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,20 +25,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging main",
-    "last_opened_file_path": "C:/wamp64/www/SAE501",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/wamp64/www/SAE501&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="présentation1.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/html/présentation1.php">
       <method v="2" />
@@ -80,7 +60,8 @@
       <workItem from="1698312625575" duration="3000" />
       <workItem from="1699881916505" duration="483000" />
       <workItem from="1699894276759" duration="1043000" />
-      <workItem from="1700063352704" duration="122000" />
+      <workItem from="1700063352704" duration="208000" />
+      <workItem from="1700569992211" duration="2000" />
     </task>
     <servers />
   </component>
