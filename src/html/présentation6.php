@@ -185,7 +185,7 @@
 
                 <div class="sections" id="5">
                     <div class="txtSection" id="hidden">
-                        <h3>Club de Robotic</h3>
+                        <h3>Club de Robotique</h3>
                         <p>
                             Il permettra aux passionnés de robotique de participer à des projets à long terme, tels que
                             la conception d’un robot en partenariat avec les pédagogues du lycée Jean Moulin à Béziers.
@@ -200,9 +200,20 @@
 
                 <div class="sections" id="6">
                     <div class="txtSection" id="hidden">
-                        <h3></h3>
+                        <h3>Fablab</h3>
                         <p>
-
+                            Un Fablab est un espace collaboratif destiné au partage de technologies, de compétences, et
+                            à l’apprentissage de celles-ci par la pratique. C‘est un lieu de rencontre convivial,
+                            d’échanges, de transmission de savoir-faire, s’adressant à tout public n’ayant pas
+                            nécessairement de formation technique.
+                        </p>
+                        <p>
+                            On vient y chercher des avis, des conseils, de l'aide, des savoir-faire. On peut aussi y
+                            rencontrer d'autres professionnels, parler crowd-founding, organiser des ateliers, des
+                            conférences, faire profiter les autres de ses propres connaissances. On y croise des
+                            enfants, des ingénieurs, des étudiants, des designers, des retraités, des pros et des moins
+                            pros, et même des génies ingénus. Que des gens curieux en somme, des passionnés, comme vous
+                            peut-être.
                         </p>
 
                     </div>
@@ -211,9 +222,18 @@
 
                 <div class="sections" id="7">
                     <div class="txtSection" id="hidden">
-                        <h3></h3>
+                        <h3>Un super matériel disponible pour les étudiants</h3>
                         <p>
-
+                            L'IUT dispose d'une salle fond vert, de plusieurs caméras, lumières pour réaliser vos
+                            projets d'audiovisuels. Tout est mis a disposition des éleves à tout moment et pour
+                            n'importe quel projet, pour les cours ou personnel.
+                        </p>
+                        <p>
+                            De nombreuses tablettes graphiques wacom sont aussi mises à la disposition des étudiants
+                            pour tous leurs travaux graphiques
+                        </p>
+                        <p>
+                            Une salle radio est aussi en libre accès pour tous ceux qui le souhaitent.
                         </p>
 
                     </div>
