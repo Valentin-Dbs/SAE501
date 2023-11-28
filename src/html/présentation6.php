@@ -11,11 +11,14 @@
 
     <style>
         .sections {
-            width: 100%;
+            width: 95%;
             height: 409.6px;
             position: relative;
             display: flex;
             align-items: center;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .imgSection {
@@ -119,7 +122,7 @@
                 </div>
 
                 <div class="sections" id="2">
-                    <div class="txtSection" id="hidden">
+                    <div class="txtSection" id="hiddenL">
                         <h3>Hackathon</h3>
                         <p>
                             Pendant 3 jours, les étudiants sont répartis en équipe réunissant toutes les formations de
@@ -139,7 +142,7 @@
                 </div>
 
                 <div class="sections" id="3">
-                    <div class="txtSection" id="hidden">
+                    <div class="txtSection" id="hiddenR">
                         <h3>A ton Tour (club de jeux de société)</h3>
                         <p>
                             A ton Tour est un club de jeu de société ouvert à tous les étudiants de l’IUT de Béziers.
@@ -151,7 +154,7 @@
                 </div>
 
                 <div class="sections" id="4">
-                    <div class="txtSection" id="hidden">
+                    <div class="txtSection" id="hiddenL">
                         <h3>Bureau Des Étudiants Athéna (BDE Athéna)</h3>
                         <p>
                             Le BDE Athena, c'est l'association étudiante dynamique et engagée de l'IUT de Béziers. Notre
@@ -184,8 +187,8 @@
                 </div>
 
                 <div class="sections" id="5">
-                    <div class="txtSection" id="hidden">
-                        <h3>Club de Robotic</h3>
+                    <div class="txtSection" id="hiddenR">
+                        <h3>Club de Robotique</h3>
                         <p>
                             Il permettra aux passionnés de robotique de participer à des projets à long terme, tels que
                             la conception d’un robot en partenariat avec les pédagogues du lycée Jean Moulin à Béziers.
@@ -199,10 +202,21 @@
                 </div>
 
                 <div class="sections" id="6">
-                    <div class="txtSection" id="hidden">
-                        <h3></h3>
+                    <div class="txtSection" id="hiddenL">
+                        <h3>Fablab</h3>
                         <p>
-
+                            Un Fablab est un espace collaboratif destiné au partage de technologies, de compétences, et
+                            à l’apprentissage de celles-ci par la pratique. C‘est un lieu de rencontre convivial,
+                            d’échanges, de transmission de savoir-faire, s’adressant à tout public n’ayant pas
+                            nécessairement de formation technique.
+                        </p>
+                        <p>
+                            On vient y chercher des avis, des conseils, de l'aide, des savoir-faire. On peut aussi y
+                            rencontrer d'autres professionnels, parler crowd-founding, organiser des ateliers, des
+                            conférences, faire profiter les autres de ses propres connaissances. On y croise des
+                            enfants, des ingénieurs, des étudiants, des designers, des retraités, des pros et des moins
+                            pros, et même des génies ingénus. Que des gens curieux en somme, des passionnés, comme vous
+                            peut-être.
                         </p>
 
                     </div>
@@ -210,10 +224,19 @@
                 </div>
 
                 <div class="sections" id="7">
-                    <div class="txtSection" id="hidden">
-                        <h3></h3>
+                    <div class="txtSection" id="hiddenR">
+                        <h3>Un super matériel disponible pour les étudiants</h3>
                         <p>
-
+                            L'IUT dispose d'une salle fond vert, de plusieurs caméras, lumières pour réaliser vos
+                            projets d'audiovisuels. Tout est mis a disposition des éleves à tout moment et pour
+                            n'importe quel projet, pour les cours ou personnel.
+                        </p>
+                        <p>
+                            De nombreuses tablettes graphiques wacom sont aussi mises à la disposition des étudiants
+                            pour tous leurs travaux graphiques
+                        </p>
+                        <p>
+                            Une salle radio est aussi en libre accès pour tous ceux qui le souhaitent.
                         </p>
 
                     </div>
