@@ -62,11 +62,6 @@
                         </p>
                         <h4>Bonne découverte !</h4>
                     </div>
-
-                    <button onclick="nextSlide()">></button>
-                    <br>
-
-
                     <div class="carousel-slide">
                         <img src="..\img\developpeur-informatique.jpeg" alt="Développeur informatique" width="200px">
                         <h2>Développeur / développeuse informatique</h2>
@@ -182,15 +177,13 @@
                     Faire le quiz 2
                 </button>
             </form>
-
         </div>
     </div>
 
     <!-- js -->
 
 
-<!-- js -->
-
+    <!-- js -->
 
 
     <script>

@@ -49,14 +49,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['progression'] = $pageProgressionMap[$nextPage];
 
     // Ajoutez un message de débogage pour voir la progression actuelle
-    // echo "Progression mise à jour : " . $_SESSION['progression'];
+                // echo "Progression mise à jour : " . $_SESSION['progression'];
 
-    // // Redirection JavaScript vers la prochaine page avec un délai de 2 secondes
-    // echo "<script>
-    //         setTimeout(function() {
-    //             window.location.href = '../../src/html/$nextPage';
-    //         }, 2000); // Délai en millisecondes
-    //       </script>";
+                // // Redirection JavaScript vers la prochaine page avec un délai de 2 secondes
+                // echo "<script>
+                //         setTimeout(function() {
+                //             window.location.href = '../../src/html/$nextPage';
+                //         }, 2000); // Délai en millisecondes
+                //       </script>";
 
     header('Location: ../../src/html/' . $nextPage);
     exit;
@@ -69,14 +69,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['progression'] = $pageProgressionMap[$currentPage];
 
     // Ajoutez un message de débogage pour voir la progression actuelle
-    // echo "Progression mise à jour (Retour à la page précédente) : " . $_SESSION['progression'];
+                // echo "Progression mise à jour (Retour à la page précédente) : " . $_SESSION['progression'];
 
-    // // Redirection JavaScript vers la prochaine page avec un délai de 2 secondes
-    // echo "<script>
-    //     setTimeout(function() {
-    //         window.location.href = '../../src/html/$currentPage';
-    //     }, 2000); // Délai en millisecondes
-    //   </script>";
+                // // Redirection JavaScript vers la prochaine page avec un délai de 2 secondes
+                // echo "<script>
+                //     setTimeout(function() {
+                //         window.location.href = '../../src/html/$currentPage';
+                //     }, 2000); // Délai en millisecondes
+                //   </script>";
 
     header('Location: ../../src/html/' . $currentPage);
 } else {
