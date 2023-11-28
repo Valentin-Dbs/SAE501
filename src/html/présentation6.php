@@ -16,6 +16,7 @@
             position: relative;
             display: flex;
             align-items: center;
+            padding: 10px;
         }
 
         .imgSection {
@@ -119,7 +120,7 @@
                 </div>
 
                 <div class="sections" id="2">
-                    <div class="txtSection" id="hidden">
+                    <div class="txtSection" id="hiddenL">
                         <h3>Hackathon</h3>
                         <p>
                             Pendant 3 jours, les étudiants sont répartis en équipe réunissant toutes les formations de
@@ -139,7 +140,7 @@
                 </div>
 
                 <div class="sections" id="3">
-                    <div class="txtSection" id="hidden">
+                    <div class="txtSection" id="hiddenR">
                         <h3>A ton Tour (club de jeux de société)</h3>
                         <p>
                             A ton Tour est un club de jeu de société ouvert à tous les étudiants de l’IUT de Béziers.
@@ -151,7 +152,7 @@
                 </div>
 
                 <div class="sections" id="4">
-                    <div class="txtSection" id="hidden">
+                    <div class="txtSection" id="hiddenL">
                         <h3>Bureau Des Étudiants Athéna (BDE Athéna)</h3>
                         <p>
                             Le BDE Athena, c'est l'association étudiante dynamique et engagée de l'IUT de Béziers. Notre
@@ -184,7 +185,7 @@
                 </div>
 
                 <div class="sections" id="5">
-                    <div class="txtSection" id="hidden">
+                    <div class="txtSection" id="hiddenR">
                         <h3>Club de Robotique</h3>
                         <p>
                             Il permettra aux passionnés de robotique de participer à des projets à long terme, tels que
@@ -199,7 +200,7 @@
                 </div>
 
                 <div class="sections" id="6">
-                    <div class="txtSection" id="hidden">
+                    <div class="txtSection" id="hiddenL">
                         <h3>Fablab</h3>
                         <p>
                             Un Fablab est un espace collaboratif destiné au partage de technologies, de compétences, et
@@ -221,7 +222,7 @@
                 </div>
 
                 <div class="sections" id="7">
-                    <div class="txtSection" id="hidden">
+                    <div class="txtSection" id="hiddenR">
                         <h3>Un super matériel disponible pour les étudiants</h3>
                         <p>
                             L'IUT dispose d'une salle fond vert, de plusieurs caméras, lumières pour réaliser vos
