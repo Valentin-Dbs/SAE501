@@ -116,3 +116,16 @@ button:hover{
   width: 60%;
   border-radius: 5px;
 }
+
+.container{
+  display: flex;
+  place-items: center;
+}
+
+.arrows{
+  height: 10%;
+  margin: 10px;
+}
+.carousel-slide p{
+  padding: 0;
+}
