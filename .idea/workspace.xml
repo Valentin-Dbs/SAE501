@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea8333ea-792f-4388-955b-0cacf44e2737" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/a-ton-tour.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ae.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/club-robotique.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/fablab.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ffb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/hackathon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/marathon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/matériel.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/présentation3.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/présentation3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/présentation6.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/présentation6.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/main_quiz1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main_quiz1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/main_quiz2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main_quiz2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/main_quiz3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main_quiz3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="ea8333ea-792f-4388-955b-0cacf44e2737" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +30,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/wamp64/www/SAE501",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -79,7 +62,7 @@
       <workItem from="1699894276759" duration="1043000" />
       <workItem from="1700063352704" duration="208000" />
       <workItem from="1700569992211" duration="2000" />
-      <workItem from="1701189093863" duration="456000" />
+      <workItem from="1701189093863" duration="756000" />
     </task>
     <servers />
   </component>
