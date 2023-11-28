@@ -1,4 +1,5 @@
 var questionsCorrectes = 0;
+var listQuestionsValidees = [];
 var tabQuestions = [
     [
       "Dans quel domaine peut-on apprendre à se servir d’un appareil photo ou d’une caméra?",
@@ -87,7 +88,9 @@ function presenterQuestion() {
   if (questionsCorrectes == 3) {
     window.location.href = "../html/présentation6.php";
   } else {
-    var idQuestion = Math.floor(Math.random() * tabQuestions.length);
+    do {
+      idQuestion = Math.floor(Math.random() * tabQuestions.length);
+    } while (listQuestionsValidees.includes(idQuestion));
 
     zoneResultat.style.visibility = "hidden";
     zoneBoutonNext.style.visibility = "hidden";
@@ -176,6 +179,8 @@ function clickReponse(idReponse) {
   // Affichez le résultat
   if (idReponse == idReponseCorrecte) {
     zoneResultat.innerHTML = "Votre réponse est juste";
+    // Ajouter le nouvel idQuestion à listQuestionsValidees
+    listQuestionsValidees.push(idQuestion);
     questionsCorrectes++;
   } else {
     zoneResultat.innerHTML = "Votre réponse est fausse";
