@@ -3,7 +3,7 @@ var listQuestionsValidees = [];
 var tabQuestions = [
   ["Quelle est la durée d'un BUT ?", "1 an", "2 ans", "3 ans", "4 ans", 3],
   [
-    "Quest-ce qu'un IUT ?",
+    "Qu'est-ce qu'un IUT ?",
     "Une université classique",
     "Un institut universitaire de technologie ",
     "Une école d'ingénieurs",
@@ -66,6 +66,17 @@ var tabQuestions = [
     "Création numérique, développement web et Stratégie de communication",
     4,
   ],
+];
+var tabExplications = [
+  ["Quelle est la durée d'un BUT ?", "Ce n'est pas la bonne réponse.", "Le diplome durait bien deux ans lorsque c'était encore un DUT, mais depuis la réforme ça n'est plus le cas.", "Depuis la réforme de 2021, le DUT de deux ans a changé en BUT de trois ans.", "Ce n'est pas la bonne réponse."],
+  ["Qu'est-ce qu'un IUT ?", "Relisez bien le nom...", "C'est indiqué dans le nom. L'anagramme d'institut universitaire de technologie est IUT.", "Relisez bien le nom...", "Relisez bien le nom..."],
+  ["Comment les formations à l'IUT se comparent-elles à celles de l'université ?", "En ce qui concerne le premier diplome que vous obtiendrez, le temps d'études sera de la même durée en université qu'à l'IUT.", "Vous apprendrez certes de la théorie, mais ça ne constituera pas la majorité de vos études.", "Tout au long de votre formation, vous serez confrontés à des cas pratiques qui simulent des situations professionnelles afin de vous donner de l'expérience dans le domaine du multimédia.", "L'IUT a pour but de vous former afin de pouvoir directement intégrer le milieu professionnel dès l'obtention de votre diplome."],
+  ["Pourquoi les formations à l'IUT sont-elles sélectives ?", "La durée d'une formation est rarement en rapport avec sa sélectivité.", "Ce n'est pas le prix de la formation qui est le facteur principal de sa sélectivité.", "Les places sont en effet très limités. En 2023 par exemple, seul 59 étudiants ont pu intégrer la formation MMI.", "Au contraire, cela rendrait la formation bien plus accessible."],
+  ["Que pouvez-vous faire après avoir suivi un cursus à l'IUT ?", "Vous pouvez tout à fait entrer dans une entreprise après avoir obtenu votre diplome, mais ce n'est pas la seule option qui vous est disponible.", "Vous pouvez tout à fait poursuivre vos études en écoles supérieures après avoir obtenu votre diplome, mais ce n'est pas la seule option qui vous est disponible", "Un diplome MMI vous offre plusieurs voies à son obtention. Vous pouvez décider d'intégrer une entreprise immédiatement, ou bien vous pouvez poursuivre vos études dans des écoles supérieures.", "Un diplome qui vous empêche de poursuivre dans vos études ou qui n'a aucune valeur professionnelle n'est pas très utile, vous ne trouvez pas?"],
+  ["Que veut dire MMI ?", "Comme son nom l'indique, ce diplome vous forme aux métiers du multimédia et de l'internet", "Rappellez-vous de ce qui est enseigné durant cette formation, et ce à quoi cela vous forme...", "Rappellez-vous de ce qui est enseigné durant cette formation, et ce à quoi cela vous forme...", "Vous êtes sur la bonne voie, mais ce n'est pas exactement ça."],
+  ["Quelles compétences peut-on acquérir en suivant le BUT MMI ?", "Ce sont certes des compétences que vous pouvez acquérir, mais ce ne sont pas les seules...", "Ce sont certes des compétences que vous pouvez acquérir, mais ce ne sont pas les seules...", "Ce sont certes des compétences que vous pouvez acquérir, mais ce ne sont pas les seules...", "Le milieu du multimédia étant très vaste, cette formation vous présente plusieurs domaines différents. Vous pourrez vous spécialiser par la suite en deuxième année."],
+  ["Combien de parcours de spécialisation sont disponibles en MMI ?", "Ce n'est pas la bonne réponse.", "Ce n'est pas la bonne réponse.", "En deuxième année, vous pouvez choisir entre trois parcours de spécialisation qui offrent chacun différentes compétences.", "Ce n'est pas la bonne réponse."],
+  ["Quels sont les parcours de spécialisation disponibles dans la formation MMI ?", "Ce n'est pas la bonne réponse.", "Ce n'est pas la bonne réponse.", "En deuxième année, vous pouvez choisir entre le parcours création numérique, le parcours stratégie de communication numérique et design d'expérience et le parcours développement Web et dispositifs interactifs. Attention, certains IUT ne proposent pas toutes les formations, alors prennez garde à cela lorsque vous faites vos choix d'établissement!", "Ce n'est pas la bonne réponse."]
 ];
 
 var question_courante;
