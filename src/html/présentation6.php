@@ -11,11 +11,14 @@
 
     <style>
         .sections {
-            width: 100%;
+            width: 95%;
             height: 409.6px;
             position: relative;
             display: flex;
             align-items: center;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .imgSection {
