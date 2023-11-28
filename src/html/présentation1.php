@@ -46,14 +46,15 @@
                 <p>Nous, nous sommes le BUT MMI de Béziers, c’est ici !</p>
             </div>
             <br />
-            <a href="présentation2.php"><button id="goTo1" class="bouton_next" style="padding: 10px 100px 10px 100px">Suite</button></a>
+            <form action="../../php/navigation/update_progression.php" method="post">
+            <input type="hidden" name="next_page" value="présentation2.php">
+            <button type="submit" id="goTo1" class="bouton_next" style="padding: 10px 100px 10px 100px">Suite</button>
+        </form>
         </div>
 
     </div>
 
 <!-- js -->
-
-<script src="../js/navigation.js"></script>
 
 <!-- js -->
 

@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";  // Serveur de la base de données (généralement "localhost" pour WAMP)
-$username = "root";         // Nom d'utilisateur MySQL
-$password = "";             // Mot de passe MySQL (laissez-le vide si vous ne l'avez pas défini)
-$database = "quiz_app";     // Nom de la base de données que vous avez créée
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "quiz_app";
 
 // Récupérez les données du formulaire
 $nom = $_POST['nom'];
@@ -17,47 +17,47 @@ if ($conn->connect_error) {
     die("Échec de la connexion à la base de données : " . $conn->connect_error);
 }
 
-// Vérifiez si l'utilisateur existe et est un administrateur
-$sqlCheckAdmin = "SELECT role FROM users WHERE nom = ? AND role = 'admin'";
-$stmtCheckAdmin = $conn->prepare($sqlCheckAdmin);
-$stmtCheckAdmin->bind_param("s", $nom);
-$stmtCheckAdmin->execute();
-$stmtCheckAdmin->store_result();
+// Vérifiez si l'utilisateur existe
+$sqlCheckUser = "SELECT progression FROM users WHERE nom = ?";
+$stmtCheckUser = $conn->prepare($sqlCheckUser);
+$stmtCheckUser->bind_param("s", $nom);
+$stmtCheckUser->execute();
+$stmtCheckUser->store_result();
 
-// Si un administrateur avec le nom spécifié existe, redirigez vers la page d'administration
-if ($stmtCheckAdmin->num_rows > 0) {
-    session_start();
-    $_SESSION['nom'] = $nom;
-    $_SESSION['prenom'] = $prenom;
-    $_SESSION['role'] = 'admin';
-    header('Location: ../../src/html/page_admin.php');
-    exit;
-}
-
-// Sinon, continuez avec l'insertion d'utilisateur
-$sql = "INSERT INTO users (nom, prenom, numero_etudiant) VALUES (?, ?, ?)";
-
-// Utilisation d'une requête préparée pour éviter les injections SQL
-$stmt = $conn->prepare($sql);
-
-// Associez les valeurs aux paramètres de la requête
-$stmt->bind_param("sss", $nom, $prenom, $numero_etudiant);
-
-// Exécutez la requête
-if ($stmt->execute()) {
-    // Créez une variable de session pour l'authentification
-    session_start();
-    $_SESSION['nom'] = $nom;
-    $_SESSION['prenom'] = $prenom;
-    $_SESSION['progression'] = 1; // 1 correspond à la première page (présentation1.php)
-
-    // Redirigez en fonction du rôle
-
-        header('Location: ../../src/html/présentation1.php'); 
-    exit;
+// Si l'utilisateur existe, récupérez la progression et redirigez-le vers la bonne page
+if ($stmtCheckUser->num_rows > 0) {
+    $stmtCheckUser->bind_result($progression);
+    $stmtCheckUser->fetch();
     
+    session_start();
+    $_SESSION['nom'] = $nom;
+    $_SESSION['prenom'] = $prenom;
+    $_SESSION['progression'] = $progression;
+
+    header('Location: ../../src/html/présentation' . $progression . '.php');
+    exit;
 } else {
-    echo "Erreur : " . $conn->error;
+    // Sinon, continuez avec l'insertion d'utilisateur
+    $sqlInsertUser = "INSERT INTO users (nom, prenom, numero_etudiant, progression) VALUES (?, ?, ?, 0)";
+    $stmtInsertUser = $conn->prepare($sqlInsertUser);
+
+    // Associez les valeurs aux paramètres de la requête
+    $stmtInsertUser->bind_param("sss", $nom, $prenom, $numero_etudiant);
+
+    // Exécutez la requête et vérifiez le résultat
+    if ($stmtInsertUser->execute()) {
+        // Créez une variable de session pour l'authentification
+        session_start();
+        $_SESSION['nom'] = $nom;
+        $_SESSION['prenom'] = $prenom;
+        $_SESSION['progression'] = 0; // 0 correspond à la première page (présentation1.php)
+
+        // Redirigez l'utilisateur vers la première page de la présentation
+        header('Location: ../../src/html/présentation1.php'); 
+        exit;
+    } else {
+        echo "Erreur lors de l'insertion : " . $stmtInsertUser->error;
+    }
 }
 
 // Fermez la connexion

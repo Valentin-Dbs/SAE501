@@ -98,13 +98,16 @@
             </div>
             <br>
 
-            <a href="présentation1.php"><button id="goTo1" class="bouton_next">
-                    Présentation précédente
-                </button></a>
-
-            <a href="quiz1.php"><button id="goTo1" class="bouton_next" style="padding: 10px 100px 10px 100px">
+            <form action="../../php/navigation/update_progression.php" method="post">
+                <input type="hidden" name="next_page" value="présentation1.php">
+                <button type="submit" id="goTo1" class="bouton_next">Présentation précédente</button>
+            </form>
+            <form action="../../php/navigation/update_progression.php" method="post">
+                <input type="hidden" name="next_page" value="quiz1.php">
+                <button type="submit" id="goTo1" class="bouton_next" style="padding: 10px 100px 10px 100px">
                     Faire le quiz 1
-                </button></a>
+                </button>
+            </form>
         </div>
 
     </div>
@@ -128,7 +131,6 @@
 
 <!-- js -->
 
-<script src="../js/navigation.js"></script>
 
 <!-- js -->
 

@@ -58,8 +58,9 @@
 
   <!-- js -->
 
-  <script src="../js/navigation.js"></script>
+
   <script src="../js/main_quiz1.js"></script>
+
 
   <!-- js -->
 

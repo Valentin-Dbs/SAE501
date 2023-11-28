@@ -103,6 +103,14 @@ if ($conn->query($sql) === TRUE) {
     echo "Erreur lors de la création de la table 'quiz_responses' : " . $conn->error;
 }
 
+// Ajouter la colonne 'progression' à la table 'users'
+$sqlAlterTable = "ALTER TABLE users ADD COLUMN progression INT NOT NULL";
+if ($conn->query($sqlAlterTable) === TRUE) {
+    echo " Colonne 'progression' ajoutée avec succès à la table 'users' !";
+} else {
+    echo " Erreur lors de l'ajout de la colonne 'progression' à la table 'users' : " . $conn->error;
+}
+
 // Fermeture de la connexion à la base de données
 $conn->close();
 ?>
