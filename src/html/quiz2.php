@@ -62,15 +62,9 @@
 
   <script src="../js/main_quiz2.js"></script>
 
+  <!-- js -->
 
-<!-- question -->
 
-<!-- js -->
-
-  <script src="../js/navigation.js"></script>
-  <script src="../js/main_quiz2.js"></script>
-
-<!-- js -->
 
 
 

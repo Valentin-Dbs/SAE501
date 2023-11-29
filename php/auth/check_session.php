@@ -6,36 +6,38 @@ if (!isset($_SESSION['nom']) || !isset($_SESSION['prenom'])) {
     exit;
 }
 
-// $pages = array(
-//     "connexion.html",
-//     "présentation1.php",
-//     "présentation2.php",
-//     "quiz1.php",
-//     "présentation3.php",
-//     "présentation4.php",
-//     "quiz2.php",
-//     "présentation5.php",
-//     "présentation6.php",
-//     "quiz3.php",
-//     "page_certificat.php",
-//     "accueil.html"
-// );
+$allowedPages = array(
+    'présentation1.php',
+    'présentation2.php',
+    'quiz1.php',
+    'présentation3.php',
+    'quiz2.php',
+    'présentation4.php',
+    'présentation5.php',
+    'quiz3.php',
+    'présentation6.php',
+    'certificat.php'
+);
 
-// $maxRedirections = 5; 
+$currentPage = basename($_SERVER['PHP_SELF']);
 
-// if (isset($_SESSION['progression']) && $_SESSION['progression'] < count($pages)) {
-//     $redirectionPage = $pages[$_SESSION['progression']];
+// Vérifie si la page actuelle est autorisée en fonction de la progression
+$currentPageIndex = array_search($currentPage, $allowedPages);
+$allowedPageIndex = $_SESSION['progression'];
+
+if (!in_array($currentPage, $allowedPages) || $currentPageIndex > $allowedPageIndex || $currentPageIndex < $allowedPageIndex) {
+    // Redirigez l'utilisateur vers la dernière page autorisée
+    $redirectPage = $allowedPages[$_SESSION['progression']];
+    // Affiche un message avant de rediriger
     
-//     if ($_SESSION['redirectionCount'] < $maxRedirections) {
-//         $_SESSION['redirectionCount']++;
-//         header("Location: $redirectionPage");
-//         exit;
-//     } else {
-//         // Redirigez vers une page d'erreur ou l'accueil
-//         header("Location: accueil.html");
-//         exit;
-//     }
-// }
+    echo "Vous n'êtes pas autorisé à accéder à cette page. Vous serez redirigé dans quelques instants.";
 
-
+    // Redirection JavaScript avec un délai de 2 secondes
+    echo "<script>
+        setTimeout(function() {
+            window.location.href = '../../src/html/$redirectPage';
+        }, 2000); // Délai en millisecondes
+    </script>";
+    exit;
+}
 ?>

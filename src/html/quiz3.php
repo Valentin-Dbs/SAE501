@@ -60,7 +60,6 @@
   <!-- js -->
 
   <script src="../js/main_quiz3.js"></script>
-  <script src="../js/navigation.js"></script>
   
 <!-- js -->
 

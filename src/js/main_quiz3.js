@@ -86,7 +86,20 @@ var zoneBoutonNext = document.getElementById("nextQuestion");
 
 function presenterQuestion() {
   if (questionsCorrectes == 3) {
-    window.location.href = "../html/présentation6.php";
+                // Mettre à jour la progression
+                $.ajax({
+                  type: "POST",
+                  url: "../../php/navigation/update_progression.php",
+                  data: { next_page: 'présentation6.php' },
+                  success: function () {
+                      // Rediriger l'utilisateur vers la prochaine page après la mise à jour de la progression
+                      window.location.href = "../../src/html/présentation6.php";
+                  },
+                  error: function (xhr, status, error) {
+                      // Gérer les erreurs ici
+                      console.error(error);
+                  }
+              });
   } else {
     do {
       idQuestion = Math.floor(Math.random() * tabQuestions.length);

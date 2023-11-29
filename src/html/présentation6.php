@@ -244,16 +244,17 @@
                 </div>
             </div>
             <br>
-            <a href="index"><button id="goTo1" class="bouton_next">
-                    Suite...
-                </button></a>
+            <form action="../../php/navigation/update_progression.php" method="post">
+                <input type="hidden" name="next_page" value="certificat.php">
+                <button type="submit" id="goTo1" class="bouton_next" style="padding: 10px 100px 10px 100px">
+                    Accéder au certificat 
+                </button>
+            </form>
         </div>
 
     </div>
 
     <!-- js -->
-
-    <script src="../js/navigation.js"></script>
 
     <!-- js -->
 

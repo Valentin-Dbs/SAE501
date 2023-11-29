@@ -171,17 +171,17 @@
                 </button>
             </div>
             <br>
-            <a href="quiz2.php">
-                <button id="goTo1" class="bouton_next">
-                    Faire le quiz 1
+            <form action="../../php/navigation/update_progression.php" method="post">
+                <input type="hidden" name="next_page" value="quiz2.php">
+                <button type="submit" id="goTo1" class="bouton_next" style="padding: 10px 100px 10px 100px">
+                    Faire le quiz 2
                 </button>
-            </a>
+            </form>
         </div>
     </div>
 
     <!-- js -->
 
-    <script src="../js/navigation.js"></script>
 
     <!-- js -->
 

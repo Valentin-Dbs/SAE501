@@ -96,11 +96,12 @@
 
             </div>
             <br>
-            <a href="présentation5.php">
-                <button id="goTo1" class="bouton_next">
-                    Faire le quiz 1
+            <form action="../../php/navigation/update_progression.php" method="post">
+                <input type="hidden" name="next_page" value="présentation5.php">
+                <button type="submit" id="goTo1" class="bouton_next" style="padding: 10px 100px 10px 100px">
+                    Suite
                 </button>
-            </a>
+            </form>
         </div>
 
     </div>
@@ -108,7 +109,6 @@
 
 <!-- js -->
 
-<script src="../js/navigation.js"></script>
 
 <!-- js -->
 
