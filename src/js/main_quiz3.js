@@ -166,6 +166,9 @@ function presenterQuestion() {
       idQuestion = Math.floor(Math.random() * tabQuestions.length);
     } while (listQuestionsValidees.includes(idQuestion));
 
+    questionNumber = idQuestion;
+    console.log("Le numéro de la question est : " + questionNumber);
+
     zoneResultat.style.visibility = "hidden";
     zoneExplication.style.visibility = "hidden";
     zoneBoutonNext.style.visibility = "hidden";
