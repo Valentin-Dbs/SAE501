@@ -97,11 +97,11 @@ var tabExplications = [
     "Oui mais est-ce le seul secteur?",
     "Oui mais est-ce le seul secteur?",],
 
-  ["Quel métier consiste à donner vie à des images dessinées sur papier ou tablette?", 
-  "Alors non ! Le développeur peut créer des images et les animer (en SVG par exemple) mais pas sur papier ou tablette",
-  "Oui c'est ça !",
-  "Le crée des produits multimédias en mêlant sons, textes et images, en collaboration avec des graphistes, des auteurs, des développeurs et des webdesigners. Mais il ne crée pas de d'animation en particulier.",
-  "Le Webmaster crée des site web mais ne donne pas vie a des images.",]
+  ["Quel métier consiste à donner vie à des images dessinées sur papier ou tablette?",
+    "Alors non ! Le développeur peut créer des images et les animer (en SVG par exemple) mais pas sur papier ou tablette",
+    "Oui c'est ça !",
+    "Le crée des produits multimédias en mêlant sons, textes et images, en collaboration avec des graphistes, des auteurs, des développeurs et des webdesigners. Mais il ne crée pas de d'animation en particulier.",
+    "Le Webmaster crée des site web mais ne donne pas vie a des images.",]
   // ["Combien de parcours de spécialisation sont disponibles en MMI ?", "AC", "AD", "AE", "AF"],
   // ["Quels sont les parcours de spécialisation disponibles dans la formation MMI ?", "AG", "AH", "AI", "AJ"]
 ];
@@ -125,20 +125,20 @@ var zoneBoutonNext = document.getElementById("nextQuestion");
 
 function presenterQuestion() {
   if (questionsCorrectes == 3) {
-            // Mettre à jour la progression
-            $.ajax({
-              type: "POST",
-              url: "../../php/navigation/update_progression.php",
-              data: { next_page: 'présentation4.php' },
-              success: function () {
-                  // Rediriger l'utilisateur vers la prochaine page après la mise à jour de la progression
-                  window.location.href = "../../src/html/présentation4.php";
-              },
-              error: function (xhr, status, error) {
-                  // Gérer les erreurs ici
-                  console.error(error);
-              }
-          });
+    // Mettre à jour la progression
+    $.ajax({
+      type: "POST",
+      url: "../../php/navigation/update_progression.php",
+      data: { next_page: 'présentation4.php' },
+      success: function () {
+        // Rediriger l'utilisateur vers la prochaine page après la mise à jour de la progression
+        window.location.href = "../../src/html/présentation4.php";
+      },
+      error: function (xhr, status, error) {
+        // Gérer les erreurs ici
+        console.error(error);
+      }
+    });
   } else {
     do {
       idQuestion = Math.floor(Math.random() * tabQuestions.length);

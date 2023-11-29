@@ -1,82 +1,83 @@
 var questionsCorrectes = 0;
+var questionNumber = 0;
 var listQuestionsValidees = [];
 var tabQuestions = [
-    [
-      "Dans quel domaine peut-on apprendre à se servir d’un appareil photo ou d’une caméra?",
-      "Audiovisuel",
-      "Animation",
-      "Suite Adobe",
-      "Développement de jeux vidéo",
-      1
-    ],
-    [
-      "Quels types de projets peuvent être fait en Audiovisuel ?",
-      "Montage photo",
-      "Court-métrages",
-      "Construction de sites web",
-      "Jeux vidéo",
-      2
-    ],
-    [
-      "Dans quel domaine apprend-on à utiliser une tablette et des logiciels de dessin ?",
-      "Audiovisuel",
-      "Animation et Dessin numérique",
-      "Développement de jeux vidéo",
-      "Développement Back",
-      2
-    ],
-    [
-      "Qu’est-ce que la suite Adobe? ",
-      "Un ensemble de logiciel dédié à la création",
-      "Un logiciel de montage photo et vidéo",
-      "Un ensemble de langages de programmation pour développer des jeux vidéo",
-      "Un logiciel qui permet le développement de sites web",
-      1
-    ],
-    [
-      "Quel domaine implique l'apprentissage de langages, logiciels et techniques pour les jeux vidéo ?",
-      "Audiovisuel",
-      "Animation",
-      "Suite Adobe",
-      "Développement de jeux vidéo",
+  [
+    "Dans quel domaine peut-on apprendre à se servir d’un appareil photo ou d’une caméra?",
+    "Audiovisuel",
+    "Animation",
+    "Suite Adobe",
+    "Développement de jeux vidéo",
+    1
+  ],
+  [
+    "Quels types de projets peuvent être fait en Audiovisuel ?",
+    "Montage photo",
+    "Court-métrages",
+    "Construction de sites web",
+    "Jeux vidéo",
+    2
+  ],
+  [
+    "Dans quel domaine apprend-on à utiliser une tablette et des logiciels de dessin ?",
+    "Audiovisuel",
+    "Animation et Dessin numérique",
+    "Développement de jeux vidéo",
+    "Développement Back",
+    2
+  ],
+  [
+    "Qu’est-ce que la suite Adobe? ",
+    "Un ensemble de logiciel dédié à la création",
+    "Un logiciel de montage photo et vidéo",
+    "Un ensemble de langages de programmation pour développer des jeux vidéo",
+    "Un logiciel qui permet le développement de sites web",
+    1
+  ],
+  [
+    "Quel domaine implique l'apprentissage de langages, logiciels et techniques pour les jeux vidéo ?",
+    "Audiovisuel",
+    "Animation",
+    "Suite Adobe",
+    "Développement de jeux vidéo",
 
-      4
-    ],
-    [
-      "Où peut-on apprendre à utiliser des logiciels de construction de site tels que WordPress ?",
-      "Développement de jeux vidéo",
-      "Développement de site web",
-      "Développement Back",
-      "Audiovisuel",
-      2
-    ],
-    [
-      "Dans quel domaine apprend-on à construire et coder une base de données ?",
-      "Audiovisuel",
-      "Animation",
-      "Suite Adobe",
-      "Développement Back",
-      4
-    ],
-    [
-      "Quel outil est mentionné comme un logiciel pour créer des boutiques en ligne ?",
-      "Adobe",
-      "WordPress",
-      "Prestashop",
-      "Suite Microsoft",
-      3
-    ]
-  ];
-  var tabExplications = [
-    [
-      "Dans quel domaine peut-on apprendre à se servir d’un appareil photo ou d’une caméra?",
+    4
+  ],
+  [
+    "Où peut-on apprendre à utiliser des logiciels de construction de site tels que WordPress ?",
+    "Développement de jeux vidéo",
+    "Développement de site web",
+    "Développement Back",
+    "Audiovisuel",
+    2
+  ],
+  [
+    "Dans quel domaine apprend-on à construire et coder une base de données ?",
+    "Audiovisuel",
+    "Animation",
+    "Suite Adobe",
+    "Développement Back",
+    4
+  ],
+  [
+    "Quel outil est mentionné comme un logiciel pour créer des boutiques en ligne ?",
+    "Adobe",
+    "WordPress",
+    "Prestashop",
+    "Suite Microsoft",
+    3
+  ]
+];
+var tabExplications = [
+  [
+    "Dans quel domaine peut-on apprendre à se servir d’un appareil photo ou d’une caméra?",
     "Oui, les cours d'Audiovisuel permettent la manipulation d'appareils photo et de caméra (mais pas que...)",
     "Non, l'animation se centre principalement autour de l'utilisation des logiciel de la suite Adobe",
     "Non, la Suite Adobe n'est pas un domaine d'apprentissage mais un outil",
     "Non, dans le développement de jeux vidéo se centre sur l'utilisatin de la suite adobe (pour les réalisations graphiques) et de logiciels de programmation"
   ],
-    [
-      "Quels types de projets peuvent être fait en Audiovisuel ?",
+  [
+    "Quels types de projets peuvent être fait en Audiovisuel ?",
     "Non, le montage photo se fait en création raphique",
     "Oui, les court-métrages sont des projets qui peuvent être fait en Audiovisuel",
     "Non, la construction de sites web est un projet qui se fait en développement web",
@@ -124,8 +125,8 @@ var tabQuestions = [
     "Oui, Prestashop est le le CMS le plus efficace pour faire créer des boutiques en ligne.",
     "Non, la suite Microsoft est un GAFAM qui cherche à diriger le monde."
   ]
-  ];
-  
+];
+
 
 var question_courante;
 var reponse1_courante;
@@ -146,20 +147,20 @@ var zoneBoutonNext = document.getElementById("nextQuestion");
 
 function presenterQuestion() {
   if (questionsCorrectes == 3) {
-                // Mettre à jour la progression
-                $.ajax({
-                  type: "POST",
-                  url: "../../php/navigation/update_progression.php",
-                  data: { next_page: 'présentation6.php' },
-                  success: function () {
-                      // Rediriger l'utilisateur vers la prochaine page après la mise à jour de la progression
-                      window.location.href = "../../src/html/présentation6.php";
-                  },
-                  error: function (xhr, status, error) {
-                      // Gérer les erreurs ici
-                      console.error(error);
-                  }
-              });
+    // Mettre à jour la progression
+    $.ajax({
+      type: "POST",
+      url: "../../php/navigation/update_progression.php",
+      data: { next_page: 'présentation6.php' },
+      success: function () {
+        // Rediriger l'utilisateur vers la prochaine page après la mise à jour de la progression
+        window.location.href = "../../src/html/présentation6.php";
+      },
+      error: function (xhr, status, error) {
+        // Gérer les erreurs ici
+        console.error(error);
+      }
+    });
   } else {
     do {
       idQuestion = Math.floor(Math.random() * tabQuestions.length);

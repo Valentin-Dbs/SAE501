@@ -98,22 +98,22 @@ var zoneExplication = document.getElementById("explication");
 var zoneBoutonNext = document.getElementById("nextQuestion");
 
 function presenterQuestion() {
-    tempsDebut = new Date();
+  tempsDebut = new Date();
   if (questionsCorrectes == 3) {
-        // Mettre à jour la progression
-        $.ajax({
-          type: "POST",
-          url: "../../php/navigation/update_progression.php",
-          data: { next_page: 'présentation3.php' },
-          success: function () {
-              // Rediriger l'utilisateur vers la prochaine page après la mise à jour de la progression
-              window.location.href = "../../src/html/présentation3.php";
-          },
-          error: function (xhr, status, error) {
-              // Gérer les erreurs ici
-              console.error(error);
-          }
-      });
+    // Mettre à jour la progression
+    $.ajax({
+      type: "POST",
+      url: "../../php/navigation/update_progression.php",
+      data: { next_page: 'présentation3.php' },
+      success: function () {
+        // Rediriger l'utilisateur vers la prochaine page après la mise à jour de la progression
+        window.location.href = "../../src/html/présentation3.php";
+      },
+      error: function (xhr, status, error) {
+        // Gérer les erreurs ici
+        console.error(error);
+      }
+    });
   } else {
     do {
       idQuestion = Math.floor(Math.random() * tabQuestions.length);
