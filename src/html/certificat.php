@@ -50,7 +50,7 @@
 
                 // Load the background image
                 var backgroundImage = new Image();
-                backgroundImage.src = '../../img/BG-image.png'; // Replace with the actual image path
+                backgroundImage.src = '../../img/BG-image-NOTEXT.png'; // Replace with the actual image path
 
                 // Draw the background image onto the canvas
                 backgroundImage.onload = function () {
