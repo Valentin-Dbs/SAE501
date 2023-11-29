@@ -1,4 +1,5 @@
 var questionsCorrectes = 0;
+var questionNumber = 0;
 var listQuestionsValidees = [];
 var tabQuestions = [
   ["Quelle est la durée d'un BUT ?", "1 an", "2 ans", "3 ans", "4 ans", 3],
@@ -93,6 +94,7 @@ var zoneReponse3 = document.getElementById("reponse3");
 var zoneReponse4 = document.getElementById("reponse4");
 
 var zoneResultat = document.getElementById("resultat");
+var zoneExplication = document.getElementById("explication");
 var zoneBoutonNext = document.getElementById("nextQuestion");
 
 function presenterQuestion() {
@@ -104,7 +106,11 @@ function presenterQuestion() {
       idQuestion = Math.floor(Math.random() * tabQuestions.length);
     } while (listQuestionsValidees.includes(idQuestion));
 
+    questionNumber = idQuestion;
+    console.log("Le numéro de la question est : " + questionNumber);
+
     zoneResultat.style.visibility = "hidden";
+    zoneExplication.style.visibility = "hidden";
     zoneBoutonNext.style.visibility = "hidden";
 
     zoneReponse1.disabled = false;
@@ -143,6 +149,7 @@ function clickReponse(idReponse) {
   if (idReponse != 4) zoneReponse4.style.opacity = 0.5;
 
   zoneResultat.style.visibility = "visible";
+  zoneExplication.style.visibility = "visible";
   zoneBoutonNext.style.visibility = "visible";
 
   var reponseChoisie; // variable pour stocker la réponse choisie
@@ -200,6 +207,9 @@ function clickReponse(idReponse) {
   } else {
     zoneResultat.innerHTML = "Votre réponse est fausse";
   }
+  // Afficher l'explication
+  const explication = tabExplications[questionNumber][idReponse];
+  zoneExplication.innerHTML = explication;
 }
 
 presenterQuestion();
