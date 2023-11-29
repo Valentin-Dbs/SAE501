@@ -32,7 +32,7 @@ var tabQuestions = [
     "Bâtiment et travaux publics (BTP)",
     "Édition, librairie, bibliothèque",
     "Il peut travailler dans tous les domaines qui ont besoin d'un site web",
-    1
+    4
   ],
   [
     "Quel professionnel améliore l'expérience des utilisateurs en simplifiant la navigation en ligne ?",
