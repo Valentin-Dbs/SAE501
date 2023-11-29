@@ -1,4 +1,5 @@
 var questionsCorrectes = 0;
+var questionNumber = 0;
 var listQuestionsValidees = [];
 var tabQuestions = [
   ["Quelle est la durée d'un BUT ?", "1 an", "2 ans", "3 ans", "4 ans", 3],
@@ -76,7 +77,7 @@ var tabExplications = [
   ["Que veut dire MMI ?", "Comme son nom l'indique, ce diplome vous forme aux métiers du multimédia et de l'internet", "Rappellez-vous de ce qui est enseigné durant cette formation, et ce à quoi cela vous forme...", "Rappellez-vous de ce qui est enseigné durant cette formation, et ce à quoi cela vous forme...", "Vous êtes sur la bonne voie, mais ce n'est pas exactement ça."],
   ["Quelles compétences peut-on acquérir en suivant le BUT MMI ?", "Ce sont certes des compétences que vous pouvez acquérir, mais ce ne sont pas les seules...", "Ce sont certes des compétences que vous pouvez acquérir, mais ce ne sont pas les seules...", "Ce sont certes des compétences que vous pouvez acquérir, mais ce ne sont pas les seules...", "Le milieu du multimédia étant très vaste, cette formation vous présente plusieurs domaines différents. Vous pourrez vous spécialiser par la suite en deuxième année."],
   ["Combien de parcours de spécialisation sont disponibles en MMI ?", "Ce n'est pas la bonne réponse.", "Ce n'est pas la bonne réponse.", "En deuxième année, vous pouvez choisir entre trois parcours de spécialisation qui offrent chacun différentes compétences.", "Ce n'est pas la bonne réponse."],
-  ["Quels sont les parcours de spécialisation disponibles dans la formation MMI ?", "Ce n'est pas la bonne réponse.", "Ce n'est pas la bonne réponse.", "En deuxième année, vous pouvez choisir entre le parcours création numérique, le parcours stratégie de communication numérique et design d'expérience et le parcours développement Web et dispositifs interactifs. Attention, certains IUT ne proposent pas toutes les formations, alors prennez garde à cela lorsque vous faites vos choix d'établissement!", "Ce n'est pas la bonne réponse."]
+  ["Quels sont les parcours de spécialisation disponibles dans la formation MMI ?", "Ce n'est pas la bonne réponse.", "Ce n'est pas la bonne réponse.", "Ce n'est pas la bonne réponse.", "En deuxième année, vous pouvez choisir entre le parcours création numérique, le parcours stratégie de communication numérique et design d'expérience et le parcours développement Web et dispositifs interactifs. Attention, certains IUT ne proposent pas toutes les formations, alors prennez garde à cela lorsque vous faites vos choix d'établissement!"]
 ];
 
 var question_courante;
@@ -93,6 +94,7 @@ var zoneReponse3 = document.getElementById("reponse3");
 var zoneReponse4 = document.getElementById("reponse4");
 
 var zoneResultat = document.getElementById("resultat");
+var zoneExplication = document.getElementById("explication");
 var zoneBoutonNext = document.getElementById("nextQuestion");
 
 function presenterQuestion() {
@@ -117,7 +119,11 @@ function presenterQuestion() {
       idQuestion = Math.floor(Math.random() * tabQuestions.length);
     } while (listQuestionsValidees.includes(idQuestion));
 
+    questionNumber = idQuestion;
+    console.log("Le numéro de la question est : " + questionNumber);
+
     zoneResultat.style.visibility = "hidden";
+    zoneExplication.style.visibility = "hidden";
     zoneBoutonNext.style.visibility = "hidden";
 
     zoneReponse1.disabled = false;
@@ -156,6 +162,7 @@ function clickReponse(idReponse) {
   if (idReponse != 4) zoneReponse4.style.opacity = 0.5;
 
   zoneResultat.style.visibility = "visible";
+  zoneExplication.style.visibility = "visible";
   zoneBoutonNext.style.visibility = "visible";
 
   var reponseChoisie; // variable pour stocker la réponse choisie
@@ -213,6 +220,9 @@ function clickReponse(idReponse) {
   } else {
     zoneResultat.innerHTML = "Votre réponse est fausse";
   }
+  // Afficher l'explication
+  const explication = tabExplications[questionNumber][idReponse];
+  zoneExplication.innerHTML = explication;
 }
 
 presenterQuestion();

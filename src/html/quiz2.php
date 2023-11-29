@@ -45,6 +45,7 @@
       </div>
 
       <div id="resultat" class="texte_resultat">Zone résultat</div>
+      <div id="explication" class="texte_resultat"></div>
 
       <button id="nextQuestion" class="bouton_next" onClick="presenterQuestion()">
         Question suivante
