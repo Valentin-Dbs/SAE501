@@ -1,18 +1,7 @@
 <?php
 session_start();
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "quiz_app";
-
-// Connexion à la base de données
-$conn = new mysqli($servername, $username, $password, $database);
-
-// Vérification de la connexion
-if ($conn->connect_error) {
-    die("Échec de la connexion à la base de données : " . $conn->connect_error);
-}
+include '../database/database_connection.php';
 
 // Définissez la correspondance entre les pages et les indices de progression
 $pageProgressionMap = [

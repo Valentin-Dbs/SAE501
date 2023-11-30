@@ -1,21 +1,11 @@
 <?php
-$servername = "localhost";  // Serveur de la base de données (généralement "localhost" pour WAMP)
-$username = "root";         // Nom d'utilisateur MySQL
-$password = "";             // Mot de passe MySQL (laissez-le vide si vous ne l'avez pas défini)
-$database = "quiz_app";     // Nom de la base de données que vous avez créée
+include '../database/database_connection.php';
 
 // Récupérez les données du formulaire
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
 $numero_etudiant = isset($_POST['numero_etudiant']) ? $_POST['numero_etudiant'] : null;
 
-// Connexion à la base de données
-$conn = new mysqli($servername, $username, $password, $database);
-
-// Vérification de la connexion
-if ($conn->connect_error) {
-    die("Échec de la connexion à la base de données : " . $conn->connect_error);
-}
 // Récupérez les valeurs du formulaire
 $nom = isset($_POST['nom']) ? $_POST['nom'] : '';
 $prenom = isset($_POST['prenom']) ? $_POST['prenom'] : '';

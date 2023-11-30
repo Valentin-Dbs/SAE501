@@ -1,17 +1,5 @@
 <?php
-// Informations de connexion à la base de données
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "quiz_app";
-
-// Connexion à la base de données
-$conn = new mysqli($servername, $username, $password);
-
-// Vérification de la connexion
-if ($conn->connect_error) {
-    die("Échec de la connexion : " . $conn->connect_error);
-}
+include 'database_connection.php';
 
 // Création de la base de données si elle n'existe pas déjà
 $sql = "CREATE DATABASE IF NOT EXISTS $database";

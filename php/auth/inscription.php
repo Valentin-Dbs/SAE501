@@ -1,21 +1,11 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "quiz_app";
+
+include '../database/database_connection.php';
 
 // Récupérez les données du formulaire
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
 $numero_etudiant = isset($_POST['numero_etudiant']) ? $_POST['numero_etudiant'] : null;
-
-// Connexion à la base de données
-$conn = new mysqli($servername, $username, $password, $database);
-
-// Vérification de la connexion
-if ($conn->connect_error) {
-    die("Échec de la connexion à la base de données : " . $conn->connect_error);
-}
 
 // Vérifiez si l'utilisateur existe
 $sqlCheckUser = "SELECT progression FROM users WHERE nom = ?";

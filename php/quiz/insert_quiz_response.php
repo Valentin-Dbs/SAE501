@@ -1,24 +1,9 @@
 <?php
 
-// Informations de connexion à la base de données
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "quiz_app";
-
-// Connexion à la base de données
-$conn = new mysqli($servername, $username, $password, $database);
-
-// Vérification de la connexion
-if ($conn->connect_error) {
-    die("Échec de la connexion : " . $conn->connect_error);
-}
+include '../database/database_connection.php';
 
 // Démarrez la session
 session_start();
-
-
-
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Assurez-vous que l'utilisateur est connecté et que la variable de session user_id est définie
