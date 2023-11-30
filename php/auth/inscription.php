@@ -9,7 +9,7 @@ $prenom = $_POST['prenom'];
 $numero_etudiant = isset($_POST['numero_etudiant']) ? $_POST['numero_etudiant'] : null;
 
 // Vérification si l'utilisateur existe
-$sqlCheckUser = "SELECT progression FROM users WHERE nom = ?";
+$sqlCheckUser = "SELECT progression, role FROM users WHERE nom = ?";
 $stmtCheckUser = $conn->prepare($sqlCheckUser);
 $stmtCheckUser->bind_param("s", $nom);
 $stmtCheckUser->execute();
@@ -17,32 +17,38 @@ $stmtCheckUser->store_result();
 
 // Si l'utilisateur existe, récupération de la progression et redirection de l'utilisateur vers la bonne page
 if ($stmtCheckUser->num_rows > 0) {
-    $stmtCheckUser->bind_result($progression);
+    $stmtCheckUser->bind_result($progression, $role); // Now binding two variables
     $stmtCheckUser->fetch();
-    
+
     session_start();
     $_SESSION['nom'] = $nom;
     $_SESSION['prenom'] = $prenom;
     $_SESSION['progression'] = $progression;
 
-     // Définir la correspondance entre les pages et les indices de progression
-     $pageProgression = [
-        'présentation1.php',
-        'présentation2.php',
-        'quiz1.php',
-        'présentation3.php',
-        'quiz2.php',
-        'présentation4.php',
-        'présentation5.php',
-        'quiz3.php',
-        'présentation6.php',
-        'certificat.php'
-    ];
+    // Vérifier si l'utilisateur est un administrateur
+    if ($role === 'admin') {
+        header('Location: ../../src/html/page_admin.php');
+        exit;
+    } else {
+        // Définir la correspondance entre les pages et les indices de progression
+        $pageProgression = [
+            'présentation1.php',
+            'présentation2.php',
+            'quiz1.php',
+            'présentation3.php',
+            'quiz2.php',
+            'présentation4.php',
+            'présentation5.php',
+            'quiz3.php',
+            'présentation6.php',
+            'certificat.php'
+        ];
 
-    $Page = $pageProgression[$progression];
+        $Page = $pageProgression[$progression];
 
-    header('Location: ../../src/html/' . $Page . '');
-    exit;
+        header('Location: ../../src/html/' . $Page . '');
+        exit;
+    }
 } else {
 
     // Sinon insertion d'utilisateur
