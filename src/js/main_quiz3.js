@@ -102,7 +102,7 @@ var tabExplications = [
     "Non, l'audiovisuel implique l'apprentissage technique de la réalisation de vidéos, le montage, la prise de son...",
     "Non l'animation implique l'apprentissage de la suite Adobe et la maitrise graphique",
     "Non,la suite Adobe implique de création numérique",
-    "Non, le développement de jeux vidéo impliqué l'apprentissage de language de programmation"
+    "Oui ! Avouez elle était facile celle-là !"
   ],
   [
     "Où peut-on apprendre à utiliser des logiciels de construction de site tels que WordPress ?",
