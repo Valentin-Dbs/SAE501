@@ -65,43 +65,43 @@ var tabExplications = [
     "Eh non en effet ! Bizarrement le BUT MMI ne prépare pas à être medecin ou chirurgien",
     "En MMI nous apprenons à réaliser des vidéos, court-métrages et publicitées. Il prépare donc tout naturellement à devenir réalisateur",
     "Vous pouvez tout à fait devenir Game Designer après votre BUT. MMI nous donne les notions de graphismes et de programation nécessaire à ce métier",
-    "Si vous êtes dans le parcours Developpement web et dispositifs intercatifs, devenir développeur web est une suite logique du parcours",],
+    "Si vous êtes dans le parcours Developpement web et dispositifs intercatifs, devenir développeur web est une suite logique du parcours"],
 
   ["Quels sont les métiers potentiels pour les amoureux des graphismes et de l'audiovisuel issus du BUT MMI ?",
     "Bravo !",
     "Pas vraiment il vaut mieux aimer le développement web pour ce métier",
     "Pas vraiment il vaut mieux aimer le développement web pour ce métier",
-    "Pas vraiment il faut avoir des connaissances de cyber sécurité",],
+    "Pas vraiment il faut avoir des connaissances de cyber sécurité"],
 
   ["Quels débouchés sont mentionnés pour les passionnés du développement informatique ?",
     "Ah non, si vous voulez traviller dans ce domaine il vaut mieux choisir le parcours Stratégies de communication",
     "Oui ! A vos lignes de code !",
     "Pour gérer les médias sociaux, Stratégie de communication est sans aucun doute un parcours plus adapté que Developpement Web",
-    "Il faut impérativement avoir des notion de cyber sécurité pour travailler dans ce métier...",],
+    "Il faut impérativement avoir des notion de cyber sécurité pour travailler dans ce métier..."],
 
   ["Où peut travailler un webmestre en fonction de ses centres d'intérêt ?",
     "Oui, mais pas seulement !",
     "Oui, mais pas seulement !",
     "Oui, mais pas seulement !",
-    "Absolument !", ,],
+    "Absolument !"],
 
   ["Quel professionnel améliore l'expérience des utilisateurs en simplifiant la navigation en ligne ?",
     "Le développeur va mettre en place les consignes de simplification mais ne va pas les créer",
     "Non, n'a rien a voir avec la navigation en ligne.",
     "Eh bien le concepteur multimédia crée les médias du sites, il ne simplifie donc pas la navigation sur un site",
-    "Oui ! UX vient de User Experience (expérience utilisateur en français). Il améliore donc l'expérience utilisateur en faisant des recherches pour simplifier la navigation",],
+    "Oui ! UX vient de User Experience (expérience utilisateur en français). Il améliore donc l'expérience utilisateur en faisant des recherches pour simplifier la navigation"],
 
   ["Quels domaines professionnels sont associés au métier d'UX designer?",
     "Oui, tout à fait !",
     "C'est assez rare mais si un réalisateur a besoin d'un site pourquoi pas. Mais est-ce le seul secteur?",
     "Oui mais est-ce le seul secteur?",
-    "Oui mais est-ce le seul secteur?",],
+    "Oui mais est-ce le seul secteur?"],
 
   ["Quel métier consiste à donner vie à des images dessinées sur papier ou tablette?",
     "Alors non ! Le développeur peut créer des images et les animer (en SVG par exemple) mais pas sur papier ou tablette",
     "Oui c'est ça !",
     "Le crée des produits multimédias en mêlant sons, textes et images, en collaboration avec des graphistes, des auteurs, des développeurs et des webdesigners. Mais il ne crée pas de d'animation en particulier.",
-    "Le Webmaster crée des site web mais ne donne pas vie a des images.",]
+    "Le Webmaster crée des site web mais ne donne pas vie a des images."]
   // ["Combien de parcours de spécialisation sont disponibles en MMI ?", "AC", "AD", "AE", "AF"],
   // ["Quels sont les parcours de spécialisation disponibles dans la formation MMI ?", "AG", "AH", "AI", "AJ"]
 ];
