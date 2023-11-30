@@ -1,11 +1,12 @@
 <?php
+
+// Démarrage de la session
 session_start();
 
-if (!isset($_SESSION['nom']) || !isset($_SESSION['prenom'])) {
-    header('Location: connexion.html');
-    exit;
-}
+// Inclusion du fichier de vérification de connexion
+include 'check_auth.php';
 
+// Liste des pages autorisées dans l'ordre de progression
 $allowedPages = array(
     'présentation1.php',
     'présentation2.php',
@@ -19,18 +20,21 @@ $allowedPages = array(
     'certificat.php'
 );
 
+// Nom de la page actuelle
 $currentPage = basename($_SERVER['PHP_SELF']);
 
-// Vérifie si la page actuelle est autorisée en fonction de la progression
+// Indice de la page actuelle dans la liste des pages autorisées
 $currentPageIndex = array_search($currentPage, $allowedPages);
+
+// Indice de la page autorisée en fonction de la progression stockée en session
 $allowedPageIndex = $_SESSION['progression'];
 
+// Vérification si la page actuelle est autorisée
 if (!in_array($currentPage, $allowedPages) || $currentPageIndex > $allowedPageIndex || $currentPageIndex < $allowedPageIndex) {
-    // Redirigez l'utilisateur vers la dernière page autorisée
-    $redirectPage = $allowedPages[$_SESSION['progression']];
-    // Affiche un message avant de rediriger
-    
+
+    // Redirection vers la dernière page autorisée avec un message
     echo "Vous n'êtes pas autorisé à accéder à cette page. Vous serez redirigé dans quelques instants.";
+    $redirectPage = $allowedPages[$_SESSION['progression']]; 
 
     // Redirection JavaScript avec un délai de 2 secondes
     echo "<script>
@@ -40,4 +44,5 @@ if (!in_array($currentPage, $allowedPages) || $currentPageIndex > $allowedPageIn
     </script>";
     exit;
 }
+
 ?>

@@ -1,20 +1,21 @@
 <?php
 
+// Inclusion du fichier de connexion à la base de données
 include '../database/database_connection.php';
 
-// Récupérez les données du formulaire
+// Récupération des données du formulaire
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
 $numero_etudiant = isset($_POST['numero_etudiant']) ? $_POST['numero_etudiant'] : null;
 
-// Vérifiez si l'utilisateur existe
+// Vérification si l'utilisateur existe
 $sqlCheckUser = "SELECT progression FROM users WHERE nom = ?";
 $stmtCheckUser = $conn->prepare($sqlCheckUser);
 $stmtCheckUser->bind_param("s", $nom);
 $stmtCheckUser->execute();
 $stmtCheckUser->store_result();
 
-// Si l'utilisateur existe, récupérez la progression et redirigez-le vers la bonne page
+// Si l'utilisateur existe, récupération de la progression et redirection de l'utilisateur vers la bonne page
 if ($stmtCheckUser->num_rows > 0) {
     $stmtCheckUser->bind_result($progression);
     $stmtCheckUser->fetch();
@@ -24,25 +25,43 @@ if ($stmtCheckUser->num_rows > 0) {
     $_SESSION['prenom'] = $prenom;
     $_SESSION['progression'] = $progression;
 
-    header('Location: ../../src/html/présentation' . $progression . '.php');
+     // Définir la correspondance entre les pages et les indices de progression
+     $pageProgression = [
+        'présentation1.php',
+        'présentation2.php',
+        'quiz1.php',
+        'présentation3.php',
+        'quiz2.php',
+        'présentation4.php',
+        'présentation5.php',
+        'quiz3.php',
+        'présentation6.php',
+        'certificat.php'
+    ];
+
+    $Page = $pageProgression[$progression];
+
+    header('Location: ../../src/html/' . $Page . '');
     exit;
 } else {
-    // Sinon, continuez avec l'insertion d'utilisateur
+
+    // Sinon insertion d'utilisateur
     $sqlInsertUser = "INSERT INTO users (nom, prenom, numero_etudiant, progression) VALUES (?, ?, ?, 0)";
     $stmtInsertUser = $conn->prepare($sqlInsertUser);
 
-    // Associez les valeurs aux paramètres de la requête
+    // Association des valeurs aux paramètres de la requête
     $stmtInsertUser->bind_param("sss", $nom, $prenom, $numero_etudiant);
 
-    // Exécutez la requête et vérifiez le résultat
+    // Exécution de la requête et vérification du résultat
     if ($stmtInsertUser->execute()) {
-        // Créez une variable de session pour l'authentification
+
+        // Création d'une variable de session pour l'authentification
         session_start();
         $_SESSION['nom'] = $nom;
         $_SESSION['prenom'] = $prenom;
         $_SESSION['progression'] = 0; // 0 correspond à la première page (présentation1.php)
 
-        // Redirigez l'utilisateur vers la première page de la présentation
+        // Redirection de l'utilisateur vers la première page de la présentation
         header('Location: ../../src/html/présentation1.php'); 
         exit;
     } else {
@@ -50,6 +69,7 @@ if ($stmtCheckUser->num_rows > 0) {
     }
 }
 
-// Fermez la connexion
+// Fermeture de la connexion à la base de données
 $conn->close();
+
 ?>

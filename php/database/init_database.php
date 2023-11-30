@@ -1,4 +1,6 @@
 <?php
+
+// Inclusion du fichier de connexion à la base de données
 include 'database_connection.php';
 
 // Création de la base de données si elle n'existe pas déjà
@@ -8,9 +10,6 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "Erreur lors de la création de la base de données : " . $conn->error;
 }
-
-// Sélection de la base de données
-$conn->select_db($database);
 
 // Création de la table "users"
 $sql = "CREATE TABLE IF NOT EXISTS users (
@@ -29,11 +28,11 @@ if ($conn->query($sql) === TRUE) {
     echo "Erreur lors de la création de la table 'users' : " . $conn->error;
 }
 
-// Ajouter un administrateur
+// Ajout d'un administrateur
 $adminNom = "admin";
 $adminPrenom = "admin";
 $adminNumeroEtudiant = "admin123";
-$adminRole = "admin"; // Utilisez le rôle "admin" pour les administrateurs
+$adminRole = "admin";
 
 $sql = "INSERT INTO users (nom, prenom, numero_etudiant, role) 
         VALUES ('$adminNom', '$adminPrenom', '$adminNumeroEtudiant', '$adminRole')";
@@ -59,7 +58,7 @@ $sql = "CREATE TABLE IF NOT EXISTS quiz_responses (
 if ($conn->query($sql) === TRUE) {
     echo "Table 'quiz_responses' créée avec succès !";
 
-    // Maintenant, ajoutons la clé étrangère
+    // Ajout de la clé étrangère
     $alterSql = "ALTER TABLE quiz_responses ADD CONSTRAINT FOREIGN KEY (user_nom) REFERENCES users(nom)";
     if ($conn->query($alterSql) === TRUE) {
         echo "Clé étrangère ajoutée avec succès !";
@@ -91,7 +90,7 @@ if ($conn->query($sql) === TRUE) {
     echo "Erreur lors de la création de la table 'quiz_responses' : " . $conn->error;
 }
 
-// Ajouter la colonne 'progression' à la table 'users'
+// Ajout de la colonne 'progression' à la table 'users'
 $sqlAlterTable = "ALTER TABLE users ADD COLUMN progression INT NOT NULL";
 if ($conn->query($sqlAlterTable) === TRUE) {
     echo " Colonne 'progression' ajoutée avec succès à la table 'users' !";
@@ -101,4 +100,5 @@ if ($conn->query($sqlAlterTable) === TRUE) {
 
 // Fermeture de la connexion à la base de données
 $conn->close();
+
 ?>

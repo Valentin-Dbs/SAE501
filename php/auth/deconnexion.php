@@ -1,14 +1,16 @@
 <?php
-// Démarrez la session
+
+// Démarrage de la session
 session_start();
 
-// Détruisez toutes les variables de session
+// Destruction de toutes les variables de session
 session_unset();
 
-// Détruisez la session
+// Destruction de la session
 session_destroy();
 
-// Redirigez l'utilisateur vers la page de connexion ou une autre page de votre choix
+// Redirection de l'utilisateur vers la page de connexion
 header('Location: ../../');
 exit;
+
 ?>

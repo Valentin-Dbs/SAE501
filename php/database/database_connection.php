@@ -1,4 +1,6 @@
 <?php
+
+// Inclusion du fichier de connexion à la base de données
 include 'database_config.php';
 
 // Connexion à la base de données
@@ -10,4 +12,5 @@ if ($conn->connect_error) {
 
 // Sélection de la base de données
 $conn->select_db($database);
+
 ?>
