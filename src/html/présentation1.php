@@ -12,11 +12,11 @@
 
 <body>
 
-<!-- session -->
+    <!-- session -->
 
-<?php include('../../php/auth/check_session.php'); ?>
+    <?php include('../../php/auth/check_session.php'); ?>
 
-<!-- session -->
+    <!-- session -->
 
     <div class="div-centre">
         <div class="div-centre-contenu">
@@ -25,38 +25,44 @@
                 <h3>C’est quoi un IUT ?</h3>
 
                 <p>
-                    L’ IUT est un institut universitaire de technologie qui propose des
-                    formations sélectives. Les formations y sont aussi plus axées sur les
-                    travaux pratiques et plus professionnalisantes. On apprend tout en
-                    créant, c’est ce qui rend l’IUT super intéressant. On peut tout à fait,
-                    après un cursus à l’IUT, entrer dans une entreprise ou bien continuer
-                    ses études selon ce que l’on veut faire.
+                    L’ IUT (Institut Universitaire de Technologie) est un établissement d'étude supérieur dans lequels
+                    on peut faire un BTS, un DUT ou bien un BUT. les formations qui y sont proposées ont,
+                    malheureusement, un nombre de place limité. Ce sont donc des formations selectives.
                 </p>
                 <p>
-                    Le BUT est une formation qui se fait à l’IUT en 3 ans, il signifie
-                    bachelor universitaire de technologie.
+                    Ces formations y sont aussi plus professionnalisantes et on y a aussi plus de travaux pratiques. On
+                    apprend tout en faisant, c’est ce qui rend l’IUT super intéressant!
                 </p>
+                <h3>Et un BUT alors ?</h3>
+
                 <p>
-                    Il existe plusieurs BUT mais celui qui nous intéresse ici c’est le BUT
+                    Le BUT (Bachelor Universitairede Technologie) est une formation qui se fait à l’IUT en 3 ans. Il a
+                    été crée en 2021. Il vient prendre la relève du DUT, qui était une formation moins poussée qui se
+                    faisait en 2 ans seulement.
+                </p>
+                <p style="font-weight : bold">
+                    Bon ! Vous suivez toujours ? Allez on va attaquer la partie qui vous intéresse le plus : Le BUT MMI
+                    !
+                    <!-- Il existe plusieurs BUT mais celui qui nous intéresse ici c’est le BUT
                     MMI ! Le BUT MMI (Métiers du multimédia et de l’Informatique) est un
                     couteau suisse qui permet d’obtenir des compétences dans le domaine de
                     la Création Numérique, la Communication, le Développement Web et
-                    l’Audiovisuel.
+                    l’Audiovisuel. -->
                 </p>
-                <p>Nous, nous sommes le BUT MMI de Béziers, c’est ici !</p>
             </div>
             <br />
             <form action="../../php/navigation/update_progression.php" method="post">
-            <input type="hidden" name="next_page" value="présentation2.php">
-            <button type="submit" id="goTo1" class="bouton_next" style="padding: 10px 100px 10px 100px">Suite</button>
-        </form>
+                <input type="hidden" name="next_page" value="présentation2.php">
+                <button type="submit" id="goTo1" class="bouton_next"
+                    style="padding: 10px 100px 10px 100px">Suite</button>
+            </form>
         </div>
 
     </div>
 
-<!-- js -->
+    <!-- js -->
 
-<!-- js -->
+    <!-- js -->
 
 </body>
 

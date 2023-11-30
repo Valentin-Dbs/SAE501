@@ -13,46 +13,38 @@
 
 <body>
 
-<!-- session -->
+    <!-- session -->
 
-<?php include('../../php/auth/check_session.php'); ?>
+    <?php include('../../php/auth/check_session.php'); ?>
 
-<!-- session -->
+    <!-- session -->
 
     <div class="div-centre">
         <div>
             <div class="textInfo">
-                <h1>Et le BUT MMI ?</h1>
-                <p>Lors de la deuxième année, il te sera demandé de choisir un parcours de spécialisation. Les trois
-                    parcours de
-                    spécialisation possibles en MMI sont :
-                <ul>
-                    <li>Création numérique</li>
-                    <li>Développement web et dispositifs interactifs</li>
-                    <li>Stratégie de communication numérique et design d’expérience</li>
-                </ul>
+                <h1>Le BUT Métiers du Multimédia et de l'Internet</h1>
+
+                <p>
+                    Comme son nom l'indique, le BUT MMI, Métiers du Multimédia et de l'Internet, permet de former les étudiants à une majorité des métiers du web !
                 </p>
                 <p>
-                    Cependant à l’IUT de Béziers seulement 2 parcours sont proposés :
-                <ul>
-                    <li> Création numérique</li>
-                    <li>Développement web et dispositifs interactifs</li>
-
-                </ul>
+                    Réalisation de vidéo, photo, interview et publicités, développement de site web, e-boutique,
+                    applications et de jeux vidéo, mise en place de stratégie de communications, de gestion de projet,
+                    et autres ... Le BUT MMI est un vrai couteau suisse qui permet de maîtriser un évantail de
+                    compétence très complet !
                 </p>
+
+                <h3>
+                    Les parcours
+                </h3>
                 <p>
-
-                    Mais il existe 30 IUT qui proposent MMI parmis les 108 IUT de France alors si le parcours stratégie
-                    de
-                    communication numérique et design d’expérience t’intéresse alors n’hésite pas à regarder les autres
-                    IUT.
-
-                    Cliquez sur les dossiers pour en apprendre davantage sur les parcours ;)
+                    Lors de la deuxième année, il te sera demandé de choisir un parcours de spécialisation. Les trois
+                    parcours de spécialisation possibles en MMI sont les suivants :
                 </p>
-
                 <div class="parcours">
                     <button onclick="toggleText('crea')" id="underlineButton">Création numérique</button>
-                    <div class="texteCache" id="crea" style="display: none;"> Si tu choisis cette voie, tu te plongeras dans le monde de la
+                    <div class="texteCache" id="crea" style="display: none;"> Si tu choisis cette voie, tu te plongeras
+                        dans le monde de la
                         conception
                         numérique. Cela
                         signifie que tu apprendras à créer des éléments visuels numériques comme des illustrations, des
@@ -65,7 +57,8 @@
                 </div>
 
                 <div class="parcours">
-                    <button onclick="toggleText('dev')" id ="underlineButton">Développement web et dispositifs interactifs </button>
+                    <button onclick="toggleText('dev')" id="underlineButton">Développement web et dispositifs
+                        interactifs </button>
                     <div class="texteCache" id="dev" style="display: none;">
                         Avec ce parcours, tu te lanceras dans le domaine du développement web. Tu apprendras à créer des
                         sites web interactifs, des applications web et mobiles, des jeux vidéo, ainsi que d'autres
@@ -78,7 +71,8 @@
                 </div>
 
                 <div class="parcours">
-                    <button onclick="toggleText('com')" id="underlineButton">Stratégie de communication numérique et design
+                    <button onclick="toggleText('com')" id="underlineButton">Stratégie de communication numérique et
+                        design
                         d'expérience</button>
                     <div class="texteCache" id="com" style="display: none;">
                         Si tu choisis cette spécialisation, tu te plongeras dans le monde de la communication numérique.
@@ -92,9 +86,19 @@
                     </div>
 
                 </div>
+                <p>
+                    Cependant à l’IUT de Béziers seulement 2 parcours sont proposés :
+                <ul>
+                    <li> Création numérique</li>
+                    <li>Développement web et dispositifs interactifs</li>
 
-
-
+                </ul>
+                </p>
+                <p>
+                    Mais il existe 30 IUT qui proposent MMI parmis les 108 IUT de France alors si le parcours stratégie
+                    de communication numérique et design d’expérience t’intéresse alors n’hésite pas à regarder les autres
+                    IUT.
+                </p>
             </div>
             <br>
 
