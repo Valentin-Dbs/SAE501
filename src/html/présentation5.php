@@ -46,7 +46,7 @@
 
         .txtCours {
             display: block;
-            opacity: 0;
+            opacity: 0.2;
             width: 90%;
         }
     </style>
@@ -188,7 +188,7 @@
         tousCours.forEach(function (cours) {
             cours.addEventListener('mouseout', function () {
                 var txtAssocie = cours.querySelector('.txtCours')
-                txtAssocie.style.opacity = "0"
+                txtAssocie.style.opacity = "0.2"
             });
         });
 
