@@ -146,7 +146,9 @@ var zoneExplication = document.getElementById("explication");
 var zoneBoutonNext = document.getElementById("nextQuestion");
 
 function presenterQuestion() {
+  tempsDebut = new Date();
   if (questionsCorrectes == 3) {
+    
     // Mettre à jour la progression
     $.ajax({
       type: "POST",
@@ -229,13 +231,16 @@ function clickReponse(idReponse) {
       break;
   }
 
+  var tempsFin = new Date(); // Enregistrez le temps de fin
+  var tempsReponse = (tempsFin - tempsDebut) / 1000; // Calcul du temps de réponse en secondes
+
   // Préparez les données à envoyer
   var postData = {
     quiz_id: 3,
     question: question_courante,
     reponse_choisie: reponseChoisie, // Utilisez la variable reponseChoisie définie précédemment
     est_correcte: idReponse === idReponseCorrecte ? 1 : 0, // 1 si la réponse est correcte, 0 sinon
-    temps_reponse: 33, // Remplacez par le temps passé sur la question
+    temps_reponse: tempsReponse,
   };
 
   console.log(postData);
