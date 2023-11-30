@@ -144,6 +144,9 @@ function presenterQuestion() {
       idQuestion = Math.floor(Math.random() * tabQuestions.length);
     } while (listQuestionsValidees.includes(idQuestion));
 
+    questionNumber = idQuestion;
+    console.log("Le numéro de la question est : " + questionNumber);
+
     zoneResultat.style.visibility = "hidden";
     zoneExplication.style.visibility = "hidden";
     zoneBoutonNext.style.visibility = "hidden";
@@ -212,7 +215,7 @@ function clickReponse(idReponse) {
     est_correcte: idReponse === idReponseCorrecte ? 1 : 0, // 1 si la réponse est correcte, 0 sinon
     temps_reponse: 33, // Remplacez par le temps passé sur la question
   };
-
+  
   console.log(postData);
 
   // Utilisez AJAX pour envoyer les données au fichier PHP
@@ -241,6 +244,7 @@ function clickReponse(idReponse) {
   }
   // Afficher l'explication
   const explication = tabExplications[questionNumber][idReponse];
+
   zoneExplication.innerHTML = explication;
 }
 

@@ -94,6 +94,7 @@ li {
 }
 .texte_reponse:hover{
   background-color: var(--darker-light-color-main);
+  padding: 10px calc(2.5% + 24px);
   width: 85%;
   transition: 0.1s ease-in-out;
 }
