@@ -66,6 +66,43 @@ li {
   align-items: center;
   justify-content: center;
 }
+.admin {
+  padding: 20px 0 20px 0;
+  margin: 10px 0 20px 0;
+  background-color: white;
+  min-height: 80%;
+  width: 80%;
+  box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: var(--color-main);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+table{
+  border: none;
+  border-collapse: collapse;
+  width: 95%;
+}
+table tr:nth-child(even){
+  background-color: #79aed4;
+  color: white;
+}
+th{
+  border: none;
+}
+td{
+  padding: 5px 0 5px 0;
+  text-align: center;
+  border: none;
+}
+.tbl-name{
+  background-color: #316F9A;
+  color: white;
+  border-radius: 10px;
+}
 .btn-connexion{
   width: 100%;
     background-color: #FF8C15;
@@ -74,7 +111,7 @@ li {
 .texte_question {
   font-size: 32px;
   border: 1 px black;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .texte_reponse {
@@ -100,8 +137,7 @@ li {
 }
 
 .texte_resultat {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .Reponses {
@@ -148,4 +184,8 @@ button:hover{
 }
 .carousel-slide p{
   padding: 0;
+}
+
+.bouton_next{
+  margin: 10px 0 10px 0;
 }
