@@ -130,6 +130,9 @@ var reponse3_courante;
 var reponse4_courante;
 var idReponseCorrecte;
 
+var selectedButton = null;
+
+var zoneCompteur = document.getElementById("compteur");
 var zoneQuestion = document.getElementById("question");
 var zoneReponse1 = document.getElementById("reponse1");
 var zoneReponse2 = document.getElementById("reponse2");
@@ -140,8 +143,21 @@ var zoneResultat = document.getElementById("resultat");
 var zoneExplication = document.getElementById("explication");
 var zoneBoutonNext = document.getElementById("nextQuestion");
 
+
+
+function setCounter(currentTotal) {
+  console.log(currentTotal);
+  zoneCompteur.innerHTML = "Questions validées : " + currentTotal + "/3";
+}
+
 function presenterQuestion() {
+  if (selectedButton) {
+    selectedButton.classList.remove('active');
+    document.getElementById("submitter").style.display = "none";
+  }
   tempsDebut = new Date();
+  setCounter(questionsCorrectes);
+
   if (questionsCorrectes == 3) {
     // Mettre à jour la progression
     $.ajax({
@@ -163,7 +179,6 @@ function presenterQuestion() {
     } while (listQuestionsValidees.includes(idQuestion));
 
     questionNumber = idQuestion;
-    console.log("Le numéro de la question est : " + questionNumber);
 
     zoneResultat.style.visibility = "hidden";
     zoneExplication.style.visibility = "hidden";
@@ -194,7 +209,21 @@ function presenterQuestion() {
   }
 }
 
-function clickReponse(idReponse) {
+function selectedReponse(index) {
+  if (selectedButton) {
+    selectedButton.classList.remove('active');
+  }
+
+  const button = document.getElementById(`reponse${index}`);
+  button.classList.add('active');
+  selectedButton = button;
+
+  if (document.getElementById("submitter").style.display !== "inline-block") {
+    document.getElementById("submitter").style.display = "inline-block";
+  }
+}
+
+/* function clickReponse(idReponse) {
   zoneReponse1.disabled = true;
   zoneReponse2.disabled = true;
   zoneReponse3.disabled = true;
@@ -260,11 +289,107 @@ function clickReponse(idReponse) {
     // Ajouter le nouvel idQuestion à listQuestionsValidees
     listQuestionsValidees.push(idQuestion);
     questionsCorrectes++;
+    setCounter(questionsCorrectes);
   } else {
     zoneResultat.innerHTML = "Votre réponse est fausse";
   }
   // Afficher l'explication
   const explication = tabExplications[questionNumber][idReponse];
+  zoneExplication.innerHTML = explication;
+} */
+
+function clickReponse() {
+  // Ensure that there is an active button
+  if (!selectedButton) {
+    console.error("No active button selected");
+    return;
+  }
+
+  // Get the value from the active button and parse it as an integer
+  const buttonValue = parseInt(selectedButton.value, 10);
+
+  // Check if the parsed value is a valid integer
+  if (isNaN(buttonValue)) {
+    console.error("Invalid button value");
+    return;
+  }
+
+  zoneReponse1.disabled = true;
+  zoneReponse2.disabled = true;
+  zoneReponse3.disabled = true;
+  zoneReponse4.disabled = true;
+
+  // Adjust opacity for the selected button
+  for (let i = 1; i <= 4; i++) {
+    const opacityValue = i === buttonValue ? 1 : 0.5;
+    document.getElementById(`reponse${i}`).style.opacity = opacityValue;
+  }
+
+  zoneResultat.style.visibility = "visible";
+  zoneExplication.style.visibility = "visible";
+  zoneBoutonNext.style.visibility = "visible";
+
+  var reponseChoisie; // variable pour stocker la réponse choisie
+
+  switch (buttonValue) {
+    case 1:
+      reponseChoisie = reponse1_courante;
+      break;
+    case 2:
+      reponseChoisie = reponse2_courante;
+      break;
+    case 3:
+      reponseChoisie = reponse3_courante;
+      break;
+    case 4:
+      reponseChoisie = reponse4_courante;
+      break;
+    default:
+      console.error("Invalid button value");
+      return;
+  }
+
+  var tempsFin = new Date(); // Enregistrez le temps de fin
+  var tempsReponse = (tempsFin - tempsDebut) / 1000; // Calcul du temps de réponse en secondes
+
+  // Préparez les données à envoyer
+  var postData = {
+    quiz_id: 1,
+    question: question_courante,
+    reponse_choisie: reponseChoisie,
+    est_correcte: buttonValue === idReponseCorrecte ? 1 : 0, // 1 si la réponse est correcte, 0 sinon
+    temps_reponse: tempsReponse,
+  };
+
+  console.log(postData);
+
+  // Utilisez AJAX pour envoyer les données au fichier PHP
+  $.ajax({
+    type: "POST",
+    url: "../../php/quiz/insert_quiz_response.php",
+    data: postData,
+    success: function (response_choisie) {
+      // Gérez la réponse du serveur ici (par exemple, affichez un message de confirmation)
+      console.log(response_choisie);
+    },
+    error: function (xhr, status, error) {
+      // Gérez les erreurs ici
+      console.error(error);
+    },
+  });
+
+  // Affichez le résultat
+  if (buttonValue === idReponseCorrecte) {
+    zoneResultat.innerHTML = "Votre réponse est juste";
+    // Ajouter le nouvel idQuestion à listQuestionsValidees
+    listQuestionsValidees.push(idQuestion);
+    questionsCorrectes++;
+    setCounter(questionsCorrectes);
+  } else {
+    zoneResultat.innerHTML = "Votre réponse est fausse";
+  }
+  // Afficher l'explication
+  const explication = tabExplications[questionNumber][buttonValue];
   zoneExplication.innerHTML = explication;
 }
 

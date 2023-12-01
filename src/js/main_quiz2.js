@@ -147,7 +147,6 @@ function presenterQuestion() {
     } while (listQuestionsValidees.includes(idQuestion));
 
     questionNumber = idQuestion;
-    console.log("Le numéro de la question est : " + questionNumber);
 
     zoneResultat.style.visibility = "hidden";
     zoneExplication.style.visibility = "hidden";
