@@ -136,8 +136,23 @@ td{
   transition: 0.1s ease-in-out;
 }
 
+.texte_reponse.correct {
+  background-color: #4CAF50;
+}
+
+.texte_reponse.active {
+  border: 4px solid #aaa;
+  border-color: var(--light-color-main);
+  background-color: white;
+  color: var(--light-color-main);
+}
+
 .texte_resultat {
   margin: 20px;
+}
+
+#submitter {
+  display: none;
 }
 
 .Reponses {
