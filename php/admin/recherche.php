@@ -20,9 +20,10 @@ $stmtRecherche->execute();
 $resultats = $stmtRecherche->get_result();
 
 // Affichage des résultats de la recherche
-echo "<h3>Résultats de la recherche :</h3>";
+echo '<link rel="stylesheet" type="text/css" href="../../style.css">';
+echo "<div class='admin'><h3>Résultats de la recherche :</h3>";
 echo "<table border='1'>
-        <tr>
+        <tr class='tbl-name'>
             <th>Nom</th>
             <th>Prénom</th>
             <th>Question</th>
@@ -42,7 +43,7 @@ while ($row = $resultats->fetch_assoc()) {
           </tr>";
 }
 
-echo "</table>";
+echo "</table></div>";
 
 // Fermeture de la connexion à la base de données
 $conn->close();
