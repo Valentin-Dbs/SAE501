@@ -28,10 +28,6 @@
 
       <div id="Reponses">
 
-        <!-- <button id="reponse1" class="texte_reponse" onClick="clickReponse(1);">
-          Emplacement réponse 1
-        </button> -->
-
         <button id="reponse1" class="texte_reponse" onClick="selectedReponse(1);" value="1">
           Emplacement réponse 1
         </button>

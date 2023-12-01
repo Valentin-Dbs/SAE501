@@ -144,8 +144,6 @@ var zoneResultat = document.getElementById("resultat");
 var zoneExplication = document.getElementById("explication");
 var zoneBoutonNext = document.getElementById("nextQuestion");
 
-
-
 function setCounter(currentTotal) {
   zoneCompteur.innerHTML = "Questions validées : " + currentTotal + "/3";
 }
@@ -235,30 +233,24 @@ function setButtonColors(buttonValue) {
   const correctButton = document.getElementById(`reponse${idReponseCorrecte}`);
   const selectedButton = document.getElementById(`reponse${buttonValue}`);
 
-  // Remove "active" class and add "correct" or "incorrect" class to the selected button
   if (buttonValue === idReponseCorrecte) {
     selectedButton.classList.remove('active');
     selectedButton.classList.add('correct');
   } else {
     selectedButton.classList.remove('active');
     selectedButton.classList.add('incorrect');
-    
-    // Add "correct" class to the button with the correct answer
     correctButton.classList.add('correct');
   }
 }
 
 function clickReponse() {
-  // Ensure that there is an active button
   if (!selectedButton) {
     console.error("No active button selected");
     return;
   }
 
-  // Get the value from the active button and parse it as an integer
   const buttonValue = parseInt(selectedButton.value, 10);
 
-  // Check if the parsed value is a valid integer
   if (isNaN(buttonValue)) {
     console.error("Invalid button value");
     return;
@@ -272,11 +264,9 @@ function clickReponse() {
 
   zoneSubmitter.style.opacity = 0.5;
 
-  // Adjust opacity for the selected button
   for (let i = 1; i <= 4; i++) {
     const opacityValue = i === buttonValue ? 1 : 0.5;
     document.getElementById(`reponse${i}`).style.opacity = opacityValue;
-    
   }
 
   zoneResultat.style.visibility = "visible";

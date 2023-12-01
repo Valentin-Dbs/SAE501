@@ -20,29 +20,37 @@
 
   <!-- question -->
 
-  <div class="div-centre">
+  <<div class="div-centre">
     <div>
+      <div id="compteur">
+
+      </div>
       <div id="question" class="texte_question">Emplacement question</div>
 
       <div id="Reponses">
 
-        <button id="reponse1" class="texte_reponse" onClick="clickReponse(1);">
+        <button id="reponse1" class="texte_reponse" onClick="selectedReponse(1);" value="1">
           Emplacement réponse 1
         </button>
 
-        <button id="reponse2" class="texte_reponse" onClick="clickReponse(2);">
+        <button id="reponse2" class="texte_reponse" onClick="selectedReponse(2);" value="2">
           Emplacement réponse 2
         </button>
 
-        <button id="reponse3" class="texte_reponse" onClick="clickReponse(3)">
+        <button id="reponse3" class="texte_reponse" onClick="selectedReponse(3)" value="3">
           Emplacement réponse 3
         </button>
 
-        <button id="reponse4" class="texte_reponse" onClick="clickReponse(4)">
+        <button id="reponse4" class="texte_reponse" onClick="selectedReponse(4)" value="4">
           Emplacement réponse 4
         </button>
 
       </div>
+
+      <button id="submitter" class="texte_reponse" onClick="clickReponse()">
+          Confirmer
+      </button>
+
 
       <div id="resultat" class="texte_resultat">Zone résultat</div>
       <div id="explication" class="texte_resultat"></div>
