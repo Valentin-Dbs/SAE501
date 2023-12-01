@@ -1,23 +1,25 @@
 <?php
+
+// Inclusion du fichier de connexion à la base de données
 include '../database/database_connection.php';
 
-// Récupérez les données du formulaire
+// Récupération des données du formulaire
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
 $numero_etudiant = isset($_POST['numero_etudiant']) ? $_POST['numero_etudiant'] : null;
 
-// Récupérez les valeurs du formulaire
+// Récupération des valeurs du formulaire
 $nom = isset($_POST['nom']) ? $_POST['nom'] : '';
 $prenom = isset($_POST['prenom']) ? $_POST['prenom'] : '';
 
-// Utilisez ces valeurs pour effectuer votre recherche dans la vue
+// Utilisation de ces valeurs pour effectuer une recherche dans la vue
 $sqlRecherche = "SELECT * FROM vue_quiz_responses WHERE Nom = ? AND Prenom = ?";
 $stmtRecherche = $conn->prepare($sqlRecherche);
 $stmtRecherche->bind_param("ss", $nom, $prenom);
 $stmtRecherche->execute();
 $resultats = $stmtRecherche->get_result();
 
-// Affichez les résultats de la recherche
+// Affichage des résultats de la recherche
 echo "<h3>Résultats de la recherche :</h3>";
 echo "<table border='1'>
         <tr>
@@ -42,6 +44,7 @@ while ($row = $resultats->fetch_assoc()) {
 
 echo "</table>";
 
-// Fermez la connexion
+// Fermeture de la connexion à la base de données
 $conn->close();
+
 ?>

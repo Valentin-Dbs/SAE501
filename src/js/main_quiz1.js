@@ -234,7 +234,7 @@ function clickReponse(idReponse) {
     question: question_courante,
     reponse_choisie: reponseChoisie, // Utilisez la variable reponseChoisie définie précédemment
     est_correcte: idReponse === idReponseCorrecte ? 1 : 0, // 1 si la réponse est correcte, 0 sinon
-    temps_reponse: tempsReponse, // Remplacez par le temps passé sur la question
+    temps_reponse: tempsReponse, 
   };
 
   console.log(postData);
