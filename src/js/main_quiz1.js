@@ -2,37 +2,36 @@ var questionsCorrectes = 0;
 var questionNumber = 0;
 var listQuestionsValidees = [];
 var tabQuestions = [
-  ["Quelle est la durée d'un BUT ?", "1 an", "2 ans", "3 ans", "4 ans", 3],
   [
-    "Qu'est-ce qu'un IUT ?",
-    "Une université classique",
-    "Un institut universitaire de technologie ",
-    "Une école d'ingénieurs",
-    "Une école de commerce",
+    "Quelle est la durée d'un BUT ?",
+    "1 an",
+    "2 ans",
+    "3 ans",
+    "4 ans",
+    3
+  ],
+  [
+    'Ça veut dire quoi "IUT" ?',
+    "C'est une université",
+    "C'est un institut universitaire de technologie ",
+    "C'est une école d'ingénieurs",
+    "C'est une école de commerce",
     2,
   ],
   [
     "Comment les formations à l'IUT se comparent-elles à celles de l'université ?",
-    "Plus longues",
-    "Plus théoriques",
-    "Plus pratiques",
-    "Moins professionnalisante",
-    3,
+    "Elles sont moins longues",
+    "Elles sont plus théoriques",
+    "Elles sont moins pratiques",
+    "Elles sont plus professionnalisante",
+    4,
   ],
   [
     "Pourquoi les formations à l'IUT sont-elles sélectives ?",
     "Parce qu'elles sont plus courtes",
     "Parce qu'elles sont moins chères",
-    "Parce qu'elles ont un nombre limité de places disponibles",
+    "Parce qu'elles ont un nombre limité de places",
     "Parce qu'elles sont ouvertes à tout le monde",
-    3,
-  ],
-  [
-    "Que pouvez-vous faire après avoir suivi un cursus à l'IUT ?",
-    "Entrer dans une entreprise uniquement",
-    "Continuer ses études uniquement",
-    "L’un ou l’autre",
-    "Rien du tout",
     3,
   ],
   [
@@ -66,56 +65,48 @@ var tabQuestions = [
     "Création numérique et stratégie de communication",
     "Création numérique, développement web et Stratégie de communication",
     4,
-  ]
+  ],
 ];
 var tabExplications = [
   [
     "Quelle est la durée d'un BUT ?",
-    "Ce n'est pas la bonne réponse.",
-    "Le diplôme durait bien deux ans lorsque c'était encore un DUT, mais depuis la réforme ça n'est plus le cas.",
-    "Depuis la réforme de 2021, le DUT de deux ans a changé en BUT de trois ans.",
-    "Ce n'est pas la bonne réponse."
+    "C'est un peu court comme études, non ?",
+    "Le diplome durait bien deux ans lorsque c'était encore un DUT, mais depuis la réforme ça n'est plus le cas.",
+    "Bravo ! Depuis la réforme de 2021, le DUT de deux ans a changé en BUT de trois ans.",
+    "Eh non ! Il existe bien des formations en 4 ans mais le BUT n'en fait pas parti"
   ],
   [
-    "Qu'est-ce qu'un IUT ?",
-    "Relisez bien le nom...",
+    'Ça veut dire quoi "IUT" ?',
+    "Psst un petit indice : c'est un anagramme !",
     "C'est indiqué dans le nom. L'anagramme d'institut universitaire de technologie est IUT.",
-    "Relisez bien le nom...",
-    "Relisez bien le nom..."
+    "Psst un petit indice : c'est un anagramme !",
+    "Psst un petit indice : c'est un anagramme !"
   ],
   [
     "Comment les formations à l'IUT se comparent-elles à celles de l'université ?",
-    "En ce qui concerne le premier diplôme que vous obtiendrez, le temps d'études sera de la même durée en université qu'à l'IUT.",
+    "En ce qui concerne le premier diplome que vous obtiendrez, le temps d'études sera de la même durée en université qu'à l'IUT.",
     "Vous apprendrez certes de la théorie, mais ça ne constituera pas la majorité de vos études.",
-    "Tout au long de votre formation, vous serez confrontés à des cas pratiques qui simulent des situations professionnelles afin de vous donner de l'expérience dans le domaine du multimédia.",
-    "L'IUT a pour but de vous former afin de pouvoir directement intégrer le milieu professionnel dès l'obtention de votre diplôme."
+    "C'est faux ! Dans la majoritée des formations dispensé à l'IUT, vous ferez plus de travaux pratiques qu'à l'université.",
+    "L'IUT a pour but de vous former afin de pouvoir directement intégrer le milieu professionnel dès l'obtention de votre diplome."
   ],
   [
     "Pourquoi les formations à l'IUT sont-elles sélectives ?",
     "La durée d'une formation est rarement en rapport avec sa sélectivité.",
     "Ce n'est pas le prix de la formation qui est le facteur principal de sa sélectivité.",
-    "Les places sont, en effet, très limités. En 2023 par exemple, seuls 59 étudiants ont pu intégrer la formation MMI.",
+    "Les places sont en effet très limités. En 2023 par exemple, seul 59 étudiants ont pu intégrer la formation MMI à l'IUT de Béziers.",
     "Au contraire, cela rendrait la formation bien plus accessible."
   ],
   [
-    "Que pouvez-vous faire après avoir suivi un cursus à l'IUT ?",
-    "Vous pouvez tout à fait entrer dans une entreprise après avoir obtenu votre diplôme, mais ce n'est pas la seule option qui vous est disponible.",
-    "Vous pouvez tout à fait poursuivre vos études en écoles supérieures après avoir obtenu votre diplôme, mais ce n'est pas la seule option qui vous est disponible",
-    "Un diplôme MMI vous offre plusieurs voies à son obtention. Vous pouvez décider d'intégrer une entreprise immédiatement, ou bien vous pouvez poursuivre vos études dans des écoles supérieures.",
-    "Un diplôme qui vous empêche de poursuivre dans vos études ou qui n'a aucune valeur professionnelle n'est pas très utile, vous ne trouvez pas ?"
-  ],
-  [
     "Que veut dire MMI ?",
-    "Comme son nom l'indique, ce diplôme vous forme aux métiers du multimédia et de l'internet",
-    "Rappelez-vous de ce qui est enseigné durant cette formation, et ce à quoi cela vous forme...",
-    "Rappelez-vous de ce qui est enseigné durant cette formation, et ce à quoi cela vous forme...",
+    "Comme son nom l'indique, ce diplome vous forme aux métiers du multimédia et de l'internet",
+    "Rappellez-vous de ce qui est enseigné durant cette formation, et ce à quoi cela vous forme...",
+    "Rappellez-vous de ce qui est enseigné durant cette formation, et ce à quoi cela vous forme...",
     "Vous êtes sur la bonne voie, mais ce n'est pas exactement ça."
   ],
   [
     "Quelles compétences peut-on acquérir en suivant le BUT MMI ?",
     "Ce sont certes des compétences que vous pouvez acquérir, mais ce ne sont pas les seules...",
-    "Ce sont certes des compétences que vous pouvez acquérir, mais ce ne sont pas les seules...",
-    "Ce sont certes des compétences que vous pouvez acquérir, mais ce ne sont pas les seules...",
+    "Ce sont certes des compétences que vous pouvez acquérir, mais ce ne sont pas les seules...", "Ce sont certes des compétences que vous pouvez acquérir, mais ce ne sont pas les seules...",
     "Le milieu du multimédia étant très vaste, cette formation vous présente plusieurs domaines différents. Vous pourrez vous spécialiser par la suite en deuxième année."
   ],
   [
@@ -126,10 +117,9 @@ var tabExplications = [
   ],
   [
     "Quels sont les parcours de spécialisation disponibles dans la formation MMI ?",
+    "Ce n'est pas la bonne réponse.", "Ce n'est pas la bonne réponse.",
     "Ce n'est pas la bonne réponse.",
-    "Ce n'est pas la bonne réponse.",
-    "Ce n'est pas la bonne réponse.",
-    "En deuxième année, vous pouvez choisir entre le parcours création numérique, le parcours stratégie de communication numérique et design d'expérience et le parcours développement Web et dispositifs interactifs. Attention, certains IUT ne proposent pas toutes les formations, alors prennez garde à cela lorsque vous faites vos choix d'établissement !"
+    "En deuxième année, vous pouvez choisir entre le parcours création numérique, le parcours stratégie de communication numérique et design d'expérience et le parcours développement Web et dispositifs interactifs. Attention, certains IUT ne proposent pas toutes les formations, alors prennez garde à cela lorsque vous faites vos choix d'établissement!"
   ]
 ];
 
