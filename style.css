@@ -138,6 +138,12 @@ td{
 
 .texte_reponse.correct {
   background-color: #4CAF50;
+  color: white;
+}
+
+.texte_reponse.incorrect {
+  background-color: #c75353;
+  color: white;
 }
 
 .texte_reponse.active {
