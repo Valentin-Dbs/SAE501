@@ -26,28 +26,24 @@
 
                 <p>
                     L’ IUT (Institut Universitaire de Technologie) est un établissement d'étude supérieur dans lequels
-                    on peut faire un BTS, un DUT ou bien un BUT. les formations qui y sont proposées ont,
-                    malheureusement, un nombre de place limité. Ce sont donc des formations selectives.
+                    on peut faire un BUT. Les formations qui y sont proposées ont, malheureusement, un nombre de place
+                    limité. Ce sont donc des formations selectives.
                 </p>
                 <p>
-                    Ces formations y sont aussi plus professionnalisantes et on y a aussi plus de travaux pratiques. On
+                    Ces formations y sont aussi plus professionnalisantes et comporte aussi plus de travaux pratiques.
+                    On
                     apprend tout en faisant, c’est ce qui rend l’IUT super intéressant!
                 </p>
                 <h3>Et un BUT alors ?</h3>
 
                 <p>
-                    Le BUT (Bachelor Universitairede Technologie) est une formation qui se fait à l’IUT en 3 ans. Il a
+                    Le BUT (Bachelor Universitaire de Technologie) est une formation qui se fait à l’IUT en 3 ans. Il a
                     été crée en 2021. Il vient prendre la relève du DUT, qui était une formation moins poussée qui se
                     faisait en 2 ans seulement.
                 </p>
                 <p style="font-weight : bold">
                     Bon ! Vous suivez toujours ? Allez on va attaquer la partie qui vous intéresse le plus : Le BUT MMI
                     !
-                    <!-- Il existe plusieurs BUT mais celui qui nous intéresse ici c’est le BUT
-                    MMI ! Le BUT MMI (Métiers du multimédia et de l’Informatique) est un
-                    couteau suisse qui permet d’obtenir des compétences dans le domaine de
-                    la Création Numérique, la Communication, le Développement Web et
-                    l’Audiovisuel. -->
                 </p>
             </div>
             <br />
