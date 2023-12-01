@@ -3,6 +3,39 @@ var questionNumber = 0;
 var listQuestionsValidees = [];
 var tabQuestions = [
   [
+    "Qui a le plus de qualifications pour travailler en tant qu'infographiste ?",
+    "Les génies créatifs bien sûr !",
+    "Les rois du code évidement !",
+    "Les maîtres de la communication sans aucun doute !",
+    "Tout le monde !",
+    1
+  ],
+  [
+    "Qui a le plus de qualifications pour travailler en tant qu'intégrateur de dispositif de réalité virtuelle ?",
+    "Les génies créatifs bien sûr !",
+    "Les rois du code évidement !",
+    "Les maîtres de la communication sans aucun doute !",
+    "Tout le monde !",
+    2
+  ],
+  [
+    "Qui a le plus de qualifications pour travailler en tant qu'UX Designer",
+    "Les génies créatifs bien sûr !",
+    "Les rois du code évidement !",
+    "Les maîtres de la communication sans aucun doute !",
+    "Tout le monde !",
+    3
+  ],
+
+  [
+    "Quel est le métier qui n’est pas un débouché de MMI ?",
+    "Chirurgien",
+    "Réalisateur",
+    "Game Designer",
+    "Développeur Web",
+    1
+  ],
+  [
     "Quel est le métier qui n’est pas un débouché de MMI ?",
     "Chirurgien",
     "Réalisateur",
