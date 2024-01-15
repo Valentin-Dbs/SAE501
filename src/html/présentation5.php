@@ -9,47 +9,50 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <title>Site Parcousup</title>
 
+
     <style>
-        #conteneurParcours {
-            display: flex;
-            justify-content: space-evenly;
-            width: 100%;
-        }
+    #conteneurParcours {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 
-        .parcours {
-            width: 40%;
+    .parcours {
+        width: 40%;
+    }
 
-        }
+    #crea {
+        margin-left: 5%;
+    }
 
-        #crea {
-            margin-left: 5%;
-        }
-        #dev {
-            margin-right: 5%;
-        }
+    #dev {
+        margin-right: 5%;
+    }
 
-        .cours {
-            margin: 15px 0 15px 0;
-            height: 170px;
-            display: flex;
-            align-items: center;
-        }
+    .cours {
+        margin: 15px 0 15px 0;
+        display: flex;
+        align-items: center;
+        /* height: auto; Remove this line */
+    }
 
-        .imgCours {
-            /* width: 20%; */
-            max-height: 80%;
-            height: auto;
-            /* flex: 1; */
-            border-radius: 100%;
-            /* left: 0; */
-        }
+    .cours img {
+        height: 170px;
+    }
 
-        .txtCours {
-            display: block;
-            opacity: 0.2;
-            width: 90%;
-        }
-    </style>
+    .imgCours {
+        max-height: 80%;
+        height: auto;
+        border-radius: 100%;
+    }
+
+    .txtCours {
+        flex: 1; /* Add this line */
+        display: block;
+        opacity: 0.2;
+        width: 90%;
+    }
+</style>
 </head>
 
 <body>
@@ -66,7 +69,7 @@
                 <h1>Venez apprendre à l'IUT de Béziers !</h1>
                 <div id="conteneurParcours">
                     <div class="parcours" id="crea">
-                        <h3>Parcours Création numérique</h3>
+                        <h2>Parcours Création numérique</h2>
                         <div class="cours" id="audiovisuel">
                             <img class="imgCours" src="..\img\caméra.png" alt="Camera">
                             <div class="txtCours" id="txtAudiovisuel">
@@ -111,7 +114,7 @@
                     </div>
 
                     <div class="parcours" id="dev">
-                        <h3>Parcours Développement Web</h3>
+                        <h2>Parcours Développement Web</h2>
                         <div class="cours" id="jeu">
                             <div class="txtCours" id="txtJeu">
                                 <h5>Développement de jeux vidéo</h5>
