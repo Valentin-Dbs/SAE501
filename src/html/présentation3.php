@@ -32,8 +32,10 @@
     <div class="div-centre">
         <div style="width: 90%;">
             <div class="container">
+                <div>
                 <button onclick="prevSlide()" class="arrows">
-                    < </button>
+                    <img src="..\img\flecheG.png" alt="précédent" class="imgFleche"> </button>
+                    </div>
                         <div class="carousel-container">
                             <div class="carousel-slide">
                                 <img src="..\img\mmi-logo-couleur_1.png" alt="Logo MMI" width="100px">
@@ -177,9 +179,12 @@
                                 </p>
                             </div>
                         </div>
+                        <div>
                         <button onclick="nextSlide()" class="arrows">
-                            >
+                            <img src="..\img\flecheD.png" alt="suivant" class="imgFleche" >
                         </button>
+                        </div>
+                        
             </div>
             <br>
             <form action="../../php/navigation/update_progression.php" method="post">
