@@ -207,7 +207,7 @@
                         <h2>Fablab</h2>
                         <p>
                             Un Fablab est un espace collaboratif destiné au partage de technologies, de compétences, et
-                            à l’apprentissage de celles-ci par la pratique. C‘est un lieu de rencontre convivial,
+                            à l’apprentissage de celles-ci par la pratique. C'est un lieu de rencontre convivial,
                             d’échanges, de transmission de savoir-faire, s’adressant à tout public n’ayant pas
                             nécessairement de formation technique.
                         </p>

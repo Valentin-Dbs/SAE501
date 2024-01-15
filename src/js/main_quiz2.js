@@ -60,7 +60,7 @@ var tabQuestions = [
     2
   ],
   [
-    "Où peut travailler un webmestre en fonction de ses centres d'intérêt ?",
+    "Où peut travailler un webmaster en fonction de ses centres d'intérêt ?",
     "Journalisme",
     "Bâtiment et travaux publics (BTP)",
     "Édition, librairie, bibliothèque",
@@ -111,7 +111,7 @@ var tabExplications = [
     "Pour gérer les médias sociaux, Stratégie de communication est sans aucun doute un parcours plus adapté que Développement Web",
     "Il faut impérativement avoir des notion de cyber sécurité pour travailler dans ce métier..."],
 
-  ["Où peut travailler un webmestre en fonction de ses centres d'intérêt ?",
+  ["Où peut travailler un webmaster en fonction de ses centres d'intérêt ?",
     "Oui, mais pas seulement !",
     "Oui, mais pas seulement !",
     "Oui, mais pas seulement !",

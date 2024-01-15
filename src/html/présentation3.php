@@ -32,8 +32,10 @@
     <div class="div-centre">
         <div style="width: 90%;">
             <div class="container">
+                <div>
                 <button onclick="prevSlide()" class="arrows">
-                    < </button>
+                    <img src="..\img\flecheG.png" alt="précédent" class="imgFleche"> </button>
+                    </div>
                         <div class="carousel-container">
                             <div class="carousel-slide">
                                 <img src="..\img\mmi-logo-couleur_1.png" alt="Logo MMI" width="100px">
@@ -137,7 +139,7 @@
                                 <img src="..\img\webmaster.jpeg" alt="Webmaster" width="200px">
                                 <h2>Webmaster</h2>
                                 <p>
-                                    <b>Synonymes :</b> Administrateur/trice de site, Webmestre éditorial/e, Webmestre
+                                    <b>Synonymes :</b> Administrateur/trice de site, Webmaster éditorial/e, Webmaster
                                     technique
                                     <br>
                                     <b>Secteurs professionnels :</b> Tout secteur nécéssitant un site web (Agriculture,
@@ -148,7 +150,7 @@
                                     technologies, Je suis accro au numérique, Je veux travailler dans la communication
                                 </p>
                                 <p>
-                                    À la fois technicien, graphiste et rédacteur, le webmestre est responsable de la vie
+                                    À la fois technicien, graphiste et rédacteur, le webmaster est responsable de la vie
                                     d'un site, du développement à l'animation, en passant par la mise en ligne et la
                                     veille
                                     technologique. Un métier à géométrie variable nécessitant d'avoir plusieurs cordes à
@@ -177,9 +179,12 @@
                                 </p>
                             </div>
                         </div>
+                        <div>
                         <button onclick="nextSlide()" class="arrows">
-                            >
+                            <img src="..\img\flecheD.png" alt="suivant" class="imgFleche" >
                         </button>
+                        </div>
+                        
             </div>
             <br>
             <form action="../../php/navigation/update_progression.php" method="post">
