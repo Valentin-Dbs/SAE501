@@ -20,7 +20,7 @@
 
   <!-- question -->
 
-  <<div class="div-centre">
+  <div class="div-centre">
     <div>
       <div id="compteur">
 

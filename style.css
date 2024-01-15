@@ -225,9 +225,13 @@ button:hover{
 .bouton_next{
   margin: 10px 0 10px 0;
 }
-@media screen and (max-width: 600px){
-  .div-centre{
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
-  }
+
+.textInfo {
+  margin: auto;
+  width: 90%;
+}
+
+.texteCache {
+  display: block;
+  margin: 10px 0;
 }

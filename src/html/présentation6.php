@@ -10,15 +10,18 @@
     <title>Site Parcousup</title>
 
     <style>
+        h1 {
+            margin: 40px auto;
+        }
+
         .sections {
-            width: 95%;
-            height: 409.6px;
             position: relative;
             display: flex;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
             margin-left: auto;
             margin-right: auto;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         }
 
         .imgSection {
@@ -87,7 +90,7 @@
 
                 <div class="sections" id="0">
                     <div class="txtSection" id="hiddenL">
-                        <h3>Le Festival du Fantastique de Béziers</h3>
+                        <h2>Le Festival du Fantastique de Béziers</h2>
                         <p>
                             Le Festival du Fantastique de Béziers est un événement annuel captivant qui transporte
                             les
@@ -103,7 +106,7 @@
 
                 <div class="sections" id="1">
                     <div class="txtSection" id="hiddenR">
-                        <h3>Marathon</h3>
+                        <h2>Marathon</h2>
                         <p>
                             Pendant 1 semaine, des groupe de 5 à 6 étudiants de 1ère, 2ème, et 3eme année du département
                             MMI (Métiers du Multimédia et de l’Internet) de l’IUT de Béziers ont pour mission d’élaborer
@@ -123,7 +126,7 @@
 
                 <div class="sections" id="2">
                     <div class="txtSection" id="hiddenL">
-                        <h3>Hackathon</h3>
+                        <h2>Hackathon</h2>
                         <p>
                             Pendant 3 jours, les étudiants sont répartis en équipe réunissant toutes les formations de
                             l'IUT (Carrières Sociales, Métiers du Multimédia et de l'Internet, Réseaux et Télécoms,
@@ -143,7 +146,7 @@
 
                 <div class="sections" id="3">
                     <div class="txtSection" id="hiddenR">
-                        <h3>A ton Tour (club de jeux de société)</h3>
+                        <h2>A ton Tour (club de jeux de société)</h2>
                         <p>
                             A ton Tour est un club de jeu de société ouvert à tous les étudiants de l’IUT de Béziers.
                             Jeu de cartes, hasard, stratégie ou escape game, face à face ou en collaboration, si vous
@@ -155,32 +158,30 @@
 
                 <div class="sections" id="4">
                     <div class="txtSection" id="hiddenL">
-                        <h3>Bureau Des Étudiants Athéna (BDE Athéna)</h3>
+                        <h2>Bureau Des Étudiants Athéna (BDE Athéna)</h2>
                         <p>
                             Le BDE Athena, c'est l'association étudiante dynamique et engagée de l'IUT de Béziers. Notre
                             mission principale est de créer une expérience étudiante inoubliable pour tous les étudiants
                             de notre établissement. Nous sommes fiers de représenter la voix des étudiants et de
                             travailler sans relâche pour améliorer leur vie universitaire.
-                        </p>
-                        <p>
                             Le BDE a pour objectifs de :
-                        <ul>
-                            <li>
-                                Fédérer la communauté étudiante : Nous organisons une variété d'événements sociaux,
-                                culturels et sportifs tout au long de l'année pour favoriser les rencontres et les
-                                échanges entre les étudiants
-                            </li>
-                            <li>
-                                Soutenir la réussite académique : Nous offrons des ressources et des initiatives pour
-                                aider nos camarades à exceller dans leurs études.
-                            </li>
-                            <li>
-                                Promouvoir l'engagement citoyen : Nous encourageons nos membres à s'impliquer dans des
-                                projets bénévoles et des actions caritatives pour contribuer positivement à notre
-                                communauté locale.
-                            </li>
-                        </ul>
-                        </p>
+                            </p>
+                            <ul>
+                                <li>
+                                    Fédérer la communauté étudiante : Nous organisons une variété d'événements sociaux,
+                                    culturels et sportifs tout au long de l'année pour favoriser les rencontres et les
+                                    échanges entre les étudiants
+                                </li>
+                                <li>
+                                    Soutenir la réussite académique : Nous offrons des ressources et des initiatives pour
+                                    aider nos camarades à exceller dans leurs études.
+                                </li>
+                                <li>
+                                    Promouvoir l'engagement citoyen : Nous encourageons nos membres à s'impliquer dans des
+                                    projets bénévoles et des actions caritatives pour contribuer positivement à notre
+                                    communauté locale.
+                                </li>
+                            </ul>
 
                     </div>
                     <img src="../img/ae.png" alt="couleur" class="imgSection">
@@ -188,7 +189,7 @@
 
                 <div class="sections" id="5">
                     <div class="txtSection" id="hiddenR">
-                        <h3>Club de Robotique</h3>
+                        <h2>Club de Robotique</h2>
                         <p>
                             Il permettra aux passionnés de robotique de participer à des projets à long terme, tels que
                             la conception d’un robot en partenariat avec les pédagogues du lycée Jean Moulin à Béziers.
@@ -203,7 +204,7 @@
 
                 <div class="sections" id="6">
                     <div class="txtSection" id="hiddenL">
-                        <h3>Fablab</h3>
+                        <h2>Fablab</h2>
                         <p>
                             Un Fablab est un espace collaboratif destiné au partage de technologies, de compétences, et
                             à l’apprentissage de celles-ci par la pratique. C‘est un lieu de rencontre convivial,
@@ -225,7 +226,7 @@
 
                 <div class="sections" id="7">
                     <div class="txtSection" id="hiddenR">
-                        <h3>Un super matériel disponible pour les étudiants</h3>
+                        <h2>Un super matériel disponible pour les étudiants</h2>
                         <p>
                             L'IUT dispose d'une salle fond vert, de plusieurs caméras, lumières pour réaliser vos
                             projets d'audiovisuels. Tout est mis a disposition des éleves à tout moment et pour
