@@ -224,3 +224,13 @@ button:hover{
 .bouton_next{
   margin: 10px 0 10px 0;
 }
+
+.textInfo {
+  margin: auto;
+  width: 90%;
+}
+
+.texteCache {
+  display: block;
+  margin: 10px 0;
+}
