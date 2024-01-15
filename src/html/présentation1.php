@@ -31,8 +31,7 @@
                 </p>
                 <p>
                     Ces formations y sont aussi plus professionnalisantes et comporte aussi plus de travaux pratiques.
-                    On
-                    apprend tout en faisant, c’est ce qui rend l’IUT super intéressant!
+                    On apprend tout en faisant, c’est ce qui rend l’IUT super intéressant !
                 </p>
                 <h3>Et un BUT alors ?</h3>
 
@@ -41,10 +40,9 @@
                     été crée en 2021. Il vient prendre la relève du DUT, qui était une formation moins poussée qui se
                     faisait en 2 ans seulement.
                 </p>
-                <p style="font-weight : bold">
-                    Bon ! Vous suivez toujours ? Allez on va attaquer la partie qui vous intéresse le plus : Le BUT MMI
-                    !
-                </p>
+                <strong>
+                    Bon ! Vous suivez toujours ? Allez on va attaquer la partie qui vous intéresse le plus : Le BUT MMI !
+                </strong>
             </div>
             <br />
             <form action="../../php/navigation/update_progression.php" method="post">

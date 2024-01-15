@@ -6,11 +6,13 @@
   --dark-color-main:#3987be;
   --light-color-main:#94c6e9;
   --darker-light-color-main: #76aed6;
+  --color-submit: #FF8C15;
+  --color-submit-hover: #e17603;
 }
 
 body {
   margin: 0;
-  /* Police */
+  /* Police */  
   /* font-family: 'Josefin Sans', sans-serif; */
   font-family: 'Lato', sans-serif;
   /* Background */
@@ -124,7 +126,6 @@ td{
 
 .texte_reponse {
   background-color: var(--light-color-main);
-  font-size: 32px;
   border: none;
   color: white;
   padding: 10px 24px;
@@ -167,11 +168,12 @@ td{
 
 #submitter {
   display: none;
-  background-color: var(--color-main);
+  background-color: var(--color-submit);
+  margin-top: 50px;
 }
 
 #submitter:hover {
-  background-color: var(--dark-color-main)!important;
+  background-color: var(--color-submit-hover)!important;
 }
 
 .Reponses {
@@ -180,7 +182,6 @@ td{
 #question{
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
-  margin-top: 100px;
 }
 
 button{
@@ -232,4 +233,21 @@ button:hover{
 
 .bouton_next{
   margin: 10px 0 10px 0;
+}
+
+.textInfo {
+  margin: auto;
+  width: 90%;
+}
+
+.texteCache {
+  display: block;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 600px){
+  .div-centre{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
 }

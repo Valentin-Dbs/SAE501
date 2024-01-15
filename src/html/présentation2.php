@@ -34,15 +34,15 @@
                     compétence très complet !
                 </p>
 
-                <h3>
+                <h2>
                     Les parcours
-                </h3>
+                </h2>
                 <p>
                     Lors de la deuxième année, il te sera demandé de choisir un parcours de spécialisation. Les trois
                     parcours de spécialisation possibles en MMI sont les suivants :
                 </p>
                 <div class="parcours">
-                    <button onclick="toggleText('crea')" id="underlineButton">Création numérique</button>
+                    <button onclick="toggleText('crea')" id="underlineButton">Création numérique &#9660;</button>
                     <div class="texteCache" id="crea" style="display: none;"> Si tu choisis cette voie, tu te plongeras
                         dans le monde de la
                         conception
@@ -58,7 +58,7 @@
 
                 <div class="parcours">
                     <button onclick="toggleText('dev')" id="underlineButton">Développement web et dispositifs
-                        interactifs </button>
+                        interactifs &#9660;</button>
                     <div class="texteCache" id="dev" style="display: none;">
                         Avec ce parcours, tu te lanceras dans le domaine du développement web. Tu apprendras à créer des
                         sites web interactifs, des applications web et mobiles, des jeux vidéo, ainsi que d'autres
@@ -73,7 +73,7 @@
                 <div class="parcours">
                     <button onclick="toggleText('com')" id="underlineButton">Stratégie de communication numérique et
                         design
-                        d'expérience</button>
+                        d'expérience &#9660;</button>
                     <div class="texteCache" id="com" style="display: none;">
                         Si tu choisis cette spécialisation, tu te plongeras dans le monde de la communication numérique.
                         Tu
