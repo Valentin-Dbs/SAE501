@@ -3,6 +3,7 @@
 
 :root{
   --color-main:#4B9CD4;
+  --dark-color-main:#3987be;
   --light-color-main:#94c6e9;
   --darker-light-color-main: #76aed6;
 }
@@ -143,22 +144,6 @@ td{
   transition: 0.1s ease-in-out;
 }
 
-.texte_reponse#submitter {
-  background-color: var(--color-main);
-  font-size: 32px;
-  border: none;
-  color: white;
-  padding: 10px 24px;
-  margin: 10px 0 10px 0;
-  cursor: pointer;
-  /* Pointer/hand icon */
-  width: 80%;
-  /* Set a width if needed */
-  border-radius: 200px;
-  display: inline-block;
-  transition: 0.1s ease-in-out;
-}
-
 .texte_reponse.correct {
   background-color: #4CAF50;
   color: white;
@@ -182,6 +167,11 @@ td{
 
 #submitter {
   display: none;
+  background-color: var(--color-main);
+}
+
+#submitter:hover {
+  background-color: var(--dark-color-main)!important;
 }
 
 .Reponses {
