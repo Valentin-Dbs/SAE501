@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 :root{
   --color-main:#4B9CD4;
@@ -9,7 +10,8 @@
 body {
   margin: 0;
   /* Police */
-  font-family: 'Josefin Sans', sans-serif;
+  /* font-family: 'Josefin Sans', sans-serif; */
+  font-family: 'Lato', sans-serif;
   /* Background */
   background-image: url('src/img/background.png');
   background-size: cover;
@@ -24,6 +26,11 @@ body {
   color: var(--color-main);
   text-align: center;
 }
+
+h1, h2, h3 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 
 p {
   text-align: left;
@@ -136,6 +143,22 @@ td{
   transition: 0.1s ease-in-out;
 }
 
+.texte_reponse#submitter {
+  background-color: var(--color-main);
+  font-size: 32px;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  margin: 10px 0 10px 0;
+  cursor: pointer;
+  /* Pointer/hand icon */
+  width: 80%;
+  /* Set a width if needed */
+  border-radius: 200px;
+  display: inline-block;
+  transition: 0.1s ease-in-out;
+}
+
 .texte_reponse.correct {
   background-color: #4CAF50;
   color: white;
@@ -165,6 +188,7 @@ td{
   text-align: center;
 }
 #question{
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
   margin-top: 100px;
 }
