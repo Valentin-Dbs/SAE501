@@ -1,41 +1,37 @@
 <?php
 
 // Inclusion du fichier de connexion à la base de données
-include '../database/database_connection.php';
+include __DIR__ . '/../database/database_connection.php';
 
-// Démarrez la session
+// Démarrage de la session
 session_start();
-
 
 // Vérification si le formulaire a été soumis
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-// Vérification que l'utilisateur est connecté et que la variable de session user_id est définie
-if (isset($_SESSION['nom']) || isset($_SESSION['prenom'])) {
-    $user_nom = $_SESSION['nom'];
-    $quiz_id = mysqli_real_escape_string($conn, $_POST['quiz_id']);
-    $question = mysqli_real_escape_string($conn, $_POST['question']); // Échapper la question
-    $reponse_choisie = mysqli_real_escape_string($conn, $_POST['reponse_choisie']); // Échapper la réponse choisie
-    $est_correcte = $_POST['est_correcte'];
-    $temps_reponse = $_POST['temps_reponse'];
-
-    // Insert des données dans la table quiz_responses
-    $sql = "INSERT INTO quiz_responses (user_nom, quiz_id, question, reponse_choisie, est_correcte, temps_reponse) 
-            VALUES ('$user_nom', '$quiz_id', '$question', '$reponse_choisie', '$est_correcte', '$temps_reponse')";
-    if ($conn->query($sql) === TRUE) {
-        echo "Les données ont été insérées avec succès dans la table quiz_responses.";
+    // Vérification que l'utilisateur est connecté et que la variable de session user_id est définie
+    if (isset($_SESSION['user_id']) && isset($_SESSION['token'])) {
+        $user_id = $_SESSION['user_id'];
+        $quiz_id = mysqli_real_escape_string($conn, $_POST['quiz_id']);
+        $question = mysqli_real_escape_string($conn, $_POST['question']); // Échapper la question
+        $reponse_choisie = mysqli_real_escape_string($conn, $_POST['reponse_choisie']); // Échapper la réponse choisie
+        $est_correcte = (int) $_POST['est_correcte']; // Assurer que est_correcte est un entier
+        $temps_reponse = (int) $_POST['temps_reponse']; // Assurer que temps_reponse est un entier    
+        // Insertion des données dans la table quiz_responses
+        $sql = "INSERT INTO quiz_responses (user_id, quiz_id, question, reponse_choisie, est_correcte, temps_reponse) 
+                VALUES (?, ?, ?, ?, ?, ?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("iissii", $user_id, $quiz_id, $question, $reponse_choisie, $est_correcte, $temps_reponse);
+    
+        if ($stmt->execute()) {
+            echo "Les données ont été insérées avec succès dans la table quiz_responses.";
+        } else {
+            echo "Erreur lors de l'insertion des données : " . $stmt->error;
+        }
     } else {
-        echo "Erreur lors de l'insertion des données : " . $conn->error;
+        echo "L'utilisateur n'est pas connecté.";
     }
-} else {
-    echo "L'utilisateur n'est pas connecté.";
-}
-
-        echo $user_nom;
-        echo $question;
-        echo $reponse_choisie;
-        echo $est_correcte;
-        echo $temps_reponse;
+    
 }
 
 // Fermeture de la connexion à la base de données
