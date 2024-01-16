@@ -35,7 +35,7 @@
 <?php include('../../php/auth/check_session.php'); ?>
 
     <canvas id="myCanvas"></canvas>
-    <button id="downloadButton">Download as PNG</button>
+    <button id="downloadButton" class="ourbtn">Download as PNG</button>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
