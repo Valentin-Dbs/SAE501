@@ -401,35 +401,6 @@ body {
 
     </script>
 
-        <!-- php --> 
-
-        <div class="breadcrumb-container">
-    <ul class="breadcrumb">
-    <?php
-    $current_page = basename($_SERVER['PHP_SELF']);
-    $pages = [
-        'présentation1.php' =>'Présentation 1',
-        'présentation2.php' => 'Présentation 2',
-        'quiz1.php' => 'Quiz 1',
-        'présentation3.php'=>'Présentation 3',
-        'quiz2.php' => 'quiz2.php',
-        'présentation4.php' => 'Présentation 4',
-        'présentation5.php' =>'Présentation 5',
-        'quiz3.php' => 'Quiz 2',
-        'présentation6.php'=> 'Présentation 6',
-        ];
-    foreach ($pages as $page => $title) {
-            echo '<li';
-            if ($current_page == $page) {
-                echo ' class="active"';
-            }
-            echo '><a href="' . $page . '">' . $title . '</a></li>';
-        }
-        ?>
-    </ul>
-</div>
-
-    <!-- php -->
 </body>
 
 </html>
