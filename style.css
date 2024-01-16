@@ -185,13 +185,14 @@ td{
   font-weight: 700;
 }
 
-.ourbtn{
+.ourbtn, .bouton_next{
   background: var(--color-main);
   border-radius: 100px;
   color: white;
   font-size: 30px;
   border: none;
   padding: 10px;
+  cursor: pointer;
 }
 .ourbtn:hover{
   cursor: pointer;
