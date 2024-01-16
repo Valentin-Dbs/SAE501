@@ -72,6 +72,20 @@
             transform: translateX(0);
             transition: opacity 0.5s, transform 0.5s;
         }
+        @media screen and (max-width: 600px){
+            #visibleR{
+                width: 100%;
+            }
+            #visibleL{
+                width: 100%;
+            }
+            #hiddenR{
+                width: 100%;
+            }
+            #hiddrenL{
+                width: 100%;
+            }
+}
     </style>
 </head>
 
@@ -162,26 +176,24 @@
                         <p>
                             Le BDE Athena, c'est l'association étudiante dynamique et engagée de l'IUT de Béziers. Notre
                             mission principale est de créer une expérience étudiante inoubliable pour tous les étudiants
-                            de notre établissement. Nous sommes fiers de représenter la voix des étudiants et de
-                            travailler sans relâche pour améliorer leur vie universitaire.
+                            de notre établissement.
                             Le BDE a pour objectifs de :
-                            </p>
-                            <ul>
-                                <li>
-                                    Fédérer la communauté étudiante : Nous organisons une variété d'événements sociaux,
-                                    culturels et sportifs tout au long de l'année pour favoriser les rencontres et les
-                                    échanges entre les étudiants
-                                </li>
-                                <li>
-                                    Soutenir la réussite académique : Nous offrons des ressources et des initiatives pour
-                                    aider nos camarades à exceller dans leurs études.
-                                </li>
-                                <li>
-                                    Promouvoir l'engagement citoyen : Nous encourageons nos membres à s'impliquer dans des
-                                    projets bénévoles et des actions caritatives pour contribuer positivement à notre
-                                    communauté locale.
-                                </li>
-                            </ul>
+                        </p>
+                        <ul>
+                            <li>
+                                Fédérer la communauté étudiante en organisant une variété d'événements sociaux,
+                                culturels et sportifs.
+                            </li>
+                            <li>
+                                Soutenir la réussite académique en offrant des ressources et des initiatives pour aider
+                                nos camarades à exceller dans leurs études.
+                            </li>
+                            <li>
+                                Promouvoir l'engagement citoyen en encourageant nos membres à s'impliquer dans des
+                                projets et des actions caritatives pour contribuer à notre
+                                communauté locale.
+                            </li>
+                        </ul>
 
                     </div>
                     <img src="../img/ae.png" alt="couleur" class="imgSection">
@@ -206,20 +218,13 @@
                     <div class="txtSection" id="hiddenL">
                         <h2>Fablab</h2>
                         <p>
-                            Un Fablab est un espace collaboratif destiné au partage de technologies, de compétences, et
-                            à l’apprentissage de celles-ci par la pratique. C'est un lieu de rencontre convivial,
-                            d’échanges, de transmission de savoir-faire, s’adressant à tout public n’ayant pas
-                            nécessairement de formation technique.
+                            Un Fablab est un lieu convivial de partage et d'apprentissage pratique des technologies,
+                            ouvert à tous, quels que soient le niveau de formation. On y échange des avis, des conseils,
+                            et des savoir-faire, tout en organisant des rencontres entre différents profils, des
+                            ateliers, des conférences et des sessions de crowdfunding. C'est un espace où se croisent
+                            des personnes de tous horizons, partageant une curiosité commune et une passion pour
+                            l'innovation.
                         </p>
-                        <p>
-                            On vient y chercher des avis, des conseils, de l'aide, des savoir-faire. On peut aussi y
-                            rencontrer d'autres professionnels, parler crowd-founding, organiser des ateliers, des
-                            conférences, faire profiter les autres de ses propres connaissances. On y croise des
-                            enfants, des ingénieurs, des étudiants, des designers, des retraités, des pros et des moins
-                            pros, et même des génies ingénus. Que des gens curieux en somme, des passionnés, comme vous
-                            peut-être.
-                        </p>
-
                     </div>
                     <img src="../img/fablab.jpg" alt="couleur" class="imgSection">
                 </div>
@@ -248,7 +253,7 @@
             <form action="../../php/navigation/update_progression.php" method="post">
                 <input type="hidden" name="next_page" value="certificat.php">
                 <button type="submit" id="goTo1" class="bouton_next" style="padding: 10px 100px 10px 100px">
-                    Accéder au certificat 
+                    Accéder au certificat
                 </button>
             </form>
         </div>

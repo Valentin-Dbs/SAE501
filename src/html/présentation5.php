@@ -51,6 +51,9 @@
         opacity: 0.2;
         width: 90%;
     }
+    p{
+        padding: 0;
+    }
 @media screen and (max-width: 600px){
     #conteneurParcours {
     flex-direction: column;
@@ -174,8 +177,6 @@
 
                     </div>
                 </div>
-
-
             </div>
             <br>
             <form action="../../php/navigation/update_progression.php" method="post">
