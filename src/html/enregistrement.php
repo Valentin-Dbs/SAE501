@@ -57,7 +57,7 @@
             <div style="font-style: italic; font-size: 12px;">* Champ obligatoire</div>
 
             <!-- Bouton de soumission -->
-            <button type="submit" class="btn-connexion">Rentrer les informations</button>
+            <button type="submit" class="btn-connexion ourbtn">Se connecter</button>
         </form>
         <div style="font-style: italic;">
             <p>

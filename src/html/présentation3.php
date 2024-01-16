@@ -33,7 +33,7 @@
         <div style="width: 90%;">
             <div class="container">
                 <div>
-                <button onclick="prevSlide()" class="arrows">
+                <button onclick="prevSlide()" class="arrows ourbtn">
                     <img src="..\img\flecheG.png" alt="précédent" class="imgFleche"> </button>
                     </div>
                         <div class="carousel-container">
@@ -180,7 +180,7 @@
                             </div>
                         </div>
                         <div>
-                        <button onclick="nextSlide()" class="arrows">
+                        <button onclick="nextSlide()" class="arrows ourbtn">
                             <img src="..\img\flecheD.png" alt="suivant" class="imgFleche" >
                         </button>
                         </div>
@@ -189,7 +189,7 @@
             <br>
             <form action="../../php/navigation/update_progression.php" method="post">
                 <input type="hidden" name="next_page" value="quiz2.php">
-                <button type="submit" id="goTo1" class="bouton_next" style="padding: 10px 100px 10px 100px">
+                <button type="submit" id="goTo1" class="bouton_next ourbtn" style="padding: 10px 100px 10px 100px">
                     Faire le quiz 2
                 </button>
             </form>

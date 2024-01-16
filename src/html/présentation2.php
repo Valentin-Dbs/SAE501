@@ -42,7 +42,7 @@
                     parcours de spécialisation possibles en MMI sont les suivants :
                 </p>
                 <div class="parcours">
-                    <button onclick="toggleText('crea')" id="underlineButton">Création numérique &#9660;</button>
+                    <button onclick="toggleText('crea')" id="underlineButton" class="ourbtn">Création numérique &#9660;</button>
                     <div class="texteCache" id="crea" style="display: none;"> Si tu choisis cette voie, tu te plongeras
                         dans le monde de la
                         conception
@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="parcours">
-                    <button onclick="toggleText('dev')" id="underlineButton">Développement web et dispositifs
+                    <button onclick="toggleText('dev')" id="underlineButton" class="ourbtn">Développement web et dispositifs
                         interactifs &#9660;</button>
                     <div class="texteCache" id="dev" style="display: none;">
                         Avec ce parcours, tu te lanceras dans le domaine du développement web. Tu apprendras à créer des
@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="parcours">
-                    <button onclick="toggleText('com')" id="underlineButton">Stratégie de communication numérique et
+                    <button onclick="toggleText('com')" id="underlineButton" class="ourbtn">Stratégie de communication numérique et
                         design
                         d'expérience &#9660;</button>
                     <div class="texteCache" id="com" style="display: none;">
@@ -104,11 +104,11 @@
 
             <form action="../../php/navigation/update_progression.php" method="post">
                 <input type="hidden" name="next_page" value="présentation1.php">
-                <button type="submit" id="goTo1" class="bouton_next">Présentation précédente</button>
+                <button type="submit" id="goTo1" class="bouton_next ourbtn">Présentation précédente</button>
             </form>
             <form action="../../php/navigation/update_progression.php" method="post">
                 <input type="hidden" name="next_page" value="quiz1.php">
-                <button type="submit" id="goTo1" class="bouton_next" style="padding: 10px 100px 10px 100px">
+                <button type="submit" id="goTo1" class="bouton_next ourbtn" style="padding: 10px 100px 10px 100px">
                     Faire le quiz 1
                 </button>
             </form>

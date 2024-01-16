@@ -185,7 +185,7 @@ td{
   font-weight: 700;
 }
 
-button{
+.ourbtn{
   background: var(--color-main);
   border-radius: 100px;
   color: white;
@@ -193,7 +193,7 @@ button{
   border: none;
   padding: 10px;
 }
-button:hover{
+.ourbtn:hover{
   cursor: pointer;
   background-color: var(--darker-light-color-main);
 }
@@ -252,7 +252,11 @@ button:hover{
   justify-content: space-around;
 }
 
-@media screen and (max-width: 600px){
+.tabSmall {
+  display: none;
+}
+
+@media screen and (max-width: 762px){
   .div-centre{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.95);
@@ -273,16 +277,14 @@ button:hover{
     background-color: rgba(255, 255, 255, 0.95);
 
   }
+  .cours {
+    display: block!important;
+    margin-bottom: 75px!important;
+  }
+  .tabSmall {
+    display: block;
+  }
+  .tabBig {
+    display: none;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
