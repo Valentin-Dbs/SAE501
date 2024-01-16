@@ -11,9 +11,9 @@ var tabQuestions = [
     1
   ],
   [
-    "Quels types de projets peuvent être fait en Audiovisuel ?",
+    "Quels types de projets peuvent être faits en Audiovisuel ?",
     "Montage photo",
-    "Court-métrages",
+    "Courts-métrages",
     "Construction de sites web",
     "Jeux vidéo",
     2
@@ -23,11 +23,11 @@ var tabQuestions = [
     "Audiovisuel",
     "Animation et Dessin numérique",
     "Développement de jeux vidéo",
-    "Développement Back",
+    "Développement back",
     2
   ],
   [
-    "Qu’est-ce que la suite Adobe ? ",
+    "Qu’est-ce que la suite Adobe ?",
     "Un ensemble de logiciels dédié à la création",
     "Un logiciel de montage photo et vidéo",
     "Un ensemble de langages de programmation pour développer des jeux vidéo",
@@ -47,7 +47,7 @@ var tabQuestions = [
     "Où peut-on apprendre à utiliser des logiciels de construction de sites tels que WordPress ?",
     "Développement de jeux vidéo",
     "Développement de site web",
-    "Développement Back",
+    "Développement back",
     "Audiovisuel",
     2
   ],
@@ -56,7 +56,7 @@ var tabQuestions = [
     "Audiovisuel",
     "Animation",
     "Suite Adobe",
-    "Développement Back",
+    "Développement back",
     4
   ],
   [
@@ -72,41 +72,41 @@ var tabExplications = [
   [
     "Dans quel domaine peut-on apprendre à se servir d’un appareil photo ou d’une caméra ?",
     "Oui, les cours d'Audiovisuel permettent la manipulation d'appareils photo et de caméra (mais pas que...)",
-    "Non, l'animation se centre principalement autour de l'utilisation des logiciels de la suite Adobe",
-    "Non, la Suite Adobe n'est pas un domaine d'apprentissage, mais un outil",
+    "Non, l'animation se centre principalement autour de l'utilisation des logiciels de la suite Adobe.",
+    "Non, la Suite Adobe n'est pas un domaine d'apprentissage, mais un outil.",
     "Non, dans le développement de jeux vidéo se centre sur l'utilisation de la suite adobe (pour les réalisations graphiques) et de logiciels de programmation"
   ],
   [
-    "Quels types de projets peuvent être fait en Audiovisuel ?",
+    "Quels types de projets peuvent être faits en Audiovisuel ?",
     "Non, le montage photo se fait en création graphique",
-    "Oui, les courts-métrages sont des projets qui peuvent être fait en Audiovisuel",
-    "Non, la construction de sites web est un projet qui se fait en développement web",
-    "Non, la réalisation de jeux vidéo est un projet qui se fait en partie en développement web et en partie en création graphique"
+    "Oui, les courts-métrages sont des projets qui peuvent être fait en Audiovisuel.",
+    "Non, la construction de sites web est un projet qui se fait en développement web.",
+    "Non, la réalisation de jeux vidéo est un projet qui se fait en partie en développement web et en partie en création graphique."
   ],
   [
     "Dans quel domaine apprend-on à utiliser une tablette et des logiciels de dessin ?",
     "Non, l'audiovisuel permet l'apprentissage du montage vidéo, du tournage, de la prise de son...",
-    "Oui, l'animation et le dessin numérique permettent d'apprendre à utiliser les tablettes graphiques et les logiciels de dessin",
-    "Non, le développement de jeux vidéo se consacre sur l'apprentissage du code de jeux vidéo",
-    "Non, le développement back se consacre sur l'apprentissage du code back des site web"
+    "Oui, l'animation et le dessin numérique permettent d'apprendre à utiliser les tablettes graphiques et les logiciels de dessin.",
+    "Non, le développement de jeux vidéo se consacre sur l'apprentissage du code de jeux vidéo.",
+    "Non, le développement back se consacre sur l'apprentissage du code back des site web."
   ],
   [
-    "Qu’est-ce que la suite Adobe ? ",
+    "Qu’est-ce que la suite Adobe ?",
     "Oui, la suite Adobe est un ensemble de logiciels dédié à la création (aussi bien pour la vidéo, le vectoriel, le pixel, l'animation...)",
-    "Non, la suite Adobe n'est pas uniquement un logiciel de montage photo et vidéo. En effet, il propose de nombreuses autres possibilités",
-    "Non, la suite Adobe peut être utilisée pour la réalisation d'assets pour développer des jeux vidéo, mais il ne s'agit pas d'un ensemble de langages de programmation",
-    "Non, la suite Adobe peut être utilisée pour la réalisation de maquettes lors d'un développement de site web, mais il ne s'agit pas d'un logiciel qui permet le développement de sites web"
+    "Non, la suite Adobe n'est pas uniquement un logiciel de montage photo et vidéo. En effet, il propose de nombreuses autres possibilités.",
+    "Non, la suite Adobe peut être utilisée pour la réalisation d'assets pour développer des jeux vidéo, mais il ne s'agit pas d'un ensemble de langages de programmation.",
+    "Non, la suite Adobe peut être utilisée pour la réalisation de maquettes lors d'un développement de site web, mais il ne s'agit pas d'un logiciel qui permet le développement de sites web."
   ],
   [
     "Quel domaine implique l'apprentissage de langages, logiciels et techniques pour les jeux vidéo ?",
     "Non, l'audiovisuel implique l'apprentissage technique de la réalisation de vidéos, le montage, la prise de son...",
-    "Non, l'animation implique l'apprentissage de la suite Adobe et la maîtrise graphique",
-    "Non, la suite Adobe implique de création numérique",
+    "Non, l'animation implique l'apprentissage de la suite Adobe et la maîtrise graphique.",
+    "Non, la suite Adobe implique de création numérique.",
     "Oui ! Avouez qu'elle était facile celle-là !"
   ],
   [
     "Où peut-on apprendre à utiliser des logiciels de construction de sites tels que WordPress ?",
-    "Non, en développement de jeux vidéo, nous apprenons principalement les langages de programmation",
+    "Non, en développement de jeux vidéo, nous apprenons principalement les langages de programmation.",
     "Oui, lors des cours en développement de site web, nous apprenons à utiliser les logiciels de construction de sites tels que WordPress (CMS)",
     "Non, le développement back se concentre sur l'apprentissage de la création de bases de données et de la mise en place de site, d'application et de jeux vidéo",
     "Non, en Audiovisuel, on se concentre sur l'apprentissage du montage vidéo, du tournage, de la prise de son..."
@@ -114,14 +114,14 @@ var tabExplications = [
   [
     "Dans quel domaine apprend-on à construire et coder une base de données ?",
     "Non, en Audiovisuel, on se concentre sur l'apprentissage du montage vidéo, du tournage, de la prise de son...",
-    "Non, l'animation implique l'apprentissage de la suite Adobe et la maîtrise graphique",
-    "Non,la suite Adobe implique de création numérique",
-    "Oui, le développement Back se concentre sur l'apprentissage de la création de bases de données et de la mise en place de site, d'application et de jeux vidéo"
+    "Non, l'animation implique l'apprentissage de la suite Adobe et la maîtrise graphique.",
+    "Non, la suite Adobe implique de création numérique.",
+    "Oui, le développement back se concentre sur l'apprentissage de la création de bases de données et de la mise en place de site, d'application et de jeux vidéo."
   ],
   [
     "Quel outil est mentionné comme un logiciel pour créer des boutiques en ligne ?",
     "Non, la suite Adobe est un ensemble de logiciels dédié à la création (aussi bien pour la vidéo, le vectoriel, le pixel, l'animation...)",
-    "Non, bien qu'il soit possible d'utiliser WordPress pour créer des boutiques en ligne, il ne s'agit pas du CMS le plus efficace",
+    "Non, bien qu'il soit possible d'utiliser WordPress pour créer des boutiques en ligne, il ne s'agit pas du CMS le plus efficace.",
     "Oui, Prestashop est le CMS le plus efficace pour faire créer des boutiques en ligne.",
     "Non, la suite Microsoft est un GAFAM qui cherche à diriger le monde."
   ]

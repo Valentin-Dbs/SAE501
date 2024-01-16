@@ -23,7 +23,7 @@ var tabQuestions = [
     "Elles sont moins longues",
     "Elles sont plus théoriques",
     "Elles sont moins pratiques",
-    "Elles sont plus professionnalisante",
+    "Elles sont plus professionnalisantes",
     4,
   ],
   [
@@ -71,36 +71,36 @@ var tabExplications = [
   [
     "Quelle est la durée d'un BUT ?",
     "C'est un peu court comme études, non ?",
-    "Le diplome durait bien deux ans lorsque c'était encore un DUT, mais depuis la réforme ça n'est plus le cas.",
+    "Le diplôme durait bien deux ans lorsque c'était encore un DUT, mais depuis la réforme ça n'est plus le cas.",
     "Bravo ! Depuis la réforme de 2021, le DUT de deux ans a changé en BUT de trois ans.",
-    "Eh non ! Il existe bien des formations en 4 ans mais le BUT n'en fait pas parti"
+    "Eh non ! Il existe bien des formations en 4 ans, mais le BUT n'en fait pas parti."
   ],
   [
     'Ça veut dire quoi "IUT" ?',
-    "Psst un petit indice : c'est un anagramme !",
+    "Psst... un petit indice : c'est une anagramme !",
     "C'est indiqué dans le nom. L'anagramme d'institut universitaire de technologie est IUT.",
-    "Psst un petit indice : c'est un anagramme !",
-    "Psst un petit indice : c'est un anagramme !"
+    "Psst... un petit indice : c'est une anagramme !",
+    "Psst... un petit indice : c'est une anagramme !"
   ],
   [
     "Comment les formations à l'IUT se comparent-elles à celles de l'université ?",
-    "En ce qui concerne le premier diplome que vous obtiendrez, le temps d'études sera de la même durée en université qu'à l'IUT.",
+    "En ce qui concerne le premier diplôme que vous obtiendrez, le temps d'études sera de la même durée en université qu'à l'IUT.",
     "Vous apprendrez certes de la théorie, mais ça ne constituera pas la majorité de vos études.",
-    "C'est faux ! Dans la majoritée des formations dispensé à l'IUT, vous ferez plus de travaux pratiques qu'à l'université.",
-    "L'IUT a pour but de vous former afin de pouvoir directement intégrer le milieu professionnel dès l'obtention de votre diplome."
+    "C'est faux ! Dans la majorité des formations dispensé à l'IUT, vous ferez plus de travaux pratiques qu'à l'université.",
+    "L'IUT a pour but de vous former afin de pouvoir directement intégrer le milieu professionnel dès l'obtention de votre diplôme."
   ],
   [
     "Pourquoi les formations à l'IUT sont-elles sélectives ?",
     "La durée d'une formation est rarement en rapport avec sa sélectivité.",
     "Ce n'est pas le prix de la formation qui est le facteur principal de sa sélectivité.",
-    "Les places sont en effet très limités. En 2023 par exemple, seul 59 étudiants ont pu intégrer la formation MMI à l'IUT de Béziers.",
+    "Les places sont, en effet, très limitées. En 2023 par exemple, seuls 59 étudiants ont pu intégrer la formation MMI à l'IUT de Béziers.",
     "Au contraire, cela rendrait la formation bien plus accessible."
   ],
   [
     "Que veut dire MMI ?",
-    "Comme son nom l'indique, ce diplome vous forme aux métiers du multimédia et de l'internet",
-    "Rappellez-vous de ce qui est enseigné durant cette formation, et ce à quoi cela vous forme...",
-    "Rappellez-vous de ce qui est enseigné durant cette formation, et ce à quoi cela vous forme...",
+    "Comme son nom l'indique, ce diplôme vous forme aux métiers du multimédia et de l'internet",
+    "Rappelez-vous de ce qui est enseigné durant cette formation, et ce à quoi cela vous forme...",
+    "Rappelez-vous de ce qui est enseigné durant cette formation, et ce à quoi cela vous forme...",
     "Vous êtes sur la bonne voie, mais ce n'est pas exactement ça."
   ],
   [
@@ -119,7 +119,7 @@ var tabExplications = [
     "Quels sont les parcours de spécialisation disponibles dans la formation MMI ?",
     "Ce n'est pas la bonne réponse.", "Ce n'est pas la bonne réponse.",
     "Ce n'est pas la bonne réponse.",
-    "En deuxième année, vous pouvez choisir entre le parcours création numérique, le parcours stratégie de communication numérique et design d'expérience et le parcours développement Web et dispositifs interactifs. Attention, certains IUT ne proposent pas toutes les formations, alors prennez garde à cela lorsque vous faites vos choix d'établissement!"
+    "En deuxième année, vous pouvez choisir entre le parcours création numérique, le parcours stratégie de communication numérique et design d'expérience et le parcours développement Web et dispositifs interactifs. Attention, certains IUT ne proposent pas toutes les formations, alors prenez garde à cela lorsque vous faites vos choix d'établissement !"
   ]
 ];
 

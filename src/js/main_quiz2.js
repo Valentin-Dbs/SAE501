@@ -4,36 +4,27 @@ var listQuestionsValidees = [];
 var tabQuestions = [
   [
     "Qui a le plus de qualifications pour travailler en tant qu'infographiste ?",
-    "Les génies créatifs bien sûr !",
-    "Les rois du code évidement !",
+    "Les virtuoses artistiques bien sûr !",
+    "Les rois du code évidemment !",
     "Les maîtres de la communication sans aucun doute !",
     "Tout le monde !",
     1
   ],
   [
     "Qui a le plus de qualifications pour travailler en tant qu'intégrateur de dispositif de réalité virtuelle ?",
-    "Les génies créatifs bien sûr !",
-    "Les rois du code évidement !",
+    "Les virtuoses artistiques bien sûr !",
+    "Les rois du code évidemment !",
     "Les maîtres de la communication sans aucun doute !",
     "Tout le monde !",
     2
   ],
   [
-    "Qui a le plus de qualifications pour travailler en tant qu'UX Designer",
-    "Les génies créatifs bien sûr !",
-    "Les rois du code évidement !",
+    "Qui a le plus de qualifications pour travailler en tant qu'UX Designer ?",
+    "Les virtuoses artistiques bien sûr !",
+    "Les rois du code évidemment !",
     "Les maîtres de la communication sans aucun doute !",
     "Tout le monde !",
     3
-  ],
-
-  [
-    "Quel est le métier qui n’est pas un débouché de MMI ?",
-    "Chirurgien",
-    "Réalisateur",
-    "Game Designer",
-    "Développeur Web",
-    1
   ],
   [
     "Quel est le métier qui n’est pas un débouché de MMI ?",
@@ -76,7 +67,7 @@ var tabQuestions = [
     4
   ],
   [
-    "Quels domaines professionnels sont associés au métier d'UX designer?",
+    "Quels domaines professionnels sont associés au métier d'UX designer ?",
     "Tout comme le Webmaster, l'UX designer peut travailler dans tous les domaines qui ont besoin d'un site web ",
     "Réalisateur",
     "Agriculture",
@@ -84,7 +75,7 @@ var tabQuestions = [
     1
   ],
   [
-    "Quel métier consiste à donner vie à des images dessinées sur papier ou tablette?",
+    "Quel métier consiste à donner vie à des images dessinées sur papier ou tablette ?",
     "Développeur informatique",
     "Animateur 2D",
     "Concepteur multimédia",
@@ -93,49 +84,69 @@ var tabQuestions = [
   ]
 ];
 var tabExplications = [
+  [
+    "Qui a le plus de qualifications pour travailler en tant qu'infographiste ?",
+    "Tout à fait ! Entre les trois propositions, ce sont les virtuoses artistiques qui devraient détenir le plus de qualifications en infographie. Bien sûr, cela ne veut pas dire que les rois du code et les maîtres de la communication sont exclus.",
+    "Et non ! En tant que roi du code, vous serez bien plus concerné par le développement technique de votre site web ou votre application, et moins sur les aspects visuels de ce dernier.",
+    "Et non ! Être un maître de communication peut apporter des compétences intéressantes pour travailler en tant qu'infographiste, mais parmi les choix proposés ce n'est pas forcément le plus qualifié.",
+    "Relisez bien la question et choisissez celui qui détiendrait le plus de qualifications entre les trois propositions."
+  ],
+  [
+    "Qui a le plus de qualifications pour travailler en tant qu'intégrateur de dispositif de réalité virtuelle ?",
+    "Et non ! Les virtuoses artistiques ont une place non-négligeable lors de la création d'un dispositif de VR, mais ils ne prennent pas part dans son intégration.",
+    "Tout à fait ! Entre les trois propositions, ce sont les rois du code qui devraient détenir le plus de qualifications pour intégrer un dispositif VR. Bien sûr, cela ne veut pas dire que les virtuoses artistiques et les maîtres de la communication sont exclus.",
+    "Et non ! La communication ne prend pas une place très importante lors de l'intégration de dispositifs de réalité virtuelle.",
+    "Relisez bien la question et choisissez celui qui détiendrait le plus de qualifications entre les trois propositions."
+  ],
+  [
+    "Qui a le plus de qualifications pour travailler en tant qu'UX Designer ?",
+    "Et non ! Bien que vous serez pardonnés de faire l'erreur étant donné que les compétences des virtuoses artistiques peuvent être très utile pour l'UX, il y a un autre choix plus exact.",
+    "Et non ! Le travail réalisé par les rois du code se base sur ce qui a été déjà fait par l'UX designer, leurs qualifications sont donc différentes.",
+    "Tout à fait ! Les maîtres de la communication ont des qualifications qui leurs permettent de clairement définir l'expérience utilisateur, ce qui demande de la communication claire et précise.",
+    "Relisez bien la question et choisissez celui qui détiendrait le plus de qualifications entre les trois propositions."
+  ],
   ["Quel est le métier qui n’est pas un débouché de MMI ?",
-    "Eh non en effet ! Bizarrement, le BUT MMI ne prépare pas à être médecin ou chirurgien",
-    "En MMI nous apprenons à réaliser des vidéos, courts-métrages et publicités. Il prépare donc tout naturellement à devenir réalisateur",
-    "Vous pouvez tout à fait devenir Game Designer après votre BUT. MMI nous donne les notions de graphismes et de programmation nécessaire à ce métier",
-    "Si vous êtes dans le parcours Développement web et dispositifs interactifs, devenir développeur web est une suite logique du parcours"],
-
+    "Eh non en effet ! Bizarrement, le BUT MMI ne prépare pas à être médecin ou chirurgien.",
+    "En MMI, nous apprenons à réaliser des vidéos, courts-métrages et publicités. Il prépare donc tout naturellement à devenir réalisateur.",
+    "Vous pouvez tout à fait devenir Game Designer après votre BUT. MMI nous donne les notions de graphismes et de programmation nécessaire à ce métier.",
+    "Si vous êtes dans le parcours Développement web et dispositifs interactifs, devenir développeur web est une suite logique du parcours."
+  ],
   ["Quels sont les métiers potentiels pour les amoureux des graphismes et de l'audiovisuel issus du BUT MMI ?",
     "Bravo !",
     "Pas vraiment, il vaut mieux aimer le développement web pour ce métier",
     "Pas vraiment, il vaut mieux aimer le développement web pour ce métier",
-    "Pas vraiment, il faut avoir des connaissances de cybersécurité"],
-
+    "Pas vraiment, il faut avoir des connaissances de cybersécurité."
+  ],
   ["Quels débouchés sont mentionnés pour les passionnés du développement informatique ?",
-    "Ah non, si vous voulez travaillez dans ce domaine, il vaut mieux choisir le parcours Stratégies de communication",
-    "Oui ! A vos lignes de code !",
-    "Pour gérer les médias sociaux, Stratégie de communication est sans aucun doute un parcours plus adapté que Développement Web",
-    "Il faut impérativement avoir des notion de cyber sécurité pour travailler dans ce métier..."],
-
+    "Ah non, si vous voulez travailler dans ce domaine, il vaut mieux choisir le parcours Stratégies de communication.",
+    "Oui ! À vos lignes de code !",
+    "Pour gérer les médias sociaux, Stratégie de communication est sans aucun doute un parcours plus adapté que Développement Web.",
+    "Il faut impérativement avoir des notions de cybersécurité pour travailler dans ce métier..."
+  ],
   ["Où peut travailler un webmaster en fonction de ses centres d'intérêt ?",
     "Oui, mais pas seulement !",
     "Oui, mais pas seulement !",
     "Oui, mais pas seulement !",
-    "Absolument !"],
-
+    "Absolument !"
+  ],
   ["Quel professionnel améliore l'expérience des utilisateurs en simplifiant la navigation en ligne ?",
-    "Le développeur va mettre en place les consignes de simplification, mais ne va pas les créer",
+    "Le développeur va mettre en place les consignes de simplification, mais ne va pas les créer.",
     "Non, ça n'a rien à voir avec la navigation en ligne.",
     "Eh bien, le concepteur multimédia crée les médias du site, il ne simplifie donc pas la navigation sur un site",
-    "Oui ! UX vient de User Experience (expérience utilisateur en français). Il améliore donc l'expérience utilisateur en faisant des recherches pour simplifier la navigation"],
-
+    'Oui ! UX vient de "User Experience" (expérience utilisateur en français). Il améliore donc l\'expérience utilisateur en faisant des recherches pour simplifier la navigation'
+  ],
   ["Quels domaines professionnels sont associés au métier d'UX designer ?",
     "Oui, tout à fait !",
     "C'est assez rare, mais si un réalisateur a besoin d'un site pourquoi pas. Mais est-ce le seul secteur ?",
     "Oui, mais est-ce le seul secteur ?",
-    "Oui, mais est-ce le seul secteur ?"],
-
-  ["Quel métier consiste à donner vie à des images dessinées sur papier ou tablette?",
-    "Alors non ! Le développeur peut créer des images et les animer (en SVG par exemple) mais pas sur papier ou tablette",
+    "Oui, mais est-ce le seul secteur ?"
+  ],
+  ["Quel métier consiste à donner vie à des images dessinées sur papier ou tablette ?",
+    "Alors non ! Le développeur peut créer des images et les animer (en SVG par exemple) mais pas sur papier ou tablette.",
     "Oui, c'est ça !",
     "Le crée des produits multimédias en mêlant sons, textes et images, en collaboration avec des graphistes, des auteurs, des développeurs et des webdesigners. Mais il ne crée pas d'animation en particulier.",
-    "Le Webmaster crée des sites web, mais ne donne pas vie a des images."]
-  // ["Combien de parcours de spécialisation sont disponibles en MMI ?", "AC", "AD", "AE", "AF"],
-  // ["Quels sont les parcours de spécialisation disponibles dans la formation MMI ?", "AG", "AH", "AI", "AJ"]
+    "Le Webmaster crée des sites web, mais ne donne pas vie à des images."
+  ]
 ];
 
 var question_courante;
