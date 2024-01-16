@@ -1,3 +1,9 @@
+<!-- session -->
+
+<?php include('../../php/auth/check_session.php'); ?>
+
+<!-- session -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,12 +16,6 @@
 </head>
 
 <body>
-
-  <!-- session -->
-
-  <?php include('../../php/auth/check_session.php'); ?>
-
-  <!-- session -->
 
   <!-- question -->
 
@@ -47,7 +47,7 @@
       </div>
 
       <button id="submitter" class="texte_reponse" onClick="clickReponse()">
-          Confirmer
+        Confirmer
       </button>
 
 
@@ -68,8 +68,8 @@
   <!-- js -->
 
   <script src="../js/main_quiz3.js"></script>
-  
-<!-- js -->
+
+  <!-- js -->
 
 
 </body>

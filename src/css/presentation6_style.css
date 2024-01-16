@@ -1,0 +1,88 @@
+h1 {
+    margin: 40px auto;
+}
+
+.sections {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.imgSection {
+    width: 100%;
+    height: 100%;
+}
+
+.txtSection {
+    position: absolute;
+    background-color: rgb(255, 255, 255, 0.9);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hiddenL {
+    height: 100%;
+    width: 70%;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s, transform 0.4s;
+}
+
+#hiddenR {
+    right: 0;
+    height: 100%;
+    width: 70%;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s, transform 0.4s;
+}
+
+#visibleL {
+    height: 100%;
+    width: 70%;
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+#visibleR {
+    right: 0;
+    height: 100%;
+    width: 70%;
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s, transform 0.5s;
+}
+@media screen and (max-width: 600px){
+    #visibleR{
+        width: 100%;
+    }
+    #visibleL{
+        width: 100%;
+    }
+    #hiddenR{
+        width: 100%;
+    }
+    #hiddrenL{
+        width: 100%;
+    }
+    .sections{
+        height: 200px;
+    }
+    p{
+        font-size: 10px;
+    }
+    li{
+        font-size: 10px;
+    }
+    h2{
+        margin: 5px;
+    }
+}

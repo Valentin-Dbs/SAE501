@@ -1,7 +1,14 @@
+<!-- session -->
+
+<?php include('../../php/auth/check_session.php'); ?>
+
+<!-- session -->
+
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire d'Inscription</title>
@@ -60,11 +67,6 @@
             <!-- Bouton de soumission -->
             <button type="submit" class="btn-connexion">Rentrer les informations</button>
         </form>
-        <div style="font-style: italic;">
-            <p>
-                Vous avez quitté la page ? Ne vous inquiétez pas ! En vous reconnectant vous reprendrez là où vous vous êtes arrêtés.
-            </p>
-        </div>
     </div>
 </body>
 

@@ -1,11 +1,19 @@
+<!-- session -->
+
+<?php include('../../php/auth/check_session.php'); ?>
+
+<!-- session -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap">
     <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../css/breadcrumb_style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <title>Site Parcousup</title>
 
@@ -13,15 +21,12 @@
 
 <body>
 
-    <!-- session -->
-
-    <?php include('../../php/auth/check_session.php'); ?>
-
-    <!-- session -->
-
     <div class="div-centre">
+
         <div>
+
             <div class="textInfo">
+
                 <h1>Le BUT Métiers du Multimédia et de l'Internet</h1>
 
                 <p>
@@ -103,39 +108,35 @@
             <br>
 
             <form action="../../php/navigation/update_progression.php" method="post">
+
                 <input type="hidden" name="next_page" value="présentation1.php">
+
                 <button type="submit" id="goTo1" class="bouton_next">Présentation précédente</button>
+
             </form>
+
             <form action="../../php/navigation/update_progression.php" method="post">
+
                 <input type="hidden" name="next_page" value="quiz1.php">
+
                 <button type="submit" id="goTo1" class="bouton_next" style="padding: 10px 100px 10px 100px">
                     Faire le quiz 1
                 </button>
+
             </form>
+            
         </div>
 
     </div>
 
+    <!-- js -->
+
+    <script src="../js/presentation2.js"></script>
+
+    <!-- js -->
+
 </body>
-<script>
-    function toggleText(text) {
-        var texteElement = document.getElementById(text);
-        var textesCaches = document.getElementsByClassName("texteCache");
-
-        if (texteElement.style.display === "none") {
-            for (let i = 0; i < textesCaches.length; i++) {
-                textesCaches[i].style.display = "none";
-            }
-            texteElement.style.display = "block";
-        } else {
-            texteElement.style.display = "none";
-        }
-    }
-</script>
-
-<!-- js -->
 
 
-<!-- js -->
 
 </html>

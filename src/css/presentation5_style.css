@@ -1,0 +1,55 @@
+#conteneurParcours {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.parcours {
+    width: 40%;
+}
+
+#crea {
+    margin-left: 5%;
+}
+
+#dev {
+    margin-right: 5%;
+}
+
+.cours {
+    margin: 15px 0 15px 0;
+    align-items: center;
+    /* height: auto; Remove this line */
+}
+
+.cours img {
+    height: 170px;
+}
+
+.imgCours {
+    max-height: 80%;
+    height: auto;
+    border-radius: 100%;
+}
+
+.txtCours {
+    flex: 1; /* Add this line */
+    display: block;
+    opacity: 0.2;
+    width: 90%;
+}
+p{
+    padding: 0;
+}
+@media screen and (max-width: 600px){
+#conteneurParcours {
+flex-direction: column;
+align-items: center;
+}
+p{
+    padding: 0;
+}
+.parcours{
+    width: 100%;
+}
+}

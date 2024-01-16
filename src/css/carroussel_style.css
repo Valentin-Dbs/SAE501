@@ -1,0 +1,9 @@
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}

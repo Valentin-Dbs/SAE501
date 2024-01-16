@@ -1,3 +1,9 @@
+<!-- session -->
+
+<?php include('../../php/auth/check_session.php'); ?>
+
+<!-- session -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,13 +16,6 @@
 </head>
 
 <body>
-
-
-  <!-- session -->
-
-  <?php include('../../php/auth/check_session.php'); ?>
-
-  <!-- session -->
 
   <!-- question -->
 
@@ -48,7 +47,7 @@
       </div>
 
       <button id="submitter" class="texte_reponse" onClick="clickReponse()">
-          Confirmer
+        Confirmer
       </button>
 
 
@@ -59,8 +58,6 @@
         Question suivante
       </button>
     </div>
-
-
 
   </div>
 

@@ -1,3 +1,9 @@
+<!-- session -->
+
+<?php include('../../php/auth/check_session.php'); ?>
+
+<!-- session -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,41 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap">
     <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../css/presentation4_style.css">
+    <link rel="stylesheet" type="text/css" href="../css/breadcrumb_style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <title>Site Parcousup</title>
-
-    <style>
-        
-
-        .element {
-            width: 45%;
-            position: relative;
-        }
-
-        .img {
-            width: 50%;
-            border-radius: 100%;
-        }
-
-        .texteCache {
-            height: 100%;
-            display: none;
-            align-items: center;
-            top: 0;
-            left: 0;
-            position: absolute;
-            background-color: rgb(255, 255, 255, 0.9);
-        }
-    </style>
 </head>
 
 <body>
-
-<!-- session -->
-
-<?php include('../../php/auth/check_session.php'); ?>
-
-<!-- session -->
 
     <div class="div-centre">
         <div>
@@ -104,31 +82,11 @@
 
     </div>
 
+    <!-- js -->
 
-<!-- js -->
+    <script src="../js/presentation4.js"></script>
 
-
-<!-- js -->
-
-
-    <script>
-
-        document.getElementById('ressources').addEventListener('mouseover', function () {
-            document.getElementById('textRessources').style.display = 'flex';
-        });
-
-        document.getElementById('ressources').addEventListener('mouseout', function () {
-            document.getElementById('textRessources').style.display = 'none';
-        });
-
-        document.getElementById('sae').addEventListener('mouseover', function () {
-            document.getElementById('textSae').style.display = 'flex';
-        });
-
-        document.getElementById('sae').addEventListener('mouseout', function () {
-            document.getElementById('textSae').style.display = 'none';
-        });
-    </script>
+    <!-- js -->
 
 </body>
 

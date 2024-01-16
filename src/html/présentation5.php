@@ -1,3 +1,9 @@
+<!-- session -->
+
+<?php include('../../php/auth/check_session.php'); ?>
+
+<!-- session -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,78 +12,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap">
     <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../css/breadcrumb_style.css">
+    <link rel="stylesheet" type="text/css" href="../css/presentation_style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>Site Parcousup</title>
-
-
-    <style>
-    #conteneurParcours {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .parcours {
-        width: 40%;
-    }
-
-    #crea {
-        margin-left: 5%;
-    }
-
-    #dev {
-        margin-right: 5%;
-    }
-
-    .cours {
-        margin: 15px 0 15px 0;
-        align-items: center;
-        /* height: auto; Remove this line */
-    }
-
-    .cours img {
-        height: 170px;
-    }
-
-    .imgCours {
-        max-height: 80%;
-        height: auto;
-        border-radius: 100%;
-    }
-
-    .txtCours {
-        flex: 1; /* Add this line */
-        display: block;
-        opacity: 0.2;
-        width: 90%;
-    }
-    p{
-        padding: 0;
-    }
-@media screen and (max-width: 600px){
-    #conteneurParcours {
-    flex-direction: column;
-    align-items: center;
-    }
-    p{
-        padding: 0;
-    }
-    .parcours{
-        width: 100%;
-    }
-}
-</style>
 </head>
 
 <body>
-
-    <!-- session -->
-
-    <?php include('../../php/auth/check_session.php'); ?>
-
-    <!-- session -->
 
     <div class="div-centre">
         <div style="width: 100%">
@@ -193,26 +136,9 @@
 
     <!-- js -->
 
+    <script src="../js/presentation5.js"></script>
+
     <!-- js -->
-
-    <script>
-        var tousCours = document.querySelectorAll(".cours")
-
-        tousCours.forEach(function (cours) {
-            cours.addEventListener('mouseover', function () {
-                var txtAssocie = cours.querySelector('.txtCours')
-                txtAssocie.style.opacity = "1"
-            });
-        });
-
-        tousCours.forEach(function (cours) {
-            cours.addEventListener('mouseout', function () {
-                var txtAssocie = cours.querySelector('.txtCours')
-                txtAssocie.style.opacity = "0.2"
-            });
-        });
-
-    </script>
 
 </body>
 

@@ -1,0 +1,19 @@
+.element {
+    width: 45%;
+    position: relative;
+}
+
+.img {
+    width: 50%;
+    border-radius: 100%;
+}
+
+.texteCache {
+    height: 100%;
+    display: none;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgb(255, 255, 255, 0.9);
+}

@@ -2,12 +2,13 @@
 <html lang="fr">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Page Admin</title>
-    <!-- Incluez les liens vers les fichiers CSS et JavaScript nécessaires ici -->
+    
 </head>
 
 <body>
@@ -30,11 +31,11 @@
 
 
     <!-- Résultats de la recherche affichés ici -->
+
     <div id="resultats">
-        <!-- Les résultats de la recherche seront affichés ici -->
+
     </div>
 
-    <!-- Incluez les fichiers JavaScript ici si nécessaire -->
 </body>
 
 </html>

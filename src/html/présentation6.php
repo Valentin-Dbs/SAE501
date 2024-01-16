@@ -1,9 +1,9 @@
 
-    <!-- session -->
+<!-- session -->
 
-    <?php include('../../php/auth/check_session.php'); ?>
+<?php include('../../php/auth/check_session.php'); ?>
 
-    <!-- session -->
+<!-- session -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,196 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap">
     <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../css/breadcrumb_style.css">
+    <link rel="stylesheet" type="text/css" href="../css/presentation6_style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <title>Site Parcousup</title>
-
-    <style>
-        h1 {
-            margin: 40px auto;
-        }
-
-        .sections {
-            position: relative;
-            display: flex;
-            align-items: center;
-            margin-bottom: 30px;
-            margin-left: auto;
-            margin-right: auto;
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        }
-
-        .imgSection {
-            width: 100%;
-            height: 100%;
-        }
-
-        .txtSection {
-            position: absolute;
-            background-color: rgb(255, 255, 255, 0.9);
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        #hiddenL {
-            height: 100%;
-            width: 70%;
-            opacity: 0;
-            transform: translateX(100%);
-            transition: opacity 0.5s, transform 0.4s;
-        }
-
-        #hiddenR {
-            right: 0;
-            height: 100%;
-            width: 70%;
-            opacity: 0;
-            transform: translateX(-100%);
-            transition: opacity 0.5s, transform 0.4s;
-        }
-
-        #visibleL {
-            height: 100%;
-            width: 70%;
-            opacity: 1;
-            transform: translateX(0);
-            transition: opacity 0.5s, transform 0.5s;
-        }
-
-        #visibleR {
-            right: 0;
-            height: 100%;
-            width: 70%;
-            opacity: 1;
-            transform: translateX(0);
-            transition: opacity 0.5s, transform 0.5s;
-        }
-        @media screen and (max-width: 600px){
-            #visibleR{
-                width: 100%;
-            }
-            #visibleL{
-                width: 100%;
-            }
-            #hiddenR{
-                width: 100%;
-            }
-            #hiddrenL{
-                width: 100%;
-            }
-            .sections{
-                height: 200px;
-            }
-            p{
-                font-size: 10px;
-            }
-            li{
-                font-size: 10px;
-            }
-            h2{
-                margin: 5px;
-            }
-}
-    </style>
-
-    <!--css--> 
-
-<style>
-
-body {
-    margin-bottom: 60px; /* La hauteur de votre breadcrumb-container */
-}
-
-.breadcrumb-container {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px; /* un peu de padding pour l'espacement */
-    z-index: 1000; /* s'assurer qu'il reste au-dessus des autres éléments */
-}
-
-.breadcrumb li.active a {
-  color: #fff; /* Couleur du texte pour l'élément actif */
-  background-color: #007bff; /* Couleur de fond pour l'élément actif */
-  border-color: #0056b3; /* Couleur de bordure pour l'élément actif */
-  cursor: default; /* Change le curseur pour indiquer que l'élément n'est pas cliquable */
-}
-
-.breadcrumb li.active a:hover {
-  background-color: #0056b3; /* Couleur de fond au survol pour l'élément actif */
-  border-color: #003580; /* Couleur de bordure au survol pour l'élément actif */
-}
-
-.breadcrumb { 
-  list-style: none; 
-  overflow: hidden; 
-  font: 18px Helvetica, Arial, Sans-Serif;
-  margin: 40px;
-  padding: 0;
-}
-.breadcrumb li { 
-  float: left; 
-}
-.breadcrumb li a {
-  color: white;
-  text-decoration: none; 
-  padding: 10px 0 10px 55px;
-  background: brown; /* fallback color */
-  background: hsla(34,85%,35%,1); 
-  position: relative; 
-  display: block;
-  float: left;
-}
-.breadcrumb li a:after { 
-  content: " "; 
-  display: block; 
-  width: 0; 
-  height: 0;
-  border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
-  border-bottom: 50px solid transparent;
-  border-left: 30px solid hsla(34,85%,35%,1);
-  position: absolute;
-  top: 50%;
-  margin-top: -50px; 
-  left: 100%;
-  z-index: 2; 
-}	
-.breadcrumb li a:before { 
-  content: " "; 
-  display: block; 
-  width: 0; 
-  height: 0;
-  border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
-  border-bottom: 50px solid transparent;
-  border-left: 30px solid white;
-  position: absolute;
-  top: 50%;
-  margin-top: -50px; 
-  margin-left: 1px;
-  left: 100%;
-  z-index: 1; 
-}	
-.breadcrumb li:first-child a {
-  padding-left: 10px;
-}
-.breadcrumb li:nth-child(2) a       { background:        hsla(34,85%,45%,1); }
-.breadcrumb li:nth-child(2) a:after { border-left-color: hsla(34,85%,45%,1); }
-.breadcrumb li:nth-child(3) a       { background:        hsla(34,85%,55%,1); }
-.breadcrumb li:nth-child(3) a:after { border-left-color: hsla(34,85%,55%,1); }
-.breadcrumb li:nth-child(4) a       { background:        hsla(34,85%,65%,1); }
-.breadcrumb li:nth-child(4) a:after { border-left-color: hsla(34,85%,65%,1); }
-.breadcrumb li:nth-child(5) a       { background:        hsla(34,85%,75%,1); }
-.breadcrumb li:nth-child(5) a:after { border-left-color: hsla(34,85%,75%,1); }
-.breadcrumb li:last-child a { border-left-color: hsla(34,85%,75%,1); 
-}
-.breadcrumb li:last-child a a:after { border-left-color: hsla(34,85%,75%,1); }
-.breadcrumb li:last-child a:after { border: 0; }
-.breadcrumb li a:hover { background: hsla(34,85%,25%,1); }
-.breadcrumb li a:hover:after { border-left-color: hsla(34,85%,25%,1) !important; }
-</style>
 </head>
 
 <body>
@@ -374,33 +188,9 @@ body {
 
     <!-- js -->
 
+    <script src="../js/presentation6.js"></script>
+
     <!-- js -->
-
-    <script>
-        var allSections = document.querySelectorAll(".sections");
-        var allTxts = document.querySelectorAll(".txtSection");
-
-        for (let i = 0; i < allSections.length; i++) {
-            var section = allSections[i];
-            var txt = allTxts[i];
-
-            section.addEventListener('mouseover', showTxt(txt, section.id));
-            section.addEventListener('mouseout', hideTxt(txt, section.id));
-        }
-
-        function showTxt(txt, id) {
-            return function () {
-                txt.id = id % 2 == 0 ? "visibleL" : "visibleR";
-            };
-        }
-
-        function hideTxt(txt, id) {
-            return function () {
-                txt.id = id % 2 == 0 ? "hiddenL" : "hiddenR";
-            };
-        }
-
-    </script>
 
 </body>
 
