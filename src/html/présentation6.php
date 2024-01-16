@@ -252,7 +252,7 @@
             <br>
             <form action="../../php/navigation/update_progression.php" method="post">
                 <input type="hidden" name="next_page" value="certificat.php">
-                <button type="submit" id="goTo1" class="bouton_next" style="padding: 10px 100px 10px 100px">
+                <button type="submit" id="goTo1" class="bouton_next ourbtn" style="padding: 10px 100px 10px 100px">
                     Accéder au certificat
                 </button>
             </form>
