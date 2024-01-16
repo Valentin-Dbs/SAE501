@@ -102,15 +102,16 @@
             </div>
             <br>
 
-            <form action="../../php/navigation/update_progression.php" method="post">
-                <input type="hidden" name="next_page" value="présentation1.php">
-                <button type="submit" id="goTo1" class="bouton_next ourbtn">Présentation précédente</button>
-            </form>
+            
             <form action="../../php/navigation/update_progression.php" method="post">
                 <input type="hidden" name="next_page" value="quiz1.php">
                 <button type="submit" id="goTo1" class="bouton_next ourbtn" style="padding: 10px 100px 10px 100px">
-                    Faire le quiz 1
+                    Faire le quiz
                 </button>
+            </form>
+            <form action="../../php/navigation/update_progression.php" method="post">
+                <input type="hidden" name="next_page" value="présentation1.php">
+                <button type="submit" id="goTo1" class="bouton_next ourbtn">Présentation précédente</button>
             </form>
         </div>
 
