@@ -1,81 +1,36 @@
 <?php
 
+// Inclusion du fichier de vérification de session
+include 'check_session.php';
+
 // Inclusion du fichier de connexion à la base de données
 include '../database/database_connection.php';
 
 // Récupération des données du formulaire
-$nom = $_POST['nom'];
-$prenom = $_POST['prenom'];
-$numero_etudiant = isset($_POST['numero_etudiant']) ? $_POST['numero_etudiant'] : null;
+$nom = $_POST['nom'] ?? null;
+$prenom = $_POST['prenom'] ?? null;
+$email = $_POST['email'] ?? null; // Ajout du champ email
+$numero_etudiant = $_POST['numero_etudiant'] ?? null;
 
-// Vérification si l'utilisateur existe
-$sqlCheckUser = "SELECT progression, role FROM users WHERE nom = ?";
-$stmtCheckUser = $conn->prepare($sqlCheckUser);
-$stmtCheckUser->bind_param("s", $nom);
-$stmtCheckUser->execute();
-$stmtCheckUser->store_result();
+// Vérification si des données ont été soumises
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Mise à jour des informations de l'utilisateur
+    $sqlUpdateUser = "UPDATE users SET nom = ?, prenom = ?, email = ?, numero_etudiant = ? WHERE id = ?";
+    $stmtUpdateUser = $conn->prepare($sqlUpdateUser);
+    $stmtUpdateUser->bind_param("ssssi", $nom, $prenom, $email, $numero_etudiant, $_SESSION['user_id']);
 
-// Si l'utilisateur existe, récupération de la progression et redirection de l'utilisateur vers la bonne page
-if ($stmtCheckUser->num_rows > 0) {
-    $stmtCheckUser->bind_result($progression, $role); // Now binding two variables
-    $stmtCheckUser->fetch();
+    if ($stmtUpdateUser->execute()) {
 
-    session_start();
-    $_SESSION['nom'] = $nom;
-    $_SESSION['prenom'] = $prenom;
-    $_SESSION['progression'] = $progression;
-
-    // Vérifier si l'utilisateur est un administrateur
-    if ($role === 'admin') {
-        header('Location: ../../src/html/page_admin.php');
+        
+   // Redirection vers la page correspondant à la progression de l'utilisateur
+        $redirectPage = $pageProgression[$_SESSION['progression']];
+        header('Location: deconnexion.php' . $redirectPage);
         exit;
     } else {
-        // Définir la correspondance entre les pages et les indices de progression
-        $pageProgression = [
-            'présentation1.php',
-            'présentation2.php',
-            'quiz1.php',
-            'présentation3.php',
-            'quiz2.php',
-            'présentation4.php',
-            'présentation5.php',
-            'quiz3.php',
-            'présentation6.php',
-            'certificat.php'
-        ];
-
-        $Page = $pageProgression[$progression];
-
-        header('Location: ../../src/html/' . $Page . '');
-        exit;
-    }
-} else {
-
-    // Sinon insertion d'utilisateur
-    $sqlInsertUser = "INSERT INTO users (nom, prenom, numero_etudiant, progression) VALUES (?, ?, ?, 0)";
-    $stmtInsertUser = $conn->prepare($sqlInsertUser);
-
-    // Association des valeurs aux paramètres de la requête
-    $stmtInsertUser->bind_param("sss", $nom, $prenom, $numero_etudiant);
-
-    // Exécution de la requête et vérification du résultat
-    if ($stmtInsertUser->execute()) {
-
-        // Création d'une variable de session pour l'authentification
-        session_start();
-        $_SESSION['nom'] = $nom;
-        $_SESSION['prenom'] = $prenom;
-        $_SESSION['progression'] = 0; // 0 correspond à la première page (présentation1.php)
-
-        // Redirection de l'utilisateur vers la première page de la présentation
-        header('Location: ../../src/html/présentation1.php'); 
-        exit;
-    } else {
-        echo "Erreur lors de l'insertion : " . $stmtInsertUser->error;
+        echo "Erreur lors de la mise à jour : " . $stmtUpdateUser->error;
     }
 }
 
-// Fermeture de la connexion à la base de données
 $conn->close();
 
 ?>

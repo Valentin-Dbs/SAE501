@@ -1,3 +1,10 @@
+
+    <!-- session -->
+
+    <?php include('../../php/auth/check_session.php'); ?>
+
+    <!-- session -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,16 +79,133 @@
             transform: translateX(0);
             transition: opacity 0.5s, transform 0.5s;
         }
+        @media screen and (max-width: 600px){
+            #visibleR{
+                width: 100%;
+            }
+            #visibleL{
+                width: 100%;
+            }
+            #hiddenR{
+                width: 100%;
+            }
+            #hiddrenL{
+                width: 100%;
+            }
+            .sections{
+                height: 200px;
+            }
+            p{
+                font-size: 10px;
+            }
+            li{
+                font-size: 10px;
+            }
+            h2{
+                margin: 5px;
+            }
+}
     </style>
+
+    <!--css--> 
+
+<style>
+
+body {
+    margin-bottom: 60px; /* La hauteur de votre breadcrumb-container */
+}
+
+.breadcrumb-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px; /* un peu de padding pour l'espacement */
+    z-index: 1000; /* s'assurer qu'il reste au-dessus des autres éléments */
+}
+
+.breadcrumb li.active a {
+  color: #fff; /* Couleur du texte pour l'élément actif */
+  background-color: #007bff; /* Couleur de fond pour l'élément actif */
+  border-color: #0056b3; /* Couleur de bordure pour l'élément actif */
+  cursor: default; /* Change le curseur pour indiquer que l'élément n'est pas cliquable */
+}
+
+.breadcrumb li.active a:hover {
+  background-color: #0056b3; /* Couleur de fond au survol pour l'élément actif */
+  border-color: #003580; /* Couleur de bordure au survol pour l'élément actif */
+}
+
+.breadcrumb { 
+  list-style: none; 
+  overflow: hidden; 
+  font: 18px Helvetica, Arial, Sans-Serif;
+  margin: 40px;
+  padding: 0;
+}
+.breadcrumb li { 
+  float: left; 
+}
+.breadcrumb li a {
+  color: white;
+  text-decoration: none; 
+  padding: 10px 0 10px 55px;
+  background: brown; /* fallback color */
+  background: hsla(34,85%,35%,1); 
+  position: relative; 
+  display: block;
+  float: left;
+}
+.breadcrumb li a:after { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid hsla(34,85%,35%,1);
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  left: 100%;
+  z-index: 2; 
+}	
+.breadcrumb li a:before { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1; 
+}	
+.breadcrumb li:first-child a {
+  padding-left: 10px;
+}
+.breadcrumb li:nth-child(2) a       { background:        hsla(34,85%,45%,1); }
+.breadcrumb li:nth-child(2) a:after { border-left-color: hsla(34,85%,45%,1); }
+.breadcrumb li:nth-child(3) a       { background:        hsla(34,85%,55%,1); }
+.breadcrumb li:nth-child(3) a:after { border-left-color: hsla(34,85%,55%,1); }
+.breadcrumb li:nth-child(4) a       { background:        hsla(34,85%,65%,1); }
+.breadcrumb li:nth-child(4) a:after { border-left-color: hsla(34,85%,65%,1); }
+.breadcrumb li:nth-child(5) a       { background:        hsla(34,85%,75%,1); }
+.breadcrumb li:nth-child(5) a:after { border-left-color: hsla(34,85%,75%,1); }
+.breadcrumb li:last-child a { border-left-color: hsla(34,85%,75%,1); 
+}
+.breadcrumb li:last-child a a:after { border-left-color: hsla(34,85%,75%,1); }
+.breadcrumb li:last-child a:after { border: 0; }
+.breadcrumb li a:hover { background: hsla(34,85%,25%,1); }
+.breadcrumb li a:hover:after { border-left-color: hsla(34,85%,25%,1) !important; }
+</style>
 </head>
 
 <body>
-
-    <!-- session -->
-
-    <?php include('../../php/auth/check_session.php'); ?>
-
-    <!-- session -->
 
     <div class="div-centre">
         <div style="width: 100%">
@@ -162,26 +286,24 @@
                         <p>
                             Le BDE Athena, c'est l'association étudiante dynamique et engagée de l'IUT de Béziers. Notre
                             mission principale est de créer une expérience étudiante inoubliable pour tous les étudiants
-                            de notre établissement. Nous sommes fiers de représenter la voix des étudiants et de
-                            travailler sans relâche pour améliorer leur vie universitaire.
+                            de notre établissement.
                             Le BDE a pour objectifs de :
-                            </p>
-                            <ul>
-                                <li>
-                                    Fédérer la communauté étudiante : Nous organisons une variété d'événements sociaux,
-                                    culturels et sportifs tout au long de l'année pour favoriser les rencontres et les
-                                    échanges entre les étudiants
-                                </li>
-                                <li>
-                                    Soutenir la réussite académique : Nous offrons des ressources et des initiatives pour
-                                    aider nos camarades à exceller dans leurs études.
-                                </li>
-                                <li>
-                                    Promouvoir l'engagement citoyen : Nous encourageons nos membres à s'impliquer dans des
-                                    projets bénévoles et des actions caritatives pour contribuer positivement à notre
-                                    communauté locale.
-                                </li>
-                            </ul>
+                        </p>
+                        <ul>
+                            <li>
+                                Fédérer la communauté étudiante en organisant une variété d'événements sociaux,
+                                culturels et sportifs.
+                            </li>
+                            <li>
+                                Soutenir la réussite académique en offrant des ressources et des initiatives pour aider
+                                nos camarades à exceller dans leurs études.
+                            </li>
+                            <li>
+                                Promouvoir l'engagement citoyen en encourageant nos membres à s'impliquer dans des
+                                projets et des actions caritatives pour contribuer à notre
+                                communauté locale.
+                            </li>
+                        </ul>
 
                     </div>
                     <img src="../img/ae.png" alt="couleur" class="imgSection">
@@ -206,20 +328,13 @@
                     <div class="txtSection" id="hiddenL">
                         <h2>Fablab</h2>
                         <p>
-                            Un Fablab est un espace collaboratif destiné au partage de technologies, de compétences, et
-                            à l’apprentissage de celles-ci par la pratique. C'est un lieu de rencontre convivial,
-                            d’échanges, de transmission de savoir-faire, s’adressant à tout public n’ayant pas
-                            nécessairement de formation technique.
+                            Un Fablab est un lieu convivial de partage et d'apprentissage pratique des technologies,
+                            ouvert à tous, quels que soient le niveau de formation. On y échange des avis, des conseils,
+                            et des savoir-faire, tout en organisant des rencontres entre différents profils, des
+                            ateliers, des conférences et des sessions de crowdfunding. C'est un espace où se croisent
+                            des personnes de tous horizons, partageant une curiosité commune et une passion pour
+                            l'innovation.
                         </p>
-                        <p>
-                            On vient y chercher des avis, des conseils, de l'aide, des savoir-faire. On peut aussi y
-                            rencontrer d'autres professionnels, parler crowd-founding, organiser des ateliers, des
-                            conférences, faire profiter les autres de ses propres connaissances. On y croise des
-                            enfants, des ingénieurs, des étudiants, des designers, des retraités, des pros et des moins
-                            pros, et même des génies ingénus. Que des gens curieux en somme, des passionnés, comme vous
-                            peut-être.
-                        </p>
-
                     </div>
                     <img src="../img/fablab.jpg" alt="couleur" class="imgSection">
                 </div>
@@ -246,9 +361,11 @@
             </div>
             <br>
             <form action="../../php/navigation/update_progression.php" method="post">
-                <input type="hidden" name="next_page" value="certificat.php">
+                <input type="hidden" name="next_page" value="enregistrement.php">
                 <button type="submit" id="goTo1" class="bouton_next" style="padding: 10px 100px 10px 100px">
-                    Accéder au certificat 
+
+                    Une dernière étape 
+
                 </button>
             </form>
         </div>
@@ -284,6 +401,7 @@
         }
 
     </script>
+
 </body>
 
 </html>

@@ -48,10 +48,17 @@
                 <input type="text" class="form-control" id="numero_etudiant" name="numero_etudiant">
             </div>
 
+            <!-- Champ Numéro Parcoursup -->
+            <div class="form-group">
+
+                <label for="email">Email :</label>
+                <input type="text" class="form-control" id="email" name="email">
+            </div>
+
             <div style="font-style: italic; font-size: 12px;">* Champ obligatoire</div>
 
             <!-- Bouton de soumission -->
-            <button type="submit" class="btn-connexion">Se connecter</button>
+            <button type="submit" class="btn-connexion">Rentrer les informations</button>
         </form>
         <div style="font-style: italic;">
             <p>

@@ -11,6 +11,7 @@
 }
 
 body {
+  overflow-x: hidden; /* Empêche le défilement vertical */
   margin: 0;
   /* Police */  
   /* font-family: 'Josefin Sans', sans-serif; */
@@ -245,12 +246,43 @@ button:hover{
   margin: 10px 0;
 }
 
+.ressourcesSae {
+  display: flex;
+  height: max-content;
+  justify-content: space-around;
+}
+
 @media screen and (max-width: 600px){
   .div-centre{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.95);
   }
+  .ressourcesSae {
+    flex-direction: column;
+    align-items: center;
+  }
+  .element{
+    height: 100%;
+    width: 100%!important;
+  }
   .texte_reponse{
     font-size: 20px;
   }
+  .connexion{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+

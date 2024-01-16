@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap">
     <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>Site Parcousup</title>
 
 
@@ -31,7 +33,6 @@
 
     .cours {
         margin: 15px 0 15px 0;
-        display: flex;
         align-items: center;
         /* height: auto; Remove this line */
     }
@@ -52,6 +53,21 @@
         opacity: 0.2;
         width: 90%;
     }
+    p{
+        padding: 0;
+    }
+@media screen and (max-width: 600px){
+    #conteneurParcours {
+    flex-direction: column;
+    align-items: center;
+    }
+    p{
+        padding: 0;
+    }
+    .parcours{
+        width: 100%;
+    }
+}
 </style>
 </head>
 
@@ -116,6 +132,7 @@
                     <div class="parcours" id="dev">
                         <h2>Parcours Développement Web</h2>
                         <div class="cours" id="jeu">
+                            <img src="..\img\manette.png" alt="Manette" class="imgCours">
                             <div class="txtCours" id="txtJeu">
                                 <h5>Développement de jeux vidéo</h5>
                                 <p>
@@ -123,9 +140,10 @@
                                     des jeux vidéo web ou application.
                                 </p>
                             </div>
-                            <img src="..\img\manette.png" alt="Manette" class="imgCours">
+                            
                         </div>
                         <div class="cours" id="site">
+                            <img src="..\img\e-shop.png" alt="Panier de courses" class="imgCours">
                             <div class="txtCours" id="txtSite">
                                 <h5>Développement de site web et de e-boutique</h5>
                                 <p>
@@ -134,9 +152,10 @@
                                     logiciels tels que Prestashop.
                                 </p>
                             </div>
-                            <img src="..\img\e-shop.png" alt="Panier de courses" class="imgCours">
+                            
                         </div>
                         <div class="cours" id="back">
+                            <img src="..\img\bdd.png" alt="Schema UML d'une base de donnée" class="imgCours">
                             <div class="txtCours" id="txtBack">
                                 <h5>Développement Back</h5>
                                 <p>
@@ -144,9 +163,9 @@
                                     requêtes qui se font derrière l’interface d’un site, jeu, application ...
                                 </p>
                             </div>
-                            <img src="..\img\bdd.png" alt="Schema UML d'une base de donnée" class="imgCours">
                         </div>
                         <div class="cours" id="vs">
+                            <img src="..\img\vs code.png" alt="Logo Visual Studio Code" class="imgCours">
                             <div class="txtCours" id="txtVs">
                                 <h5>Langages de progamations</h5>
                                 <p>
@@ -154,14 +173,12 @@
                                     des sites internet, des application, des jeu et autre de A à Z
                                 </p>
                             </div>
-                            <img src="..\img\vs code.png" alt="Logo Visual Studio Code" class="imgCours">
+                            
                         </div>
 
 
                     </div>
                 </div>
-
-
             </div>
             <br>
             <form action="../../php/navigation/update_progression.php" method="post">

@@ -36,6 +36,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -48,6 +49,13 @@
         <item itemvalue="PHP Script.présentation1.php" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-php-predefined-ba97393d7c68-b4dcf6bb9de9-com.jetbrains.php.sharedIndexes-PS-233.13135.108" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -63,6 +71,8 @@
       <workItem from="1700063352704" duration="208000" />
       <workItem from="1700569992211" duration="2000" />
       <workItem from="1701189093863" duration="1000000" />
+      <workItem from="1701516702735" duration="1195000" />
+      <workItem from="1705397241831" duration="840000" />
     </task>
     <servers />
   </component>
