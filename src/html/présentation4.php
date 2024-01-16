@@ -10,13 +10,10 @@
     <title>Site Parcousup</title>
 
     <style>
-        .ressourcesSae {
-            display: flex;
-            justify-content: space-around;
-        }
+        
 
         .element {
-            width: 30%;
+            width: 45%;
             position: relative;
         }
 
@@ -32,7 +29,7 @@
             top: 0;
             left: 0;
             position: absolute;
-            background-color: rgb(255, 255, 255, 0.5);
+            background-color: rgb(255, 255, 255, 0.9);
         }
     </style>
 </head>
@@ -69,6 +66,7 @@
                     </div>
 
                 </div>
+                <p style="display: flex;justify-content: center; margin-bottom: 50px"><i>Survolez les images pour en apprendre plus</i></p>
 
 
 
