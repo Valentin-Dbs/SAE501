@@ -1,7 +1,7 @@
 <?php
 
 // Inclusion du fichier de connexion à la base de données
-include __DIR__ . '/../database/database_connection.php';
+include '../database/database_connection.php';
 
 // Démarrage de la session
 session_start();

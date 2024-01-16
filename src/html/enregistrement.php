@@ -51,8 +51,8 @@
             <!-- Champ Numéro Parcoursup -->
             <div class="form-group">
 
-                <label for="mail">Mail :</label>
-                <input type="text" class="form-control" id="numero_mail" name="numero_mail">
+                <label for="email">Email :</label>
+                <input type="text" class="form-control" id="email" name="email">
             </div>
 
             <div style="font-style: italic; font-size: 12px;">* Champ obligatoire</div>

@@ -1,10 +1,10 @@
 <?php
 
 // Inclusion du fichier de vérification de session
-include __DIR__ .'check_session.php';
+include 'check_session.php';
 
 // Inclusion du fichier de connexion à la base de données
-include __DIR__ .'../database/database_connection.php';
+include '../database/database_connection.php';
 
 // Récupération des données du formulaire
 $nom = $_POST['nom'] ?? null;
@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         
    // Redirection vers la page correspondant à la progression de l'utilisateur
         $redirectPage = $pageProgression[$_SESSION['progression']];
-        header('Location: ../../src/html/' . $redirectPage);
+        header('Location: deconnexion.php' . $redirectPage);
         exit;
     } else {
         echo "Erreur lors de la mise à jour : " . $stmtUpdateUser->error;

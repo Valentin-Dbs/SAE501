@@ -1,6 +1,6 @@
 <?php
 // Inclusion du fichier de connexion à la base de données
-include __DIR__ .'../database/database_connection.php';
+include '../database/database_connection.php';
 
 // Création d'un token unique pour l'utilisateur
 $token = bin2hex(random_bytes(16));

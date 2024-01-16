@@ -1,7 +1,7 @@
 <?php
 
 // Inclusion du fichier de connexion à la base de données
-include __DIR__ .'database_connection.php';
+include 'database_connection.php';
 
 // Création de la base de données si elle n'existe pas déjà
 $sql = "CREATE DATABASE IF NOT EXISTS $database";
