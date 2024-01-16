@@ -1,10 +1,12 @@
 <?php
 
 // Démarrage de la session
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 
 // Inclusion du fichier de connexion à la base de données
-include '../database/database_connection.php';
+include __DIR__ . '/../database/database_connection.php';
 
 // Définir la correspondance entre les pages et les indices de progression
 $pageProgressionMap = [
@@ -17,64 +19,46 @@ $pageProgressionMap = [
     'présentation5.php' => 6,
     'quiz3.php' => 7,
     'présentation6.php' => 8,
-    'certificat.php' => 9,
+    'enregistrement.php' => 9,
 ];
 
 // Inclusion du fichier de vérification de connexion
-include '../auth/check_auth.php';
+include __DIR__ . '/../auth/check_auth.php';
 
-// Vérification si le formulaire a été soumis
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     // Récupération de la prochaine page depuis le formulaire
     $nextPage = $_POST['next_page'];
 
     // Mise à jour de la progression dans la base de données
-    $sqlUpdateProgression = "UPDATE users SET progression = ? WHERE nom = ?";
-    $stmtUpdateProgression = $conn->prepare($sqlUpdateProgression);
-    $stmtUpdateProgression->bind_param("is", $pageProgressionMap[$nextPage], $_SESSION['nom']);
-    $stmtUpdateProgression->execute();
+    if (isset($_SESSION['user_id'])) {
+        $sqlUpdateProgression = "UPDATE users SET progression = ? WHERE id = ?";
+        $stmtUpdateProgression = $conn->prepare($sqlUpdateProgression);
+        $progression = $pageProgressionMap[$nextPage];
+        $stmtUpdateProgression->bind_param("ii", $progression, $_SESSION['user_id']);
+        $stmtUpdateProgression->execute();
 
-    // Mise à jour de la progression dans la session
-    $_SESSION['progression'] = $pageProgressionMap[$nextPage];
-
-                // Ajoutez un message de débogage pour voir la progression actuelle
-                        // echo "Progression mise à jour : " . $_SESSION['progression'];
-
-                        // // Redirection JavaScript vers la prochaine page avec un délai de 2 secondes
-                        // echo "<script>
-                        //         setTimeout(function() {
-                        //             window.location.href = '../../src/html/$nextPage';
-                        //         }, 2000); // Délai en millisecondes
-                        //       </script>";
+        // Mise à jour de la progression dans la session
+        $_SESSION['progression'] = $progression;
+    }
 
     header('Location: ../../src/html/' . $nextPage);
     exit;
-
 } elseif ($_SERVER['REQUEST_METHOD'] === 'GET') {
-
-    // Si la requête est de type GET (retour à la page précédente)
+    // Gestion de la requête GET
+    // ... Code pour gérer le retour à la page précédente ...
     $currentPage = basename($_SERVER['PHP_SELF']);
-
+if (isset($_SESSION['user_id']) && isset($pageProgressionMap[$currentPage])) {
     // Mise à jour de la progression dans la session en fonction de la page précédente
     $_SESSION['progression'] = $pageProgressionMap[$currentPage];
+}
 
-                // Ajoutez un message de débogage pour voir la progression actuelle
-                        // echo "Progression mise à jour (Retour à la page précédente) : " . $_SESSION['progression'];
-
-                        // // Redirection JavaScript vers la prochaine page avec un délai de 2 secondes
-                        // echo "<script>
-                        //     setTimeout(function() {
-                        //         window.location.href = '../../src/html/$currentPage';
-                        //     }, 2000); // Délai en millisecondes
-                        //   </script>";
-
-    header('Location: ../../src/html/' . $currentPage);
+header('Location: ../../src/html/' . $currentPage);
+exit;
 } else {
-
     // Redirection vers la page d'accueil si la requête n'est ni POST ni GET
     header('Location: ../../index.html');
     exit;
-}
-
-?>
+    }
+    
+    ?>
