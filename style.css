@@ -192,9 +192,8 @@ td{
   font-size: 30px;
   border: none;
   padding: 10px;
-  cursor: pointer;
 }
-.ourbtn:hover{
+.ourbtn:hover, .bouton_next:hover{
   cursor: pointer;
   background-color: var(--darker-light-color-main);
 }
