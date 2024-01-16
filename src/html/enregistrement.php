@@ -24,14 +24,13 @@
     <div class="connexion">
         <div>
             <h3 style="text-align: center;">
-                Qui est là ?
+                Félicitation !!!
             </h3>
             <p>
-                Nous savons que vous êtes curieux de découvir cette formation, mais nous aussi nous sommes curieux de
-                savoir qui prendra le temps d'en savoir plus.
+                Vous avez réussi les questionnaires.
             </p>
             <p>
-                C'est pour cela que nous aimerions connaître votre nom, votre prénom et, si vous l'avez, votre numéro Parcoursup.
+                Afin d'enregistrer vos résultats, nous aimerions connaître votre nom, votre prénom et, si vous l'avez, votre numéro Parcoursup ainsi que votre adresse mail.
             </p>
         </div>
         <form action="../../php/auth/inscription.php" method="post">
@@ -65,7 +64,7 @@
             <div style="font-style: italic; font-size: 12px;">* Champ obligatoire</div>
 
             <!-- Bouton de soumission -->
-            <button type="submit" class="btn-connexion">Rentrer les informations</button>
+            <button type="submit" class="btn-connexion ourbtn">Se connecter</button>
         </form>
     </div>
 </body>

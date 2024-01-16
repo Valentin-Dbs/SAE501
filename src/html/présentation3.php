@@ -188,7 +188,7 @@
             <br>
             <form action="../../php/navigation/update_progression.php" method="post">
                 <input type="hidden" name="next_page" value="quiz2.php">
-                <button type="submit" id="goTo1" class="bouton_next" style="padding: 10px 100px 10px 100px">
+                <button type="submit" id="goTo1" class="bouton_next ourbtn" style="padding: 10px 100px 10px 100px">
                     Faire le quiz 2
                 </button>
             </form>

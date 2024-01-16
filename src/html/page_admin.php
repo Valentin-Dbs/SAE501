@@ -25,7 +25,7 @@
             <input type="text" id="prenom" name="prenom" class="form-control">
             <br>
 
-            <button type="submit" class="btn-connexion">Rechercher</button>
+            <button type="submit" class="btn-connexion ourbtn">Rechercher</button>
         </form>
     </div>
 
