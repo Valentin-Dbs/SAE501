@@ -44,7 +44,7 @@ const tabQuestions = [
     4
   ],
   [
-    "Où peut-on apprendre à utiliser des logiciels de construction de sites tels que WordPress ?",
+    "Dans quel domaine peut-on apprendre à utiliser des logiciels de construction de sites tels que WordPress ?",
     "Développement de jeux vidéo",
     "Développement de site web",
     "Développement back",
@@ -105,7 +105,7 @@ const tabExplications = [
     "Oui ! Avouez qu'elle était facile celle-là !"
   ],
   [
-    "Où peut-on apprendre à utiliser des logiciels de construction de sites tels que WordPress ?",
+    "Dans quel domaine peut-on apprendre à utiliser des logiciels de construction de sites tels que WordPress ?",
     "Non, en développement de jeux vidéo, nous apprenons principalement les langages de programmation.",
     "Oui, lors des cours en développement de site web, nous apprenons à utiliser les logiciels de construction de sites tels que WordPress (CMS)",
     "Non, le développement back se concentre sur l'apprentissage de la création de bases de données et de la mise en place de site, d'application et de jeux vidéo",
