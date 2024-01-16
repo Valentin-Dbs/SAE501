@@ -85,6 +85,15 @@
             #hiddrenL{
                 width: 100%;
             }
+            .sections{
+                height: 200px;
+            }
+            p{
+                font-size: 10px;
+            }
+            h2{
+                margin: 5px;
+            }
 }
     </style>
 </head>
