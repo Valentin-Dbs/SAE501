@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea8333ea-792f-4388-955b-0cacf44e2737" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/quiz/start_quiz.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/auth/check_auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/auth/check_auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/auth/check_session.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/auth/check_session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/auth/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/auth/inscription.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/database/init_database.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/database/init_database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/navigation/update_progression.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/navigation/update_progression.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/quiz/insert_quiz_response.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/quiz/insert_quiz_response.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/connexion.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/enregistrement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/présentation6.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/présentation6.php" afterDir="false" />
-    </list>
+    <list default="true" id="ea8333ea-792f-4388-955b-0cacf44e2737" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +30,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/wamp64/www/SAE501",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -85,7 +72,7 @@
       <workItem from="1700569992211" duration="2000" />
       <workItem from="1701189093863" duration="1000000" />
       <workItem from="1701516702735" duration="1195000" />
-      <workItem from="1705397241831" duration="28000" />
+      <workItem from="1705397241831" duration="840000" />
     </task>
     <servers />
   </component>
