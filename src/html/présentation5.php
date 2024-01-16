@@ -31,7 +31,6 @@
 
     .cours {
         margin: 15px 0 15px 0;
-        display: flex;
         align-items: center;
         /* height: auto; Remove this line */
     }
@@ -52,6 +51,18 @@
         opacity: 0.2;
         width: 90%;
     }
+@media screen and (max-width: 600px){
+    #conteneurParcours {
+    flex-direction: column;
+    align-items: center;
+    }
+    p{
+        padding: 0;
+    }
+    .parcours{
+        width: 100%;
+    }
+}
 </style>
 </head>
 
@@ -116,6 +127,7 @@
                     <div class="parcours" id="dev">
                         <h2>Parcours Développement Web</h2>
                         <div class="cours" id="jeu">
+                            <img src="..\img\manette.png" alt="Manette" class="imgCours">
                             <div class="txtCours" id="txtJeu">
                                 <h5>Développement de jeux vidéo</h5>
                                 <p>
@@ -123,9 +135,10 @@
                                     des jeux vidéo web ou application.
                                 </p>
                             </div>
-                            <img src="..\img\manette.png" alt="Manette" class="imgCours">
+                            
                         </div>
                         <div class="cours" id="site">
+                            <img src="..\img\e-shop.png" alt="Panier de courses" class="imgCours">
                             <div class="txtCours" id="txtSite">
                                 <h5>Développement de site web et de e-boutique</h5>
                                 <p>
@@ -134,9 +147,10 @@
                                     logiciels tels que Prestashop.
                                 </p>
                             </div>
-                            <img src="..\img\e-shop.png" alt="Panier de courses" class="imgCours">
+                            
                         </div>
                         <div class="cours" id="back">
+                            <img src="..\img\bdd.png" alt="Schema UML d'une base de donnée" class="imgCours">
                             <div class="txtCours" id="txtBack">
                                 <h5>Développement Back</h5>
                                 <p>
@@ -144,9 +158,9 @@
                                     requêtes qui se font derrière l’interface d’un site, jeu, application ...
                                 </p>
                             </div>
-                            <img src="..\img\bdd.png" alt="Schema UML d'une base de donnée" class="imgCours">
                         </div>
                         <div class="cours" id="vs">
+                            <img src="..\img\vs code.png" alt="Logo Visual Studio Code" class="imgCours">
                             <div class="txtCours" id="txtVs">
                                 <h5>Langages de progamations</h5>
                                 <p>
@@ -154,7 +168,7 @@
                                     des sites internet, des application, des jeu et autre de A à Z
                                 </p>
                             </div>
-                            <img src="..\img\vs code.png" alt="Logo Visual Studio Code" class="imgCours">
+                            
                         </div>
 
 

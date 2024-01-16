@@ -253,4 +253,9 @@ button:hover{
   .texte_reponse{
     font-size: 20px;
   }
+  .connexion{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+
+  }
 }
