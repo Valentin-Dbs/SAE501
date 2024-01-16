@@ -1,7 +1,7 @@
 var questionsCorrectes = 0;
 var questionNumber = 0;
 var listQuestionsValidees = [];
-var tabQuestions = [
+const tabQuestions = [
   [
     "Quelle est la durée d'un BUT ?",
     "1 an",
@@ -67,7 +67,7 @@ var tabQuestions = [
     4,
   ],
 ];
-var tabExplications = [
+const tabExplications = [
   [
     "Quelle est la durée d'un BUT ?",
     "C'est un peu court comme études, non ?",

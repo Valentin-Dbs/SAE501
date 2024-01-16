@@ -1,7 +1,7 @@
 var questionsCorrectes = 0;
 var questionNumber = 0;
 var listQuestionsValidees = [];
-var tabQuestions = [
+const tabQuestions = [
   [
     "Dans quel domaine peut-on apprendre à se servir d’un appareil photo ou d’une caméra ?",
     "Audiovisuel",
@@ -68,7 +68,7 @@ var tabQuestions = [
     3
   ]
 ];
-var tabExplications = [
+const tabExplications = [
   [
     "Dans quel domaine peut-on apprendre à se servir d’un appareil photo ou d’une caméra ?",
     "Oui, les cours d'Audiovisuel permettent la manipulation d'appareils photo et de caméra (mais pas que...)",

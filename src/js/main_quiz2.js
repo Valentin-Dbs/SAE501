@@ -1,7 +1,7 @@
 var questionsCorrectes = 0;
 var questionNumber = 0;
 var listQuestionsValidees = [];
-var tabQuestions = [
+const tabQuestions = [
   [
     "Qui a le plus de qualifications pour travailler en tant qu'infographiste ?",
     "Les virtuoses artistiques bien sûr !",
@@ -83,7 +83,7 @@ var tabQuestions = [
     2
   ]
 ];
-var tabExplications = [
+const tabExplications = [
   [
     "Qui a le plus de qualifications pour travailler en tant qu'infographiste ?",
     "Tout à fait ! Entre les trois propositions, ce sont les virtuoses artistiques qui devraient détenir le plus de qualifications en infographie. Bien sûr, cela ne veut pas dire que les rois du code et les maîtres de la communication sont exclus.",
