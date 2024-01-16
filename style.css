@@ -11,6 +11,7 @@
 }
 
 body {
+  overflow-x: hidden; /* Empêche le défilement vertical */
   margin: 0;
   /* Police */  
   /* font-family: 'Josefin Sans', sans-serif; */

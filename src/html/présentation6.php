@@ -91,6 +91,9 @@
             p{
                 font-size: 10px;
             }
+            li{
+                font-size: 10px;
+            }
             h2{
                 margin: 5px;
             }
