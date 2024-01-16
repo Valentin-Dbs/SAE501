@@ -1,3 +1,10 @@
+
+    <!-- session -->
+
+    <?php include('../../php/auth/check_session.php'); ?>
+
+    <!-- session -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -199,12 +206,6 @@ body {
 </head>
 
 <body>
-
-    <!-- session -->
-
-    <?php include('../../php/auth/check_session.php'); ?>
-
-    <!-- session -->
 
     <div class="div-centre">
         <div style="width: 100%">
