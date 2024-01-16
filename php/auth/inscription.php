@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         
    // Redirection vers la page correspondant à la progression de l'utilisateur
         $redirectPage = $pageProgression[$_SESSION['progression']];
-        header('Location: deconnexion.php' . $redirectPage);
+        header('Location: ../../src/html/confirmation.php' . $redirectPage);
         exit;
     } else {
         echo "Erreur lors de la mise à jour : " . $stmtUpdateUser->error;
