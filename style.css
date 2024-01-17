@@ -314,6 +314,14 @@ td{
   width: 100%;
 }
 
+.active{
+  display: flex!important;
+  justify-content: center;
+}
+.carousel-item-content {
+  width: 80%!important;
+}
+
 @media screen and (max-width: 762px){
     p{
       padding: 0;
