@@ -34,23 +34,24 @@
                 <h3>C’est quoi un IUT ?</h3>
 
                 <p>
-                    L’ IUT (Institut Universitaire de Technologie) est un établissement d'étude supérieur dans lequels
-                    on peut faire un BUT. Les formations qui y sont proposées ont, malheureusement, un nombre de place
-                    limité. Ce sont donc des formations selectives.
+                    L’ IUT (<strong>Institut Universitaire de Technologie</strong>) est un établissement d'étude supérieur dans lequels
+                    on peut faire un BUT. Les formations qui y sont proposées ont, malheureusement, <strong>un nombre de place
+                    limité</strong>. Ce sont donc des formations <strong>selectives</strong>.
                 </p>
                 <p>
-                    Ces formations y sont aussi plus professionnalisantes et comporte aussi plus de travaux pratiques.
+                    Ces formations sont dites des formations courtes, car elles ont pour but de former à un emploi.
+                    Elles sont aussi en général <strong>plus professionnalisantes</strong> et comportent aussi <strong>plus de travaux pratiques</strong>.
                     On apprend tout en faisant, c’est ce qui rend l’IUT super intéressant !
                 </p>
                 <h3>Et un BUT alors ?</h3>
 
                 <p>
-                    Le BUT (Bachelor Universitaire de Technologie) est une formation qui se fait à l’IUT en 3 ans. Il a
-                    été crée en 2021. Il vient prendre la relève du DUT, qui était une formation moins poussée qui se
+                    Le BUT (<strong>Bachelor Universitaire de Technologie</strong>) est une formation qui se fait à l’IUT en <strong>3 ans</strong>. 
+                    Il a été crée en 2021. Il vient prendre la relève du DUT, qui était une équivalence des formations actuelles mais en moins poussée et qui se
                     faisait en 2 ans seulement.
                 </p>
                 <strong>
-                    Bon ! Vous suivez toujours ? Allez on va attaquer la partie qui vous intéresse le plus : Le BUT MMI !
+                    Bon ! Vous suivez toujours ? <br> Allez on va attaquer la partie qui vous intéresse le plus : Le BUT MMI !
                 </strong>
             </div>
 
