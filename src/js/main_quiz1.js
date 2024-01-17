@@ -19,8 +19,8 @@ const tabQuestions = [
     2,
   ],
   [
-    "Comment les formations à l'IUT se comparent-elles à celles de l'université ?",
-    "Elles sont moins longues",
+    "Comment a-t-on deffinit les formations de l'IUT",
+    "Elles sont plus longues",
     "Elles sont plus théoriques",
     "Elles sont moins pratiques",
     "Elles sont plus professionnalisantes",
@@ -29,7 +29,7 @@ const tabQuestions = [
   [
     "Pourquoi les formations à l'IUT sont-elles sélectives ?",
     "Parce qu'elles sont plus courtes",
-    "Parce qu'elles sont moins chères",
+    "Parce qu'elles sont trop chères",
     "Parce qu'elles ont un nombre limité de places",
     "Parce qu'elles sont ouvertes à tout le monde",
     3,
@@ -46,7 +46,7 @@ const tabQuestions = [
     "Quelles compétences peut-on acquérir en suivant le BUT MMI ?",
     "Création de sites internet, développement d’application et jeux vidéo uniquement",
     "Création numérique, création de publicités, et communication uniquement",
-    "Gestion de projets uniquement",
+    "Gestion de projets et communication sur les médias sociaux uniquement",
     "Un peu de tout ça : MMI est un vrai couteau suisse",
     4,
   ],
@@ -84,7 +84,7 @@ const tabExplications = [
   ],
   [
     "Comment les formations à l'IUT se comparent-elles à celles de l'université ?",
-    "En ce qui concerne le premier diplôme que vous obtiendrez, le temps d'études sera de la même durée en université qu'à l'IUT.",
+    "Les formations à l'IUT sont en générale appelé formations courtes car on peut commencer à travailler directement après la formation.",
     "Vous apprendrez certes de la théorie, mais ça ne constituera pas la majorité de vos études.",
     "C'est faux ! Dans la majorité des formations dispensé à l'IUT, vous ferez plus de travaux pratiques qu'à l'université.",
     "L'IUT a pour but de vous former afin de pouvoir directement intégrer le milieu professionnel dès l'obtention de votre diplôme."
