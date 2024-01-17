@@ -251,6 +251,8 @@ function clickReponse() {
 
   const buttonValue = parseInt(selectedButton.value, 10);
 
+  document.getElementById("submitter").style.display = "none"
+
   if (isNaN(buttonValue)) {
     console.error("Invalid button value");
     return;
