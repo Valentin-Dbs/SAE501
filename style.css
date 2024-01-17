@@ -314,10 +314,10 @@ td{
   width: 100%;
 }
 
-.active{
+/* .active{
   display: flex!important;
   justify-content: center;
-}
+} */
 .carousel-item-content {
   width: 80%!important;
 }
