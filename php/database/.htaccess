@@ -1,0 +1,6 @@
+<Files "init_database.php">
+    AuthType Basic
+    AuthName "Accès Restreint"
+    AuthUserFile "C:/wamp64/www/SAE501/.htpasswd"
+    Require valid-user
+</Files>
