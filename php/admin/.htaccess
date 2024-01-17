@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Zone Administrateur"
+AuthUserFile "C:/wamp64/www/SAE501/.htpasswd"
+Require valid-user

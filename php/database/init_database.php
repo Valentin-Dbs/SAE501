@@ -53,25 +53,26 @@ if ($conn->query($sql) === TRUE)
     }
     
     // Création de la vue pour les réponses au quiz
-    $sqlVue = "CREATE VIEW vue_quiz_responses AS
+    $sqlVue = "CREATE OR REPLACE VIEW vue_quiz_responses AS
     SELECT
-    u.id AS UserId,
-    u.nom AS Nom,
-    u.prenom AS Prenom,
-    qr.question AS Question,
-    qr.reponse_choisie AS ReponseChoisie,
-    qr.est_correcte AS EstCorrecte,
-    qr.temps_reponse AS TempsReponse
+        u.id AS UserId,
+        u.nom AS Nom,
+        u.prenom AS Prenom,
+        qr.quiz_id AS QuizId,
+        qr.question AS Question,
+        qr.reponse_choisie AS ReponseChoisie,
+        qr.est_correcte AS EstCorrecte,
+        qr.temps_reponse AS TempsReponse
     FROM
-    users u
+        users u
     JOIN
-    quiz_responses qr ON u.id = qr.user_id";
-    
-    if ($conn->query($sqlVue) === TRUE) {
-    echo "Vue 'vue_quiz_responses' créée avec succès !";
-    } else {
-    echo "Erreur lors de la création de la vue 'vue_quiz_responses' : " . $conn->error;
-    }
+        quiz_responses qr ON u.id = qr.user_id";
+
+if ($conn->query($sqlVue) === TRUE) {
+    echo "Vue 'vue_quiz_responses' modifiée avec succès !";
+} else {
+    echo "Erreur lors de la modification de la vue 'vue_quiz_responses' : " . $conn->error;
+}
     
     // Ajout d'un administrateur (si nécessaire)
     $adminNom = "admin";
