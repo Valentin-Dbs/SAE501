@@ -21,8 +21,6 @@
 
 <body>
 
-    <!--css-->
-
     <div class="div-centre">
         <div class="div-centre-contenu">
 

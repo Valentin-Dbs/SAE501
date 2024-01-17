@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea8333ea-792f-4388-955b-0cacf44e2737" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/html/confirmation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/auth/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/auth/inscription.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/certificat.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/certificat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/enregistrement.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/enregistrement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/page_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/page_admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/présentation1.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/présentation1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/présentation2.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/présentation2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/présentation3.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/présentation3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/présentation4.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/présentation4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/présentation5.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/présentation5.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/présentation6.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/présentation6.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/quiz1.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/quiz1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/quiz2.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/quiz2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/quiz3.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/quiz3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="ea8333ea-792f-4388-955b-0cacf44e2737" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +30,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/wamp64/www/SAE501",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -92,7 +73,7 @@
       <workItem from="1701189093863" duration="1000000" />
       <workItem from="1701516702735" duration="1195000" />
       <workItem from="1705397241831" duration="840000" />
-      <workItem from="1705406607152" duration="435000" />
+      <workItem from="1705406607152" duration="936000" />
     </task>
     <servers />
   </component>
