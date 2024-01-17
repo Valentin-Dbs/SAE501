@@ -8,6 +8,8 @@
   --darker-light-color-main: #76aed6;
   --color-submit: #FF8C15;
   --color-submit-hover: #e17603;
+  --color-grey : #697883;
+  --color-pink : #FE7DB6;
 }
 
 body {
@@ -27,12 +29,26 @@ body {
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  color: var(--color-main);
+  color: var(--color-grey);
   text-align: center;
 }
 
 h1, h2, h3 {
   font-family: 'Josefin Sans', sans-serif;
+  margin: 10px;
+  /* color: var(--color-submit); */
+}
+
+h1{
+  color: var(--color-submit);
+}
+
+h2 {
+  color: var(--color-pink);
+}
+
+h3, .texte_question {
+  color: var(--color-main);
 }
 
 
@@ -58,7 +74,7 @@ li {
   box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
 }
@@ -189,9 +205,10 @@ td{
   background: var(--color-main);
   border-radius: 100px;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   border: none;
-  padding: 10px;
+  margin: 10px;
+  padding: 10px 30px 10px 30px;
 }
 .ourbtn:hover, .bouton_next:hover{
   cursor: pointer;
@@ -232,10 +249,6 @@ td{
   padding: 0;
 }
 
-.bouton_next{
-  margin: 10px 0 10px 0;
-}
-
 .textInfo {
   margin: auto;
   width: 90%;
@@ -249,14 +262,34 @@ td{
 .ressourcesSae {
   display: flex;
   height: max-content;
+  min-height: 200px;
   justify-content: space-around;
+  margin-bottom: 30px;
 }
 
 .tabSmall {
+  margin: 50px 0 50px 0;
   display: none;
 }
 
+.tabBig {
+  margin: 50px 0 50px 0;
+}
+
+.tabContent {
+  text-align: justify;
+  /* color: var(--color-main); */
+}
+
+.btnNavigation {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 762px){
+  p {
+    padding: 0 10px 10px 10px;
+  }
   .div-centre{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.95);
