@@ -56,19 +56,17 @@
                         d’expérience</strong>, <strong>Développement Web et dispositifs interactif</strong>.
                 </p>
 
-
                 <div class="tabSmall">
-                    <div class="d-flex align-items-start">
-                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
-                            aria-orientation="vertical">
+                    <div class="align-items-start">
+                        <div class="nav nav-pills me-3" id="v-pills-tab" role="tablist">
                             <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
                                 aria-selected="true">
                                 Créa
                             </button>
-                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-profile" type="button" role="tab"
-                                aria-controls="v-pills-profile" aria-selected="false">
+                            <button class="nav-link" id="v-pills-com-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-com" type="button" role="tab"
+                                aria-controls="v-pills-com" aria-selected="false">
                                 Com
                             </button>
                             <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill"
@@ -89,8 +87,8 @@
                                 C'est un excellent choix si tu as un œil artistique et que tu aime créer et travailler
                                 sur les projets numériques.
                             </div>
-                            <div class="tab-pane fade tabContent" id="v-pills-profile" role="tabpanel"
-                                aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <div class="tab-pane fade tabContent" id="v-pills-com" role="tabpanel"
+                                aria-labelledby="v-pills-com-tab" tabindex="0">
                                 En stratégie de communication, tu apprendras à concevoir la <strong>communication en
                                     ligne</strong>, à gérer la <strong>communication sur les réseaux sociaux</strong>,
                                 et à créer des <strong>expériences utilisateur</strong> exceptionnelles en travaillant
@@ -185,7 +183,7 @@
 
 
         <div class="btnNavigation">
-            
+
             <form action="../../php/navigation/update_progression.php" method="post">
 
                 <input type="hidden" name="next_page" value="présentation1.php">
