@@ -322,6 +322,10 @@ td{
   width: 80%!important;
 }
 
+.carousel-indicators {
+  position: unset;
+}
+
 @media screen and (max-width: 762px){
     p{
       padding: 0;
