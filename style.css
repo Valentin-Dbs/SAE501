@@ -185,7 +185,7 @@ td{
   font-weight: 700;
 }
 
-.ourbtn{
+.ourbtn, .bouton_next{
   background: var(--color-main);
   border-radius: 100px;
   color: white;
@@ -193,7 +193,7 @@ td{
   border: none;
   padding: 10px;
 }
-.ourbtn:hover{
+.ourbtn:hover, .bouton_next:hover{
   cursor: pointer;
   background-color: var(--darker-light-color-main);
 }
