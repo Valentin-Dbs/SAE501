@@ -55,29 +55,33 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="d-block w-100 carousel-item-content">
-                        <img src="..\img\mmi-logo-couleur_1.png" alt="Logo MMI" width="75px">
+                        <div class="carousel-centrer">
+                            <img src="..\img\mmi-logo-couleur_1.png" alt="Logo MMI" width="75px">
 
-                        <h1>Découvrir les débouchés</h1>
+                            <h1>Découvrir les débouchés</h1>
 
-                        <p>
-                            Le BUT MMI permet d'acquérir énormément de compétences différentes, il prépare aussi à
-                            <strong>travailler dans toutes sortes de domaines</strong>.
-                        </p>
-                        <p>
-                            On va vous montrer quelques métiers que vous pourrez faire après avoir suivit une formation
-                            MMI
-                        </p>
-                        <p>
-                            Gardez bien à l'esprit que même si on conseille un parcours pour un métiers, un autre
-                            parcours peut lui aussi déboucher sur le même métier.
-                        </p>
-                        <h3>Bonne découverte !</h3>
+                            <p>
+                                Le BUT MMI permet d'acquérir énormément de compétences différentes, il prépare aussi à
+                                <strong>travailler dans toutes sortes de domaines</strong>.
+                            </p>
+                            <p>
+                                On va vous montrer quelques métiers que vous pourrez faire après avoir suivit une
+                                formation
+                                MMI
+                            </p>
+                            <p>
+                                Gardez bien à l'esprit que même si on conseille un parcours pour un métiers, un autre
+                                parcours peut lui aussi déboucher sur le même métier.
+                            </p>
+                            <h3>Bonne découverte !</h3>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-block w-100 carousel-item-content">
+                        <div class="carousel-centrer">
                         <img src="..\img\animateur-2d-3d.jpeg" alt="Animation 2D" width="200px">
-                        <h2>Animateur / animatrice 2D et 3D</h2>
+                        <h2>Animateur 2D et 3D</h2>
                         <i>parcours conseillé : Création numérique</i>
                         <p>
                             Réaliser des dessin animés, logo animé, des animations pour des sites web ou autre, telle
@@ -87,12 +91,14 @@
                             En MMI on apprend l'animation de logo, de personnages et autres, grâce à différents
                             logiciels tels qu'After Effect ou Animate.
                         </p>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-block w-100 carousel-item-content">
+                        <div class="carousel-centrer">
                         <img src="..\img\concepteur-multimedia.jpeg" alt="Image 3" width="200px">
-                        <h2>Concepteur / conceptrice multimédia</h2>
+                        <h2>Concepteur multimédia</h2>
                         <i>parcours conseillé : Création numérique</i>
                         <p>
                             Il s'agit d'une personne chargée de produire du contenu multimédia (vidéo, musique, son,
@@ -102,13 +108,15 @@
                             En MMI on apprend et on s'entraine à produire différents type de contenus multimédia tels
                             que des vidéo, logo, infographies...
                         </p>
+                        </div>
                     </div>
 
                 </div>
                 <div class="carousel-item">
                     <div class="d-block w-100 carousel-item-content">
+                        <div class="carousel-centrer">
                         <img src="..\img\developpeur-informatique.jpeg" alt="Développeur informatique" width="200px">
-                        <h2>Développeur / développeuse d'application mobile</h2>
+                        <h2>Développeur d'application mobile</h2>
                         <i>parcours conseillé : Développement web</i>
                         <p>
                             C'est un développeur spécialisé dans la création d'application mobile. Il doit maîtriser les
@@ -118,11 +126,13 @@
                             En MMI on nous apprends à utiliser ces langages et logiciels, que se soit pour faire des
                             application sur Android ou iOs.
                         </p>
+                        </div>
                     </div>
 
                 </div>
                 <div class="carousel-item">
                     <div class="d-block w-100 carousel-item-content">
+                        <div class="carousel-centrer">
                         <img src="..\img\webmaster.jpeg" alt="Webmaster" width="200px">
                         <h2>Développeur Full-Stack</h2>
                         <i>parcours conseillé : Développement web</i>
@@ -134,11 +144,13 @@
                             Le BUT MMI est une excellente formation pour devenir Développeur Full-Stack car on y apprend
                             autant de graphismes et de developpement web pendant 2 ans avant de se spécialiser.
                         </p>
+                        </div>
                     </div>
 
                 </div>
                 <div class="carousel-item">
                     <div class="d-block w-100 carousel-item-content">
+                        <div class="carousel-centrer">
                         <img src="..\img\ux-designer.jpeg" alt="UX designer" width="200px">
                         <h2>UX designer</h2>
                         <i>parcours conseillé : Stratégie de communication</i>
@@ -150,6 +162,7 @@
                             En MMI forme à ce métier que ce soit au travers de cours théoriques ou de mise en place
                             pratiques des compétences aquises
                         </p>
+                        </div>
                     </div>
 
                 </div>

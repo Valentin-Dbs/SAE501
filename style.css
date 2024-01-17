@@ -314,11 +314,11 @@ td{
   width: 100%;
 }
 
-/* .active{
+.carousel-item-content{
   display: flex!important;
   justify-content: center;
-} */
-.carousel-item-content {
+}
+.carousel-centrer {
   width: 80%!important;
 }
 
