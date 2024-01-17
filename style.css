@@ -326,6 +326,10 @@ td{
   position: unset;
 }
 
+.title{
+  color: var(--color-pink);
+}
+
 @media screen and (max-width: 762px){
     p{
       padding: 0;
