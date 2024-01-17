@@ -262,7 +262,9 @@ td{
 .ressourcesSae {
   display: flex;
   height: max-content;
+  min-height: 200px;
   justify-content: space-around;
+  margin-bottom: 30px;
 }
 
 .tabSmall {

@@ -29,45 +29,62 @@
                     <div class="element" id="ressources">
                         <img class="img" src="..\img\ressources.jpeg" alt="Etudiant lisant ses leçons">
                         <div class="texteCache" id="textRessources">
-                            D'abord, il y a les semaines ressources où on a des cours magistraux, des travaux dirigés et
-                            des travaux pratiques qui nous donnent des connaissances théoriques et pratiques.
+                            <div>
+                                D'abord, il y a les <strong>semaines ressources</strong> où on a des cours magistraux,
+                                des
+                                travaux dirigés et
+                                des travaux pratiques qui nous donnent des <strong>connaissances théoriques et
+                                    pratiques</strong>.
+                            </div>
                         </div>
                     </div>
                     <div class="element" id="sae">
                         <img class="img" src="..\img\sae.jpeg" alt="Groupe travaillant sur un projet">
                         <div class="texteCache" id="textSae">
-                            Ensuite, place aux SAE, ces gros projets encadrés qui peuvent être très fun à réaliser.
-                            Comme réaliser un court-métrage, créer un jeu vidéo ou même une application de réalité
-                            virtuelle !
+                            <div>
+                                Ensuite, place aux <strong>SAE</strong>, où l'on doit réaliser de <strong>gros
+                                    projets</strong> qui nous permettent de mettre en pratique ce que l'on a appris en
+                                semaine de ressource. <br>
+                                Elles ont en général pour but de réaliser des <strong>projets professionnels</strong>,
+                                comme
+                                réaliser un
+                                court-métrage, créer un
+                                site web ou gérer la communication d'un projet ou d'un évenement !
+                            </div>
                         </div>
 
                     </div>
 
                 </div>
-                <p style="display: flex;justify-content: center; margin-bottom: 50px"><i>Survolez les images pour en apprendre plus</i></p>
+                <p style="display: flex;justify-content: center; margin-bottom: 50px">
+                    <i>
+                        Survolez les images pour en apprendre plus.
+                    </i>
+                </p>
 
 
 
                 <p>
                     Pendant la première année et demie, tout le monde suit les mêmes cours :
                 <ul>
-                    <li>audiovisuel</li>
-                    <li>communication</li>
-                    <li>infographie</li>
-                    <li>développement web</li>
-                    <li>gestion de projet</li>
-                    <li>droit</li>
-                    <li>anglais</li>
-                    <li>référencement</li>
-                    <li>animation</li>
+                    <li>Audiovisuel</li>
+                    <li>Communication</li>
+                    <li>Infographie</li>
+                    <li>Développement web</li>
+                    <li>Gestion de projet</li>
+                    <li>Droit</li>
+                    <li>Anglais</li>
+                    <li>Référencement</li>
+                    <li>Animation</li>
                 </ul>
                 </p>
                 <p>
-                    C'est au semestre 4 (au milieu de la deuxième année) qu'on choisit notre spécialisation : Création
+                    C'est au semestre 4 (au milieu de la deuxième année) qu'on choisit notre
+                    <strong>spécialisation</strong> : Création
                     numérique, Développement web ou Stratégie de communication.
                 </p>
                 <p>
-                    Enfin en 2e et 3e année, on a un grand choix à faire : Stage ou alternance ?
+                    Enfin en 2e et 3e année, on a un grand choix à faire : <strong>Stage ou alternance</strong> ?
                 </p>
 
             </div>
