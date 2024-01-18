@@ -59,6 +59,10 @@
       </button>
     </div>
 
+    <form id="logoutForm" action="../../php/auth/deconnexion.php" method="post">
+        <button type="button" onclick="confirmLogout()" class="link-style">Abandonner le quiz</button>
+    </form>
+
   </div>
 
   <!-- question -->
