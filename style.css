@@ -103,6 +103,9 @@ li {
   margin-bottom: 15px;
   padding: 5px 15px 5px 15px;
 }
+.btnAdmin:hover {
+  cursor: pointer;
+}
 .admin {
   padding: 20px 0 20px 0;
   margin: 10px 0 20px 0;
