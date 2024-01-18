@@ -32,7 +32,7 @@
                 <h3>C’est quoi un IUT ?</h3>
 
                 <p>
-                    L’ IUT (<strong>Institut Universitaire de Technologie</strong>) est un établissement d'étude supérieur dans lequels
+                    L’ IUT (<strong>Institut Universitaire de Technologie</strong>) est un établissement d'étude supérieur dans lequel
                     on peut faire un BUT. Les formations qui y sont proposées ont, malheureusement, <strong>un nombre de place
                     limité</strong>. Ce sont donc des formations <strong>selectives</strong>.
                 </p>

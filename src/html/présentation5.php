@@ -58,9 +58,9 @@
                                             <p>
                                                 Apprendre à se servir d’une caméra ou d’un appareil photo, à utiliser un
                                                 logiciel de
-                                                montage ou encore à faire des script et des storyboard pour créer des
+                                                montage ou encore à réaliser des scripts et des storyboards pour créer des
                                                 vidéos,
-                                                court-metrage, films, interviews et autre.
+                                                court-metrages, films, interviews et autre.
                                             </p>
                                         </div>
                                     </div>

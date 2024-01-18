@@ -39,11 +39,11 @@
                     de former les étudiants à une majorité des métiers du web !
                 </p>
                 <p>
-                    Réalisation de vidéo, photo, interview et publicités, développement de site web, e-boutique,
-                    applications et de jeux vidéo, mise en place de stratégie de communications, de gestion de projet,
+                    Réalisation de vidéos, photos, interviews et publicités, développement de sites web, e-boutiques,
+                    applications et de jeux vidéo, mise en place de stratégies de communications, de gestion de projets,
                     et autres ... <br>Le BUT MMI est <strong>un vrai couteau suisse</strong> qui permet de maîtriser un
                     évantail de
-                    compétence très complet !
+                    compétences très complet !
                 </p>
 
                 <h2>
@@ -79,12 +79,12 @@
                             <div class="tab-pane fade show active tabContent" id="v-pills-home" role="tabpanel"
                                 aria-labelledby="v-pills-home-tab" tabindex="0">
                                 Tu apprendras à créer des <strong>éléments visuels numériques</strong> comme des
-                                illustrations, des infographies, des animations, des design de jeux vidéo, des projet
+                                illustrations, des infographies, des animations, des design de jeux vidéo, des projets
                                 audiovisuels et d'autres contenus créatifs. <br>
                                 On y enseigne aussi l'utilisation de nombreux <strong>logiciels de création
                                     numérique</strong>, comme les
                                 logiciels de la <strong>suite Adobe</strong> par exemple.<br>
-                                C'est un excellent choix si tu as un œil artistique et que tu aime créer et travailler
+                                C'est un excellent choix si tu as un œil artistique et que tu aimes créer et travailler
                                 sur les projets numériques.
                             </div>
                             <div class="tab-pane fade tabContent" id="v-pills-com" role="tabpanel"
@@ -133,12 +133,12 @@
                         <div class="tab-pane fade show active tabContent" id="home-tab-pane" role="tabpanel"
                             aria-labelledby="home-tab" tabindex="0">
                             Tu apprendras à créer des <strong>éléments visuels numériques</strong> comme des
-                            illustrations, des infographies, des animations, des design de jeux vidéo, des projet
+                            illustrations, des infographies, des animations, des design de jeux vidéo, des projets
                             audiovisuels et d'autres contenus créatifs. <br>
                             On y enseigne aussi l'utilisation de nombreux <strong>logiciels de création
                                 numérique</strong>, comme les
                             logiciels de la <strong>suite Adobe</strong> par exemple.<br>
-                            C'est un excellent choix si tu as un œil artistique et que tu aime créer et travailler
+                            C'est un excellent choix si tu as un œil artistique et que tu aimes créer et travailler
                             sur les projets numériques.
                         </div>
                         <div class="tab-pane fade tabContent" id="profile-tab-pane" role="tabpanel"
@@ -169,7 +169,7 @@
 
                 <p>
                     Cependant à l’IUT de Béziers seulement 2 parcours sont proposés : Création numérique et
-                    Développement web et dispositifs interactifs
+                    Développement web et dispositifs interactifs.
                 </p>
 
                 <p>

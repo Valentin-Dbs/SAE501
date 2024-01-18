@@ -3,28 +3,28 @@ var questionNumber = 0;
 var listQuestionsValidees = [];
 const tabQuestions = [
   [
-    "Quel type de projet les Animateur 2D/3D ne réalisent-ils pas?",
+    "Quel type de projet les Animateur 2D/3D ne réalisent-ils pas ?",
     "Des dessins animés",
     "Des sites web",
     "Des animations",
     "Des logos animés",
-    2
+    2,
   ],
   [
-    "Qu'apprend-t-on dans la formation MMI qui prépare au métier d'animateur 2D/3D?",
-    "Des langages pour coder des application",
+    "Qu'apprend-t-on dans la formation MMI qui prépare au métier d'animateur 2D/3D ?",
+    "Des langages pour coder des applications",
     "Comment produire des infographies",
-    "Comment animer des logo et personnages",
+    "Comment animer des logos et personnages",
     "Comment analyser les besoins utilisateur",
-    3
+    3,
   ],
   [
-    "Quel parcours MMI est conseillé pour devenir Animateur 2D/3D?",
+    "Quel parcours MMI est conseillé pour devenir Animateur 2D/3D ?",
     "Création Numérique",
     "Développement Web",
     "Stratégies de communication",
     "Ce n'était pas écrit",
-    1
+    1,
   ],
   [
     "Quel est le métier qui n’est pas un débouché de MMI ?",
@@ -32,187 +32,188 @@ const tabQuestions = [
     "Réalisateur",
     "Game Designer",
     "Développeur Web",
-    1
+    1,
   ],
   [
-    "Que fait le Concepteur Multimedia?",
+    "Que fait le Concepteur Multimédia ?",
     "Développe des applications",
     "Produit des affiches et flyers",
     "Gère et organise les projets",
     "Produit du contenu multimédia",
-    4
+    4,
   ],
   [
-    "Qu'apprend-t-on dans la formation MMI qui prépare au métier de concepteur multimédia?",
-    "Des langages pour coder des application",
+    "Qu'apprend-t-on dans la formation MMI qui prépare au métier de concepteur multimédia ?",
+    "Des langages pour coder des applications",
     "Comment produire des infographies et vidéo",
     "Comment animer des logo et personnages",
     "Comment analyser les besoins utilisateur",
-    2
+    2,
   ],
   [
-    "Quel parcours MMI est conseillé pour devenir Concepteur Multimedia?",
+    "Quel parcours MMI est conseillé pour devenir Concepteur Multimédia ?",
     "Création Numérique",
     "Développement Web",
     "Stratégies de communication",
     "Ce n'était pas écrit",
-    1
+    1,
   ],
   [
-    "Que fait un Développeur d'application mobile?",
+    "Que fait un Développeur d'applications mobiles ?",
     "Gère et organise les projets",
     "Produit des affiches et flyers",
     "Produit du contenu multimédia",
     "Développe des applications",
-    4
+    4,
   ],
   [
-    "Qu'apprend-t-on dans la formation MMI qui prépare au métier de Développeur d'application mobile?",
-    "Des langages pour coder des application",
+    "Qu'apprend-t-on dans la formation MMI qui prépare au métier de Développeur d'applications mobiles ?",
+    "Des langages pour coder des applications",
     "Comment produire des infographies et vidéo",
-    "Comment animer des logo et personnages",
+    "Comment animer des logos et personnages",
     "Comment analyser les besoins utilisateur",
-    1
+    1,
   ],
   [
-    "Quel parcours MMI est conseillé pour devenir Développeur d'application mobile?",
+    "Quel parcours MMI est conseillé pour devenir Développeur d'applications mobiles ?",
     "Création Numérique",
     "Développement Web",
     "Stratégies de communication",
     "Ce n'était pas écrit",
-    2
+    2,
   ],
   [
-    "Que fait le Développeur Full-Stack dans le développement d'un site web?",
+    "Que fait le Développeur Full-Stack dans le développement d'un site web ?",
     "Il ne développe pas de site",
     "La programmation",
     "Les graphismes",
     "Les deux",
-    4
+    4,
   ],
   [
-    "Quel parcours MMI est conseillé pour devenir Développeur Full-Stack?",
+    "Quel parcours MMI est conseillé pour devenir Développeur Full-Stack ?",
     "Création Numérique",
     "Développement Web",
     "Stratégies de communication",
     "Ce n'était pas écrit",
-    2
+    2,
   ],
   [
-    "Que fait l'UX Designer?",
+    "Que fait l'UX Designer ?",
     "Il analyse les besoins utilisateur",
     "Il programme des applications",
     "Il design des site web",
     "Il produit des vidéos",
-    1
+    1,
   ],
   [
-    "Quel parcours MMI est conseillé pour devenir UX Designer?",
+    "Quel parcours MMI est conseillé pour devenir UX Designer ?",
     "Création Numérique",
     "Développement Web",
     "Stratégies de communication",
     "Ce n'était pas écrit",
-    3
+    3,
   ],
 ];
 const tabExplications = [
   [
-    "Quel type de projet les Animateur 2D/3D ne réalisent-ils pas?",
+    "Quel type de projets les Animateur 2D/3D ne réalisent-ils pas ?",
     "Les animateur 2D/3D peuvent totalement réaliser des dessins animés dans leur métier.",
     "En effet cela ne fait pas partie de leurs attribution.",
     `...un "Animateur" 2D/3D fait bien des animations... est-tu sûr d'avoir bien lu la question? `,
     "Un animateur 2D/3D peut se voir demander d'animer un logo",
   ],
   [
-    "Qu'apprend-t-on dans la formation MMI qui prépare au métier d'animateur 2D/3D?",
+    "Qu'apprend-t-on dans la formation MMI qui prépare au métier d'animateur 2D/3D ?",
     "C'est plutôt ce qui prépare au métier de développeur d'applications",
     "Non cela prépare plus à devenir concepteur multimédia",
     "En effet !",
     "C'est ce qui permettra de devenir UX Designer",
   ],
   [
-    "Quel parcours MMI est conseillé pour devenir Animateur 2D/3D?",
+    "Quel parcours MMI est conseillé pour devenir Animateur 2D/3D ?",
     "Oui ! Bien joué",
     "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
     "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
-    "Ah vraiment ?! Tu est sur d'avoir bien tout lu?",
-  ],
-  ["Quel est le métier qui n’est pas un débouché de MMI ?",
-    "Eh non en effet ! Bizarrement, le BUT MMI ne prépare pas à être médecin ou chirurgien.",
-    "En MMI, nous apprenons à réaliser des vidéos, courts-métrages et publicités. Il prépare donc tout naturellement à devenir réalisateur.",
-    "Vous pouvez tout à fait devenir Game Designer après votre BUT. MMI nous donne les notions de graphismes et de programmation nécessaire à ce métier.",
-    "Si vous êtes dans le parcours Développement web et dispositifs interactifs, devenir développeur web est une suite logique du parcours."
+    "Ah vraiment ?! Tu es sur d'avoir bien tout lu ?",
   ],
   [
-    "Que fait le Concepteur Multimedia?",
+    "Quel est le métier qui n’est pas un débouché de MMI ?",
+    "Eh non en effet ! Bizarrement, le BUT MMI ne prépare pas à être médecin ni chirurgien.",
+    "En MMI, nous apprenons à réaliser des vidéos, courts-métrages et publicités. Il prépare donc tout naturellement à devenir réalisateur.",
+    "Vous pouvez tout à fait devenir Game Designer après votre BUT. MMI nous donne les notions de graphismes et de programmation nécessaire à ce métier.",
+    "Si vous êtes dans le parcours Développement web et dispositifs interactifs, devenir développeur web est une suite logique du parcours.",
+  ],
+  [
+    "Que fait le Concepteur Multimédia ?",
     "Loupé ! ça c'est le travail des développeurs d'applications.",
     "Et bien non le concepteur multimédia produit des travaux qui se retrouveront sur internet (site web, resaux sociaux...)",
     "C'est plutôt quelque chose qui ce fait en tant que chef de projet",
     "Oui tout à fait !",
   ],
   [
-    "Qu'apprend-t-on dans la formation MMI qui prépare au métier de concepteur multimédia?",
+    "Qu'apprend-t-on dans la formation MMI qui prépare au métier de Concepteur Multimédia ?",
     "C'est plutôt ce qui prépare au métier de développeur d'applications",
     "Oui bravo !",
     "Non ça prépare plus au métier d'animateur 2D/3D",
     "C'est ce qui permettra de devenir UX Designer",
   ],
   [
-    "Quel parcours MMI est conseillé pour devenir Concepteur multimédia?",
+    "Quel parcours MMI est conseillé pour devenir Concepteur Multimédia ?",
     "Oui ! Bien joué",
     "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
     "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
-    "Ah vraiment ?! Tu est sur d'avoir bien tout lu?",
+    "Ah vraiment ?! Tu es sur d'avoir bien tout lu ?",
   ],
   [
-    "Que fait un Développeur d'application mobile?",
+    "Que fait un Développeur d'applications mobiles ?",
     "C'est plutôt quelque chose qui ce fait en tant que chef de projet",
     "Mmmh pas du tout non... ",
     "ça c'est plus le travail d'un concepteur multimédia",
     "Oui... Logique XD !",
   ],
   [
-    "Qu'apprend-t-on dans la formation MMI qui prépare au métier de Développeur d'application mobile?",
+    "Qu'apprend-t-on dans la formation MMI qui prépare au métier de Développeur d'applications mobiles ?",
     "Oui bravo !",
     "Non cela prépare plus à devenir concepteur multimédia",
     "Non ça prépare plus au métier d'animateur 2D/3D",
     "C'est ce qui permettra de devenir UX Designer",
   ],
   [
-    "Quel parcours MMI est conseillé pour devenir Développeur d'application mobile?",
+    "Quel parcours MMI est conseillé pour devenir Développeur d'applications mobiles ?",
     "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
     "Oui ! Bien joué",
     "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
-    "Ah vraiment ?! Tu est sur d'avoir bien tout lu?",
+    "Ah vraiment ?! Tu es sur d'avoir bien tout lu ?",
   ],
   [
-    "Que fait le Développeur Full-Stack dans le développement d'un site web?",
+    "Que fait le Développeur Full-Stack dans le développement d'un site web ?",
     "Pas de chance, il les développe justement de A à Z !",
     "Oui mais pas seulement",
     "Oui mais pas seulement",
     "Oui en effet ! Trop fort les Développeurs Full-Stack.",
   ],
   [
-    "Quel parcours MMI est conseillé pour devenir Développeur d'application mobile?",
+    "Quel parcours MMI est conseillé pour devenir Développeur d'applications mobiles ?",
     "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
     "Oui ! Bien joué",
     "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
-    "Ah vraiment ?! Tu est sur d'avoir bien tout lu?",
+    "Ah vraiment ?! Tu es sur d'avoir bien tout lu ?",
   ],
   [
-    "Que fait l'UX Designer?",
+    "Que fait l'UX Designer ?",
     "Oui et après avoir analysé les besoins utilisateur il va utiliser ces données pour proposer un produit adapté à leurs besoins.",
     "Nope, ce n'est pas son rôle",
     "Nope, ce n'est pas son rôle",
     "C'est plutôt le rôle d'un concepteur multimédia",
   ],
   [
-    "Quel parcours MMI est conseillé pour devenir UX Designer?",
+    "Quel parcours MMI est conseillé pour devenir UX Designer ?",
     "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
     "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
     "Oui ! Bien joué",
-    "Ah vraiment ?! Tu est sur d'avoir bien tout lu?",
-  ]
+    "Ah vraiment ?! Tu es sur d'avoir bien tout lu ?",
+  ],
 ];
 
 var question_courante;
@@ -242,13 +243,13 @@ function setCounter(currentTotal) {
 
 function presenterQuestion() {
   if (selectedButton) {
-    selectedButton.classList.remove('active');
+    selectedButton.classList.remove("active");
     document.getElementById("submitter").style.display = "none";
   }
 
   for (let i = 1; i <= 4; i++) {
     const button = document.getElementById(`reponse${i}`);
-    button.classList.remove('correct', 'incorrect');
+    button.classList.remove("correct", "incorrect");
   }
 
   tempsDebut = new Date();
@@ -259,7 +260,7 @@ function presenterQuestion() {
     $.ajax({
       type: "POST",
       url: "../../php/navigation/update_progression.php",
-      data: { next_page: 'présentation4.php' },
+      data: { next_page: "présentation4.php" },
       success: function () {
         // Rediriger l'utilisateur vers la prochaine page après la mise à jour de la progression
         window.location.href = "../../src/html/présentation4.php";
@@ -267,7 +268,7 @@ function presenterQuestion() {
       error: function (xhr, status, error) {
         // Gérer les erreurs ici
         console.error(error);
-      }
+      },
     });
   } else {
     do {
@@ -309,11 +310,11 @@ function presenterQuestion() {
 
 function selectedReponse(index) {
   if (selectedButton) {
-    selectedButton.classList.remove('active');
+    selectedButton.classList.remove("active");
   }
 
   const button = document.getElementById(`reponse${index}`);
-  button.classList.add('active');
+  button.classList.add("active");
   selectedButton = button;
 
   if (document.getElementById("submitter").style.display !== "inline-block") {
@@ -326,12 +327,12 @@ function setButtonColors(buttonValue) {
   const selectedButton = document.getElementById(`reponse${buttonValue}`);
 
   if (buttonValue === idReponseCorrecte) {
-    selectedButton.classList.remove('active');
-    selectedButton.classList.add('correct');
+    selectedButton.classList.remove("active");
+    selectedButton.classList.add("correct");
   } else {
-    selectedButton.classList.remove('active');
-    selectedButton.classList.add('incorrect');
-    correctButton.classList.add('correct');
+    selectedButton.classList.remove("active");
+    selectedButton.classList.add("incorrect");
+    correctButton.classList.add("correct");
   }
 }
 
@@ -343,7 +344,7 @@ function clickReponse(idReponse) {
 
   const buttonValue = parseInt(selectedButton.value, 10);
 
-  document.getElementById("submitter").style.display = "none"
+  document.getElementById("submitter").style.display = "none";
 
   if (isNaN(buttonValue)) {
     console.error("Invalid button value");
@@ -436,10 +437,12 @@ function clickReponse(idReponse) {
 
 // Fonction pour le popup de confirmation
 function confirmLogout() {
-  var confirmed = confirm("Êtes-vous certain de vouloir abandonner le quiz? Vous pouvez le recommancer à tout moment.");
+  var confirmed = confirm(
+    "Êtes-vous certain de vouloir abandonner le quiz? Vous pouvez le recommancer à tout moment."
+  );
 
   if (confirmed) {
-      document.getElementById("logoutForm").submit();
+    document.getElementById("logoutForm").submit();
   }
 }
 

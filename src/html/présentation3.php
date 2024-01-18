@@ -65,7 +65,7 @@
                                 <strong>travailler dans toutes sortes de domaines</strong>.
                             </p>
                             <p>
-                                On va vous montrer quelques métiers que vous pourrez faire après avoir suivit une
+                                On va vous montrer quelques métiers que vous pourrez faire après avoir suivi une
                                 formation
                                 MMI
                             </p>
