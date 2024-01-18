@@ -1,25 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
-:root{
-  --color-main:#4B9CD4;
-  --dark-color-main:#3987be;
-  --light-color-main:#94c6e9;
+:root {
+  --color-main: #4b9cd4;
+  --dark-color-main: #3987be;
+  --light-color-main: #94c6e9;
   --darker-light-color-main: #76aed6;
-  --color-submit: #FF8C15;
+  --color-submit: #ff8c15;
   --color-submit-hover: #e17603;
-  --color-grey : #697883;
-  --color-pink : #FE7DB6;
+  --color-grey: #697883;
+  --color-pink: #fe7db6;
 }
 
 body {
   overflow-x: hidden; /* Empêche le défilement vertical */
   margin: 0;
-  /* Police */  
+  /* Police */
   /* font-family: 'Josefin Sans', sans-serif; */
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   /* Background */
-  background-image: url('src/img/background.png');
+  background-image: url("src/img/background.png");
   background-size: cover;
   background-repeat: no-repeat;
   /* display pour centrer la page */
@@ -33,13 +33,15 @@ body {
   text-align: center;
 }
 
-h1, h2, h3 {
-  font-family: 'Josefin Sans', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Josefin Sans", sans-serif;
   margin: 10px;
   /* color: var(--color-submit); */
 }
 
-h1{
+h1 {
   color: var(--color-submit);
 }
 
@@ -47,10 +49,10 @@ h2 {
   color: var(--color-pink);
 }
 
-h3, .texte_question {
+h3,
+.texte_question {
   color: var(--color-main);
 }
-
 
 p {
   text-align: left;
@@ -63,7 +65,6 @@ ul {
 li {
   text-align: left;
 }
-
 
 .div-centre {
   padding: 20px 0 20px 0;
@@ -93,6 +94,15 @@ li {
   align-items: center;
   justify-content: center;
 }
+.btnAdmin {
+  background: #b6defa;
+  border-radius: 100px;
+  color: var(--dark-color-main);
+  font-size: 15px;
+  border: none;
+  margin-bottom: 15px;
+  padding: 5px 15px 5px 15px;
+}
 .admin {
   padding: 20px 0 20px 0;
   margin: 10px 0 20px 0;
@@ -108,31 +118,31 @@ li {
   align-items: center;
   justify-content: center;
 }
-table{
+table {
   border: none;
   border-collapse: collapse;
   width: 95%;
 }
-table tr:nth-child(even){
+table tr:nth-child(even) {
   background-color: #79aed4;
   color: white;
 }
-th{
+th {
   border: none;
 }
-td{
+td {
   padding: 5px 0 5px 0;
   text-align: center;
   border: none;
 }
-.tbl-name{
-  background-color: #316F9A;
+.tbl-name {
+  background-color: #316f9a;
   color: white;
   border-radius: 10px;
 }
-.btn-connexion{
+.btn-connexion {
   width: 100%;
-    background-color: #FF8C15;
+  background-color: #ff8c15;
 }
 
 .texte_question {
@@ -155,7 +165,7 @@ td{
   display: inline-block;
   transition: 0.1s ease-in-out;
 }
-.texte_reponse:hover{
+.texte_reponse:hover {
   background-color: var(--darker-light-color-main);
   padding: 10px calc(2.5% + 24px);
   width: 85%;
@@ -163,7 +173,7 @@ td{
 }
 
 .texte_reponse.correct {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 
@@ -190,18 +200,19 @@ td{
 }
 
 #submitter:hover {
-  background-color: var(--color-submit-hover)!important;
+  background-color: var(--color-submit-hover) !important;
 }
 
 .Reponses {
   text-align: center;
 }
-#question{
-  font-family: 'Josefin Sans', sans-serif;
+#question {
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
 }
 
-.ourbtn, .bouton_next{
+.ourbtn,
+.bouton_next {
   background: var(--color-main);
   border-radius: 100px;
   color: white;
@@ -210,42 +221,42 @@ td{
   margin: 10px;
   padding: 10px 30px 10px 30px;
 }
-.ourbtn:hover, .bouton_next:hover{
+.ourbtn:hover,
+.bouton_next:hover {
   cursor: pointer;
   background-color: var(--darker-light-color-main);
 }
-#underlineButton{
+#underlineButton {
   background: none;
   color: var(--color-main);
   font-weight: 700;
   font-size: 16px;
   padding: 0;
-  border: 1px solid #4B9CD4;
+  border: 1px solid #4b9cd4;
   margin: 5px 0 5px 0;
   padding: 2px 10px 2px 10px;
   width: 60%;
   border-radius: 5px;
 }
 
-.container{
+.container {
   display: flex;
   justify-content: space-evenly;
   place-items: center;
 }
 
-.arrows{
+.arrows {
   height: 30px;
   width: 30px;
   margin: 10px;
   display: flex;
 }
 
-.imgFleche{
+.imgFleche {
   width: 100%;
 }
 
-
-.carousel-slide p{
+.carousel-slide p {
   padding: 0;
 }
 
@@ -314,33 +325,33 @@ td{
   width: 100%;
 }
 
-.carousel-item-content{
-  display: flex!important;
+.carousel-item-content {
+  display: flex !important;
   justify-content: center;
 }
 .carousel-centrer {
-  width: 80%!important;
+  width: 80% !important;
 }
 
 .carousel-indicators {
   position: unset;
 }
 
-.title{
+.title {
   color: var(--color-pink);
 }
 
-@media screen and (max-width: 762px){
-    p{
-      padding: 0;
-    }
-    .parcours{
-      width: 100%;
-    }
+@media screen and (max-width: 762px) {
+  p {
+    padding: 0;
+  }
+  .parcours {
+    width: 100%;
+  }
   p {
     padding: 0 10px 10px 10px;
   }
-  .div-centre{
+  .div-centre {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.95);
   }
@@ -348,17 +359,16 @@ td{
     flex-direction: column;
     align-items: center;
   }
-  .element{
+  .element {
     height: 100%;
-    width: 100%!important;
+    width: 100% !important;
   }
-  .texte_reponse{
+  .texte_reponse {
     font-size: 20px;
   }
-  .connexion{
+  .connexion {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.95);
-
   }
   .cours {
     /* display: flex; */
@@ -372,7 +382,7 @@ td{
     display: none;
   }
   .txtCours {
-    opacity: 1!important;
+    opacity: 1 !important;
   }
   #conteneurParcours {
     display: none;
@@ -382,5 +392,4 @@ td{
     flex-direction: column;
     align-items: center;
   }
-
 }
