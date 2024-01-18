@@ -12,7 +12,7 @@ const tabQuestions = [
   ],
   [
     "Quels types de projets peuvent être faits en Audiovisuel ?",
-    "Montage photo",
+    "Infographie",
     "Courts-métrages",
     "Construction de sites web",
     "Jeux vidéo",
@@ -44,7 +44,7 @@ const tabQuestions = [
     4
   ],
   [
-    "Dans quel domaine peut-on apprendre à utiliser des logiciels de construction de sites tels que WordPress ?",
+    "Dans quel domaine peut-on apprendre à utiliser des logiciels de construction de sites?",
     "Développement de jeux vidéo",
     "Développement de site web",
     "Développement back",
@@ -58,14 +58,6 @@ const tabQuestions = [
     "Suite Adobe",
     "Développement back",
     4
-  ],
-  [
-    "Quel outil est mentionné comme un logiciel pour créer des boutiques en ligne ?",
-    "Adobe",
-    "WordPress",
-    "Prestashop",
-    "Suite Microsoft",
-    3
   ]
 ];
 const tabExplications = [
@@ -78,7 +70,7 @@ const tabExplications = [
   ],
   [
     "Quels types de projets peuvent être faits en Audiovisuel ?",
-    "Non, le montage photo se fait en création graphique",
+    "Non, l'infographie se fait en création graphique",
     "Oui, les courts-métrages sont des projets qui peuvent être fait en Audiovisuel.",
     "Non, la construction de sites web est un projet qui se fait en développement web.",
     "Non, la réalisation de jeux vidéo est un projet qui se fait en partie en développement web et en partie en création graphique."
@@ -117,13 +109,6 @@ const tabExplications = [
     "Non, l'animation implique l'apprentissage de la suite Adobe et la maîtrise graphique.",
     "Non, la suite Adobe implique de création numérique.",
     "Oui, le développement back se concentre sur l'apprentissage de la création de bases de données et de la mise en place de site, d'application et de jeux vidéo."
-  ],
-  [
-    "Quel outil est mentionné comme un logiciel pour créer des boutiques en ligne ?",
-    "Non, la suite Adobe est un ensemble de logiciels dédié à la création (aussi bien pour la vidéo, le vectoriel, le pixel, l'animation...)",
-    "Non, bien qu'il soit possible d'utiliser WordPress pour créer des boutiques en ligne, il ne s'agit pas du CMS le plus efficace.",
-    "Oui, Prestashop est le CMS le plus efficace pour faire créer des boutiques en ligne.",
-    "Non, la suite Microsoft est un GAFAM qui cherche à diriger le monde."
   ]
 ];
 
