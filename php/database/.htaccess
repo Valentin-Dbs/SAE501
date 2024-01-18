@@ -4,3 +4,10 @@
     AuthUserFile "C:/wamp64/www/SAE501/.htpasswd"
     Require valid-user
 </Files>
+
+<Files "database_management.php">
+    AuthType Basic
+    AuthName "Accès Restreint"
+    AuthUserFile "C:/wamp64/www/SAE501/.htpasswd"
+    Require valid-user
+</Files>

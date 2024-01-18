@@ -26,7 +26,7 @@
                 <h1>Et l'IUT de Béziers c'est quoi ?</h1>
 
                 <div class="sections" id="0">
-                    <div class="txtSection" id="hiddenL">
+                    <div class="txtSection" id="hiddenR">
                         <strong class="title">Le Festival du Fantastique de Béziers</strong>
                         <p>
                             Le Festival du Fantastique de Béziers est un événement annuel où de nombreux artistes
@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="sections" id="2">
-                    <div class="txtSection" id="hiddenL">
+                    <div class="txtSection" id="hiddenR">
                         <strong class="title">Hackathon</strong>
                         <p>
                             Pendant 3 jours, les étudiants de toutes les filliaires de l'IUT de Béziers forment des
@@ -76,7 +76,7 @@
                 </div>
 
                 <div class="sections" id="4">
-                    <div class="txtSection" id="hiddenL">
+                    <div class="txtSection" id="hiddenR">
                         <strong class="title">Bureau Des Étudiants Athéna (BDE Athéna)</strong>
                         <p>
                             Le BDE Athena, c'est l'association étudiante dynamique et engagée de l'IUT de Béziers. Leur
@@ -102,7 +102,7 @@
                 </div>
 
                 <div class="sections" id="6">
-                    <div class="txtSection" id="hiddenL">
+                    <div class="txtSection" id="hiddenR">
                         <strong class="title">Fablab</strong>
                         <p>
                             Un Fablab est un lieu convivial de partage et d'apprentissage pratique des technologies,
