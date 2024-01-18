@@ -11,12 +11,12 @@ for (let i = 0; i < allSections.length; i++) {
 
 function showTxt(txt, id) {
     return function () {
-        txt.id = id % 2 == 0 ? "visibleL" : "visibleR";
+        txt.id =  "visibleR";
     };
 }
 
 function hideTxt(txt, id) {
     return function () {
-        txt.id = id % 2 == 0 ? "hiddenL" : "hiddenR";
+        txt.id = "hiddenR";
     };
 }
