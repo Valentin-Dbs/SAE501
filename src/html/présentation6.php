@@ -1,4 +1,3 @@
-
 <!-- session -->
 
 <?php include('../../php/auth/check_session.php'); ?>
@@ -28,14 +27,11 @@
 
                 <div class="sections" id="0">
                     <div class="txtSection" id="hiddenL">
-                        <h2>Le Festival du Fantastique de Béziers</h2>
+                        <strong class="title">Le Festival du Fantastique de Béziers</strong>
                         <p>
-                            Le Festival du Fantastique de Béziers est un événement annuel captivant qui transporte
-                            les
-                            visiteurs dans un monde de mystère et d'imagination. Entre projections de films cultes,
-                            expositions artistiques et rencontres avec des réalisateurs renommés, c'est une
-                            célébration
-                            incontournable pour les amateurs de l'étrange et du surnaturel.
+                            Le Festival du Fantastique de Béziers est un événement annuel où de nombreux artistes
+                            viennent présenter leurs travaux et participer à un concours de courts-métrages, nouvelles
+                            et d’illustrations le tout autour d'un thème différents chaque année.
                         </p>
 
                     </div>
@@ -44,18 +40,11 @@
 
                 <div class="sections" id="1">
                     <div class="txtSection" id="hiddenR">
-                        <h2>Marathon</h2>
+                        <strong class="title">Marathon</strong>
                         <p>
-                            Pendant 1 semaine, des groupe de 5 à 6 étudiants de 1ère, 2ème, et 3eme année du département
-                            MMI (Métiers du Multimédia et de l’Internet) de l’IUT de Béziers ont pour mission d’élaborer
-                            des solutions de communication, sur des sujets proposés par les organisations
-                            commanditaires.
-                        </p>
-                        <p>
-                            Chaque équipe doit produire un travail en infographie (proposer un logo, une charte
-                            graphique complète, et un flyer 1 ou 2 volets), en audiovisuel (tourner et monter une (ou
-                            plusieurs) video(s) d’une durée totale de 3 minutes) et un site web (réaliser un site web
-                            responsive sous WordPress et l’alimenter en contenu)
+                            Pendant 1 semaine, tous les étudiants de la filiaire de MMI forment des équipes, toutes
+                            années confondues, pour réaliser des projets pour différentes entreprises. <br>
+                            Chaque équipe doit alors produire une infographie, une vidéo et un site web.
                         </p>
 
                     </div>
@@ -64,19 +53,11 @@
 
                 <div class="sections" id="2">
                     <div class="txtSection" id="hiddenL">
-                        <h2>Hackathon</h2>
+                        <strong class="title">Hackathon</strong>
                         <p>
-                            Pendant 3 jours, les étudiants sont répartis en équipe réunissant toutes les formations de
-                            l'IUT (Carrières Sociales, Métiers du Multimédia et de l'Internet, Réseaux et Télécoms,
-                            Technique de Commercialisation et Rob-IA). Une entreprise commanditaire va alors lancer un
-                            defi à chaque équipe, qui devront alors faire de leur mieux pour monter le projet qui
-                            convienne le mieux à l'entreprise et au défi posé.
-                        </p>
-                        <p>
-                            Cet évenement permet de ressérer les liens entres les étudiants des différentes filliaires.
-                            Cela permet aussi aux étudiant de travailler en situation professionnelle : collaborer sur
-                            un projet réel en temps limité, communiquer en interne et en externe, échanger avec des
-                            professionnels.
+                            Pendant 3 jours, les étudiants de toutes les filliaires de l'IUT de Béziers forment des
+                            équipes pour résoudre, avec les connaissances de tout le monde, des problématiques lancées
+                            par des entreprises comanditaires.
                         </p>
                     </div>
                     <img src="../img/hackathon.jpg" alt="couleur" class="imgSection">
@@ -84,7 +65,7 @@
 
                 <div class="sections" id="3">
                     <div class="txtSection" id="hiddenR">
-                        <h2>A ton Tour (club de jeux de société)</h2>
+                        <strong class="title">A ton Tour (club de jeux de société)</strong>
                         <p>
                             A ton Tour est un club de jeu de société ouvert à tous les étudiants de l’IUT de Béziers.
                             Jeu de cartes, hasard, stratégie ou escape game, face à face ou en collaboration, si vous
@@ -96,28 +77,13 @@
 
                 <div class="sections" id="4">
                     <div class="txtSection" id="hiddenL">
-                        <h2>Bureau Des Étudiants Athéna (BDE Athéna)</h2>
+                        <strong class="title">Bureau Des Étudiants Athéna (BDE Athéna)</strong>
                         <p>
-                            Le BDE Athena, c'est l'association étudiante dynamique et engagée de l'IUT de Béziers. Notre
+                            Le BDE Athena, c'est l'association étudiante dynamique et engagée de l'IUT de Béziers. Leur
                             mission principale est de créer une expérience étudiante inoubliable pour tous les étudiants
-                            de notre établissement.
+                            de l'IUT de Béziers.
                             Le BDE a pour objectifs de :
                         </p>
-                        <ul>
-                            <li>
-                                Fédérer la communauté étudiante en organisant une variété d'événements sociaux,
-                                culturels et sportifs.
-                            </li>
-                            <li>
-                                Soutenir la réussite académique en offrant des ressources et des initiatives pour aider
-                                nos camarades à exceller dans leurs études.
-                            </li>
-                            <li>
-                                Promouvoir l'engagement citoyen en encourageant nos membres à s'impliquer dans des
-                                projets et des actions caritatives pour contribuer à notre
-                                communauté locale.
-                            </li>
-                        </ul>
 
                     </div>
                     <img src="../img/ae.png" alt="couleur" class="imgSection">
@@ -125,13 +91,10 @@
 
                 <div class="sections" id="5">
                     <div class="txtSection" id="hiddenR">
-                        <h2>Club de Robotique</h2>
+                        <strong class="title">Club de Robotique</strong>
                         <p>
-                            Il permettra aux passionnés de robotique de participer à des projets à long terme, tels que
+                            Il permet aux passionnés de robotique de participer à des projets à long terme, tels que
                             la conception d’un robot en partenariat avec les pédagogues du lycée Jean Moulin à Béziers.
-                            En s’appuyant sur l’expertise de notre FabLab, il offrira aux membres l’opportunité de
-                            concrétiser leurs idées et de les transformer en réalité, soulignant ainsi l’avantage
-                            d’avoir un atelier de fabrication numérique au sein de notre établissement
                         </p>
 
                     </div>
@@ -140,14 +103,11 @@
 
                 <div class="sections" id="6">
                     <div class="txtSection" id="hiddenL">
-                        <h2>Fablab</h2>
+                        <strong class="title">Fablab</strong>
                         <p>
                             Un Fablab est un lieu convivial de partage et d'apprentissage pratique des technologies,
                             ouvert à tous, quels que soient le niveau de formation. On y échange des avis, des conseils,
-                            et des savoir-faire, tout en organisant des rencontres entre différents profils, des
-                            ateliers, des conférences et des sessions de crowdfunding. C'est un espace où se croisent
-                            des personnes de tous horizons, partageant une curiosité commune et une passion pour
-                            l'innovation.
+                            et des savoir-faire.
                         </p>
                     </div>
                     <img src="../img/fablab.jpg" alt="couleur" class="imgSection">
@@ -155,18 +115,11 @@
 
                 <div class="sections" id="7">
                     <div class="txtSection" id="hiddenR">
-                        <h2>Un super matériel disponible pour les étudiants</h2>
+                        <strong class="title">Un super matériel disponible pour les étudiants</strong>
                         <p>
                             L'IUT dispose d'une salle fond vert, de plusieurs caméras, lumières pour réaliser vos
-                            projets d'audiovisuels. Tout est mis a disposition des éleves à tout moment et pour
-                            n'importe quel projet, pour les cours ou personnel.
-                        </p>
-                        <p>
-                            De nombreuses tablettes graphiques wacom sont aussi mises à la disposition des étudiants
-                            pour tous leurs travaux graphiques
-                        </p>
-                        <p>
-                            Une salle radio est aussi en libre accès pour tous ceux qui le souhaitent.
+                            projets d'audiovisuels. Mais aussi des casques VR, des tablettes graphiques wacom et une
+                            salle radio Tout est mis a disposition des éleves à tout moment.
                         </p>
 
                     </div>

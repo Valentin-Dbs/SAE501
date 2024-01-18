@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Page Admin</title>
 </head>
+
 <body>
     <div class="connexion">
+        
         <h2>Page Admin</h2>
 
         <?php
@@ -27,7 +30,7 @@
             <input type="text" id="prenom" name="prenom" class="form-control"><br>
 
 
-            
+
             <label for="quiz_id">Numéro de Quiz :</label>
             <select id="quiz_id" name="quiz_id" class="form-control">
                 <option value="">Tous les Quiz</option>
@@ -46,4 +49,5 @@
     <div id="resultats"></div>
 
 </body>
+
 </html>

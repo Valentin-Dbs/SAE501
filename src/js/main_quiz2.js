@@ -3,28 +3,28 @@ var questionNumber = 0;
 var listQuestionsValidees = [];
 const tabQuestions = [
   [
-    "Qui a le plus de qualifications pour travailler en tant qu'infographiste ?",
-    "Les virtuoses artistiques bien sûr !",
-    "Les rois du code évidemment !",
-    "Les maîtres de la communication sans aucun doute !",
-    "Tout le monde !",
-    1
-  ],
-  [
-    "Qui a le plus de qualifications pour travailler en tant qu'intégrateur de dispositif de réalité virtuelle ?",
-    "Les virtuoses artistiques bien sûr !",
-    "Les rois du code évidemment !",
-    "Les maîtres de la communication sans aucun doute !",
-    "Tout le monde !",
+    "Quel type de projet les Animateur 2D/3D ne réalisent-ils pas?",
+    "Des dessins animés",
+    "Des sites web",
+    "Des animations",
+    "Des logos animés",
     2
   ],
   [
-    "Qui a le plus de qualifications pour travailler en tant qu'UX Designer ?",
-    "Les virtuoses artistiques bien sûr !",
-    "Les rois du code évidemment !",
-    "Les maîtres de la communication sans aucun doute !",
-    "Tout le monde !",
+    "Qu'apprend-t-on dans la formation MMI qui prépare au métier d'animateur 2D/3D?",
+    "Des langages pour coder des application",
+    "Comment produire des infographies",
+    "Comment animer des logo et personnages",
+    "Comment analyser les besoins utilisateur",
     3
+  ],
+  [
+    "Quel parcours MMI est conseillé pour devenir Animateur 2D/3D?",
+    "Création Numérique",
+    "Développement Web",
+    "Stratégies de communication",
+    "Ce n'était pas écrit",
+    1
   ],
   [
     "Quel est le métier qui n’est pas un débouché de MMI ?",
@@ -35,75 +35,107 @@ const tabQuestions = [
     1
   ],
   [
-    "Quels sont les métiers potentiels pour les amoureux des graphismes et de l'audiovisuel issus du BUT MMI ?",
-    "Agence publicitaire ou de communication",
-    "Développement web",
-    "Programmation d'applications",
-    "Sécurité informatique",
-    1
-  ],
-  [
-    "Quels débouchés sont mentionnés pour les passionnés du développement informatique ?",
-    "Marketing et stratégie de communication",
-    "Programmation d'applications",
-    "Gestion des médias sociaux",
-    "Sécurité informatique",
-    2
-  ],
-  [
-    "Où peut travailler un webmaster en fonction de ses centres d'intérêt ?",
-    "Journalisme",
-    "Bâtiment et travaux publics (BTP)",
-    "Édition, librairie, bibliothèque",
-    "Il peut travailler dans tous les domaines qui ont besoin d'un site web",
+    "Que fait le Concepteur Multimedia?",
+    "Développe des applications",
+    "Produit des affiches et flyers",
+    "Gère et organise les projets",
+    "Produit du contenu multimédia",
     4
   ],
   [
-    "Quel professionnel améliore l'expérience des utilisateurs en simplifiant la navigation en ligne ?",
-    "Développeur informatique",
-    "Animateur 2D",
-    "Concepteur multimédia",
-    "UX designer",
-    4
+    "Qu'apprend-t-on dans la formation MMI qui prépare au métier de concepteur multimédia?",
+    "Des langages pour coder des application",
+    "Comment produire des infographies et vidéo",
+    "Comment animer des logo et personnages",
+    "Comment analyser les besoins utilisateur",
+    2
   ],
   [
-    "Quels domaines professionnels sont associés au métier d'UX designer ?",
-    "Tout comme le Webmaster, l'UX designer peut travailler dans tous les domaines qui ont besoin d'un site web ",
-    "Réalisateur",
-    "Agriculture",
-    "Journalisme",
+    "Quel parcours MMI est conseillé pour devenir Concepteur Multimedia?",
+    "Création Numérique",
+    "Développement Web",
+    "Stratégies de communication",
+    "Ce n'était pas écrit",
     1
   ],
   [
-    "Quel métier consiste à donner vie à des images dessinées sur papier ou tablette ?",
-    "Développeur informatique",
-    "Animateur 2D",
-    "Concepteur multimédia",
-    "Webmaster",
+    "Que fait un Développeur d'application mobile?",
+    "Gère et organise les projets",
+    "Produit des affiches et flyers",
+    "Produit du contenu multimédia",
+    "Développe des applications",
+    4
+  ],
+  [
+    "Qu'apprend-t-on dans la formation MMI qui prépare au métier de Développeur d'application mobile?",
+    "Des langages pour coder des application",
+    "Comment produire des infographies et vidéo",
+    "Comment animer des logo et personnages",
+    "Comment analyser les besoins utilisateur",
+    1
+  ],
+  [
+    "Quel parcours MMI est conseillé pour devenir Développeur d'application mobile?",
+    "Création Numérique",
+    "Développement Web",
+    "Stratégies de communication",
+    "Ce n'était pas écrit",
     2
-  ]
+  ],
+  [
+    "Que fait le Développeur Full-Stack dans le développement d'un site web?",
+    "Il ne développe pas de site",
+    "La programmation",
+    "Les graphismes",
+    "Les deux",
+    4
+  ],
+  [
+    "Quel parcours MMI est conseillé pour devenir Développeur Full-Stack?",
+    "Création Numérique",
+    "Développement Web",
+    "Stratégies de communication",
+    "Ce n'était pas écrit",
+    2
+  ],
+  [
+    "Que fait l'UX Designer?",
+    "Il analyse les besoins utilisateur",
+    "Il programme des applications",
+    "Il design des site web",
+    "Il produit des vidéos",
+    1
+  ],
+  [
+    "Quel parcours MMI est conseillé pour devenir UX Designer?",
+    "Création Numérique",
+    "Développement Web",
+    "Stratégies de communication",
+    "Ce n'était pas écrit",
+    3
+  ],
 ];
 const tabExplications = [
   [
-    "Qui a le plus de qualifications pour travailler en tant qu'infographiste ?",
-    "Tout à fait ! Entre les trois propositions, ce sont les virtuoses artistiques qui devraient détenir le plus de qualifications en infographie. Bien sûr, cela ne veut pas dire que les rois du code et les maîtres de la communication sont exclus.",
-    "Et non ! En tant que roi du code, vous serez bien plus concerné par le développement technique de votre site web ou votre application, et moins sur les aspects visuels de ce dernier.",
-    "Et non ! Être un maître de communication peut apporter des compétences intéressantes pour travailler en tant qu'infographiste, mais parmi les choix proposés ce n'est pas forcément le plus qualifié.",
-    "Relisez bien la question et choisissez celui qui détiendrait le plus de qualifications entre les trois propositions."
+    "Quel type de projet les Animateur 2D/3D ne réalisent-ils pas?",
+    "Les animateur 2D/3D peuvent totalement réaliser des dessins animés dans leur métier.",
+    "En effet cela ne fait pas partie de leurs attribution.",
+    `...un "Animateur" 2D/3D fait bien des animations... est-tu sûr d'avoir bien lu la question? `,
+    "Un animateur 2D/3D peut se voir demander d'animer un logo",
   ],
   [
-    "Qui a le plus de qualifications pour travailler en tant qu'intégrateur de dispositif de réalité virtuelle ?",
-    "Et non ! Les virtuoses artistiques ont une place non-négligeable lors de la création d'un dispositif de VR, mais ils ne prennent pas part dans son intégration.",
-    "Tout à fait ! Entre les trois propositions, ce sont les rois du code qui devraient détenir le plus de qualifications pour intégrer un dispositif VR. Bien sûr, cela ne veut pas dire que les virtuoses artistiques et les maîtres de la communication sont exclus.",
-    "Et non ! La communication ne prend pas une place très importante lors de l'intégration de dispositifs de réalité virtuelle.",
-    "Relisez bien la question et choisissez celui qui détiendrait le plus de qualifications entre les trois propositions."
+    "Qu'apprend-t-on dans la formation MMI qui prépare au métier d'animateur 2D/3D?",
+    "C'est plutôt ce qui prépare au métier de développeur d'applications",
+    "Non cela prépare plus à devenir concepteur multimédia",
+    "En effet !",
+    "C'est ce qui permettra de devenir UX Designer",
   ],
   [
-    "Qui a le plus de qualifications pour travailler en tant qu'UX Designer ?",
-    "Et non ! Bien que vous serez pardonnés de faire l'erreur étant donné que les compétences des virtuoses artistiques peuvent être très utile pour l'UX, il y a un autre choix plus exact.",
-    "Et non ! Le travail réalisé par les rois du code se base sur ce qui a été déjà fait par l'UX designer, leurs qualifications sont donc différentes.",
-    "Tout à fait ! Les maîtres de la communication ont des qualifications qui leurs permettent de clairement définir l'expérience utilisateur, ce qui demande de la communication claire et précise.",
-    "Relisez bien la question et choisissez celui qui détiendrait le plus de qualifications entre les trois propositions."
+    "Quel parcours MMI est conseillé pour devenir Animateur 2D/3D?",
+    "Oui ! Bien joué",
+    "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
+    "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
+    "Ah vraiment ?! Tu est sur d'avoir bien tout lu?",
   ],
   ["Quel est le métier qui n’est pas un débouché de MMI ?",
     "Eh non en effet ! Bizarrement, le BUT MMI ne prépare pas à être médecin ou chirurgien.",
@@ -111,41 +143,75 @@ const tabExplications = [
     "Vous pouvez tout à fait devenir Game Designer après votre BUT. MMI nous donne les notions de graphismes et de programmation nécessaire à ce métier.",
     "Si vous êtes dans le parcours Développement web et dispositifs interactifs, devenir développeur web est une suite logique du parcours."
   ],
-  ["Quels sont les métiers potentiels pour les amoureux des graphismes et de l'audiovisuel issus du BUT MMI ?",
-    "Bravo !",
-    "Pas vraiment, il vaut mieux aimer le développement web pour ce métier",
-    "Pas vraiment, il vaut mieux aimer le développement web pour ce métier",
-    "Pas vraiment, il faut avoir des connaissances de cybersécurité."
+  [
+    "Que fait le Concepteur Multimedia?",
+    "Loupé ! ça c'est le travail des développeurs d'applications.",
+    "Et bien non le concepteur multimédia produit des travaux qui se retrouveront sur internet (site web, resaux sociaux...)",
+    "C'est plutôt quelque chose qui ce fait en tant que chef de projet",
+    "Oui tout à fait !",
   ],
-  ["Quels débouchés sont mentionnés pour les passionnés du développement informatique ?",
-    "Ah non, si vous voulez travailler dans ce domaine, il vaut mieux choisir le parcours Stratégies de communication.",
-    "Oui ! À vos lignes de code !",
-    "Pour gérer les médias sociaux, Stratégie de communication est sans aucun doute un parcours plus adapté que Développement Web.",
-    "Il faut impérativement avoir des notions de cybersécurité pour travailler dans ce métier..."
+  [
+    "Qu'apprend-t-on dans la formation MMI qui prépare au métier de concepteur multimédia?",
+    "C'est plutôt ce qui prépare au métier de développeur d'applications",
+    "Oui bravo !",
+    "Non ça prépare plus au métier d'animateur 2D/3D",
+    "C'est ce qui permettra de devenir UX Designer",
   ],
-  ["Où peut travailler un webmaster en fonction de ses centres d'intérêt ?",
-    "Oui, mais pas seulement !",
-    "Oui, mais pas seulement !",
-    "Oui, mais pas seulement !",
-    "Absolument !"
+  [
+    "Quel parcours MMI est conseillé pour devenir Concepteur multimédia?",
+    "Oui ! Bien joué",
+    "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
+    "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
+    "Ah vraiment ?! Tu est sur d'avoir bien tout lu?",
   ],
-  ["Quel professionnel améliore l'expérience des utilisateurs en simplifiant la navigation en ligne ?",
-    "Le développeur va mettre en place les consignes de simplification, mais ne va pas les créer.",
-    "Non, ça n'a rien à voir avec la navigation en ligne.",
-    "Eh bien, le concepteur multimédia crée les médias du site, il ne simplifie donc pas la navigation sur un site",
-    'Oui ! UX vient de "User Experience" (expérience utilisateur en français). Il améliore donc l\'expérience utilisateur en faisant des recherches pour simplifier la navigation'
+  [
+    "Que fait un Développeur d'application mobile?",
+    "C'est plutôt quelque chose qui ce fait en tant que chef de projet",
+    "Mmmh pas du tout non... ",
+    "ça c'est plus le travail d'un concepteur multimédia",
+    "Oui... Logique XD !",
   ],
-  ["Quels domaines professionnels sont associés au métier d'UX designer ?",
-    "Oui, tout à fait !",
-    "C'est assez rare, mais si un réalisateur a besoin d'un site pourquoi pas. Mais est-ce le seul secteur ?",
-    "Oui, mais est-ce le seul secteur ?",
-    "Oui, mais est-ce le seul secteur ?"
+  [
+    "Qu'apprend-t-on dans la formation MMI qui prépare au métier de Développeur d'application mobile?",
+    "Oui bravo !",
+    "Non cela prépare plus à devenir concepteur multimédia",
+    "Non ça prépare plus au métier d'animateur 2D/3D",
+    "C'est ce qui permettra de devenir UX Designer",
   ],
-  ["Quel métier consiste à donner vie à des images dessinées sur papier ou tablette ?",
-    "Alors non ! Le développeur peut créer des images et les animer (en SVG par exemple) mais pas sur papier ou tablette.",
-    "Oui, c'est ça !",
-    "Le crée des produits multimédias en mêlant sons, textes et images, en collaboration avec des graphistes, des auteurs, des développeurs et des webdesigners. Mais il ne crée pas d'animation en particulier.",
-    "Le Webmaster crée des sites web, mais ne donne pas vie à des images."
+  [
+    "Quel parcours MMI est conseillé pour devenir Développeur d'application mobile?",
+    "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
+    "Oui ! Bien joué",
+    "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
+    "Ah vraiment ?! Tu est sur d'avoir bien tout lu?",
+  ],
+  [
+    "Que fait le Développeur Full-Stack dans le développement d'un site web?",
+    "Pas de chance, il les développe justement de A à Z !",
+    "Oui mais pas seulement",
+    "Oui mais pas seulement",
+    "Oui en effet ! Trop fort les Développeurs Full-Stack.",
+  ],
+  [
+    "Quel parcours MMI est conseillé pour devenir Développeur d'application mobile?",
+    "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
+    "Oui ! Bien joué",
+    "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
+    "Ah vraiment ?! Tu est sur d'avoir bien tout lu?",
+  ],
+  [
+    "Que fait l'UX Designer?",
+    "Oui et après avoir analysé les besoins utilisateur il va utiliser ces données pour proposer un produit adapté à leurs besoins.",
+    "Nope, ce n'est pas son rôle",
+    "Nope, ce n'est pas son rôle",
+    "C'est plutôt le rôle d'un concepteur multimédia",
+  ],
+  [
+    "Quel parcours MMI est conseillé pour devenir UX Designer?",
+    "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
+    "Errr non loupé. N'hésite pas a revenir en arrière si tu ne te souvient plus",
+    "Oui ! Bien joué",
+    "Ah vraiment ?! Tu est sur d'avoir bien tout lu?",
   ]
 ];
 
@@ -366,6 +432,15 @@ function clickReponse(idReponse) {
   // Afficher l'explication
   const explication = tabExplications[questionNumber][buttonValue];
   zoneExplication.innerHTML = explication;
+}
+
+// Fonction pour le popup de confirmation
+function confirmLogout() {
+  var confirmed = confirm("Êtes-vous certain de vouloir abandonner le quiz? Vous pouvez le recommancer à tout moment.");
+
+  if (confirmed) {
+      document.getElementById("logoutForm").submit();
+  }
 }
 
 presenterQuestion();

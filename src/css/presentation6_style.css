@@ -60,6 +60,9 @@ h1 {
     transform: translateX(0);
     transition: opacity 0.5s, transform 0.5s;
 }
+p {
+    font-size: 15px;
+}
 @media screen and (max-width: 600px){
     #visibleR{
         width: 100%;
@@ -75,12 +78,6 @@ h1 {
     }
     .sections{
         height: 200px;
-    }
-    p{
-        font-size: 10px;
-    }
-    li{
-        font-size: 10px;
     }
     h2{
         margin: 5px;

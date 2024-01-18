@@ -346,4 +346,13 @@ function clickReponse(idReponse) {
   zoneExplication.innerHTML = explication;
 }
 
+// Fonction pour le popup de confirmation
+function confirmLogout() {
+  var confirmed = confirm("Êtes-vous certain de vouloir abandonner le quiz? Vous pouvez le recommancer à tout moment.");
+
+  if (confirmed) {
+      document.getElementById("logoutForm").submit();
+  }
+}
+
 presenterQuestion();
