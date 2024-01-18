@@ -239,6 +239,21 @@ td {
   border-radius: 5px;
 }
 
+.link-style {
+  background: none;
+  border: none;
+  color: rgb(143, 143, 143);
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+  font-style: italic;
+}
+
+.link-style:hover {
+  color: rgb(29, 29, 29);
+}
+
 .container {
   display: flex;
   justify-content: space-evenly;
@@ -258,6 +273,10 @@ td {
 
 .carousel-slide p {
   padding: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
 }
 
 .textInfo {
