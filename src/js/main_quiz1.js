@@ -19,7 +19,7 @@ const tabQuestions = [
     2,
   ],
   [
-    "Comment a-t-on definit les formations de l'IUT ?",
+    "Comment a-t-on defini les formations de l'IUT ?",
     "Elles sont plus longues",
     "Elles sont plus théoriques",
     "Elles sont moins pratiques",
@@ -83,7 +83,7 @@ const tabExplications = [
     "Psst... un petit indice : c'est une anagramme !"
   ],
   [
-    "Comment a-t-on definit les formations de l'IUT ?",
+    "Comment a-t-on defini les formations de l'IUT ?",
     "Les formations à l'IUT sont en général appelé formations courtes car on peut commencer à travailler directement après la formation.",
     "Vous apprendrez certes de la théorie, mais ça ne constituera pas la majorité de vos études.",
     "C'est faux ! Dans la majorité des formations dispensé à l'IUT, vous ferez plus de travaux pratiques qu'à l'université.",
